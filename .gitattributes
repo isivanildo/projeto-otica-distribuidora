@@ -1,2 +1,2 @@
-*.html linguist-language=vb.net
-*.css linguist-language=csharp
+linguist-language=vb.net
+linguist-language=c#
