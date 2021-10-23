@@ -1,6 +1,1 @@
-linguist-language=VB.NET
 linguist-language=C#
-linguist-language=VB.NET
-*.CSS linguist-language=C#
-*.HTML linguist-language=C#
-*.JS linguist-language=C#
