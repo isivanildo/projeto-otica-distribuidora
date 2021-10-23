@@ -1,0 +1,179 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0px;
+	background-color:#FFF;
+	background-repeat:no-repeat;
+}
+/*-------------------- Conteudo Topo ---------------------------*/
+#container{
+	width: 100%;
+	height: auto;
+}
+
+#cabecalho{	
+	width: 100%;
+	height:60px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#333;	
+	background-color: #084D6C;
+}
+
+#logo {
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+#logo img {
+	padding: 10px 20px 10px 20px;
+}
+
+#texto{
+	width: 75%;
+	height: 100%;
+	float: left;
+}
+
+/*-------------------- Conteudo Validador ---------------------------*/
+#resultados{
+	width: 96%;
+	margin: 2% auto;
+	font-size: 11px;
+	white-space: pre-line;	
+	word-wrap: break-word;
+	font-family:Verdana,Geneva,sans-serif;	
+}
+
+#resultados .nota{
+    border-bottom:1px black dotted;
+}
+
+#resultados .erros{
+	color: red;
+	font-weight: bold;
+}
+
+#resultados .linksErros{
+	text-decoration:none;
+	color: red;
+}
+
+#resultados .linksErros:hover{
+	text-decoration:underline;
+}
+
+#resultados .regrasvalidacao{
+	color: purple;
+	font-weight: bold;
+}
+
+#resultados .valido{	
+	font-size: 12px;	
+	color: #1AB21A;	
+}
+
+#resultados .alertas{
+	color: chocolate;
+	font-weight: bold;
+}
+
+#resultados .linksAlerta{
+	text-decoration:none;
+	color: chocolate;
+}
+
+#resultados .linksAlerta:hover{
+	text-decoration:underline;
+}
+
+#resultados .message
+{
+	position: relative;
+	font-size: 12px;
+	font-weight: bold;
+	top: 3px;
+	left: 3px;	
+}
+
+#resultados ul{
+	margin: 1px;
+	
+}
+#resultados ul li{	
+	margin: 2px;
+	padding: 1px;
+	
+}
+
+#textoResultado{
+	color : black;
+	font-size: 20px;	
+}
+#erro_Json{
+	font-size: 12px;	
+	color: red;	
+}
+/*-------------------- Conteudo Saiba Mais ---------------------------*/
+
+.sub_saiba_mais { 	
+	font-size: 11px;	
+}
+
+.imagem_icone_saiba_mais {
+	padding-left: 3px;
+	width: 28px;
+	height: 28px;
+}
+
+.link_tag {
+	color: #2A00F4;
+}
+
+a.link_tag:hover {
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
+
+.message_saiba_mais {
+	position: relative;
+	font-size: 12px;
+	font-weight: bold;
+	top: 3px;
+	left: 3px;	
+}
+
+.saiba_mais {
+	border-bottom:1px black dotted;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+.saiba_mais_subtitulo{
+	position: relative;
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+}
+
+.lista_tags {
+	list-style-type: none;
+}
+
+.helper_subtitulo{
+	position: relative;
+	font-size: 12px;
+	font-weight: bold;
+	color: black;	
+}
+
+.lista_posts {
+	color: #2A00F4;
+	
+}
+
+.lista_posts li:hover{
+	font-weight: bold;
+}

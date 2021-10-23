@@ -1,0 +1,27 @@
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winoticawcf.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winoticawcf.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winoticawcf.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winotica_util.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winotica_util.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winotica_util.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.vbprojResolveAssemblyReference.cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.Resources.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.vbproj.GenerateResource.Cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winoticawcf.dll.config
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winoticawcf.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winoticawcf.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winoticawcf.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winotica_util.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winotica_util.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\bin\winotica_util.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.vbprojResolveAssemblyReference.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.Resources.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.vbproj.GenerateResource.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.vbproj.CoreCompileInputs.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.vbproj.CopyComplete
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticawcf\obj\Debug\winoticawcf.pdb

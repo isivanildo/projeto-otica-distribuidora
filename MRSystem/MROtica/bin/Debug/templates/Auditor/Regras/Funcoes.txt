@@ -1,0 +1,1016 @@
+Function FormatarData(aData : string) : String;
+begin
+  Result := Format('%s/%s/%s', [Copy(aData, 9, 2), Copy(aData, 6, 2), Copy(aData, 0, 4)]);
+end;
+
+Function FieldValue(aDataSet,aCampo:String):TField;
+begin
+	Result := DataSets.GetDataSetByName(aDataSet).FieldByName(aCampo)
+end;
+
+function FindDataSet(aName : String) : TSpdXSDClientDataSet;
+begin
+	result := DataSets.GetDataSetByName(aName);
+end;
+
+function GetAno(aXMLDate : String) : Word;
+begin
+	Result := StrToInt(Copy(aXmlDate,1,4));
+end;
+
+function GetMes(aXMLDate : String) : Word;
+begin
+	Result := StrToInt(Copy(aXmlDate,6,2));
+end;
+
+function GetDia(aXMLDate : String) : Word;
+begin
+	Result := StrToInt(Copy(aXmlDate,9,2));
+end;
+
+Function XmlDateToDateTime(aXmlDate : String) : TDateTime;
+begin
+  Result := EncodeDate(GetAno(aXmlDate), GetMes(aXmlDate), GetDia(aXmlDate));
+end;
+
+Function BetweenDateTime(aData, aInicio, aFim : String) : boolean;
+var
+  _data : TDateTime;
+begin
+  _data := StrToDate(aData);
+  Result := ((_data >= StrToDate(aInicio)) AND (_data <= StrToDate(aFim)));
+end;
+
+function EstaNaListaDeExcecoes(aCodigoMun : string) : boolean;
+	begin
+		case StrToInt(aCodigoMun) of
+		 4305871, 2101919, 2202251,
+		 2201988, 2611533, 3117836,
+		 3152131, 5203939, 5203962 : result := true;
+		else
+		  result := false;
+		end;
+	end;
+
+Function CalcDigVerificadorCodMunicipio(Const aCodigoMun : string) : string;
+var
+  i, _peso, _DV, _somaPond, _pond : integer;
+begin
+  _somaPond := 0;
+  _peso := 1;
+  for i := 1 to Length(aCodigoMun) do
+  begin
+    _pond := StrToInt(Copy(aCodigoMun,i,1)) * _peso;
+
+    if _pond > 9 then
+       _pond := StrToInt( Copy(IntToStr(_pond), 1,1)) + StrToInt( Copy(IntToStr(_pond), 2,1));
+
+    _somaPond := _somaPond + (_pond);
+    if _peso = 1 then
+       _peso := 2
+    else
+       _peso := 1;
+
+  end;
+
+  if (_somaPond mod 10) = 0 then
+    _DV := 0
+  else
+    _DV := 10 - (_somaPond mod 10);
+  Result := IntToStr(_DV);
+
+end;
+
+Function ValidaCodigoMunicipio(Const aCodigoMun : string) : Boolean;
+begin
+  if EstaNaListaDeExcecoes(aCodigoMun) then
+     result := true
+  else
+	 result := CalcDigVerificadorCodMunicipio(Copy(aCodigoMun,1,6)) = Copy(aCodigoMun,7,1);
+end;
+
+function DupeString(const AText : String; const ACount : Integer) : String;
+var
+	i : integer;
+begin
+	result := '';
+	for i := 1 to ACount do
+		result := result + AText;
+end;
+
+function BuscaCaracteresValidos(valor, validos: String): String;
+var
+  i: integer;
+Begin
+  result := '';
+  for i := 1 to length(Valor) do
+    if pos(valor[i], Validos) > 0 then
+      result := result + valor[i];
+end;
+
+function ValidaCNPJ(Cnpj: String): Boolean;
+var
+  _nSoma,
+  _i,
+  _nDigito1,
+  _nDigito2 : integer;
+
+begin
+
+  result := false;
+  Cnpj := BuscaCaracteresValidos(cnpj, '0123456789');
+  if (Length(Trim(Cnpj)) = 14) and (Cnpj <> DupeString('0', 14)) and (Cnpj <> DupeString('1', 14)) and
+    (Cnpj <> DupeString('2', 14)) and (Cnpj <> DupeString('3', 14)) and (Cnpj <> DupeString('4', 14)) and
+    (Cnpj <> DupeString('5', 14)) and (Cnpj <> DupeString('6', 14)) and (Cnpj <> DupeString('7', 14)) and
+    (Cnpj <> DupeString('8', 14)) and (Cnpj <> DupeString('9', 14)) then
+	begin
+		_nSoma := 0;
+
+		for _i := 1 to 12 do
+		  if _i < 5 then
+			_nSoma := _nSoma + (StrToint(Copy(Cnpj, _i, 1)) * (6 - _i))
+		  else
+			_nSoma := _nSoma + (StrToint(Copy(Cnpj, _i, 1)) * (14 - _i));
+
+		_nDigito1 := 11 - (_nSoma Mod 11);
+
+		if _nDigito1 > 9 then
+		  _nDigito1 := 0;
+
+		_nSoma := 0;
+
+		for _i := 1 to 13 do
+		  if _i < 6 then
+			_nSoma := _nSoma + (StrToint(Copy(Cnpj, _i, 1)) * (7 - _i))
+		  else
+			_nSoma := _nSoma + (StrToint(Copy(Cnpj, _i, 1)) * (15 - _i));
+
+		_nDigito2 := 11 - (_nSoma Mod 11);
+
+		if _nDigito2 > 9 then
+		  _nDigito2 := 0;
+
+		if Copy(Trim(Cnpj), 13, 2) = intToStr(_nDigito1) + intToStr(_nDigito2) then
+		  Result := true;
+	end;
+end;
+
+
+procedure PopulaListaUF(aList: TstringList);
+  begin
+    aList.Add('AC=12');
+    aList.Add('AL=27');
+    aList.Add('AP=16');
+    aList.Add('AM=13');
+    aList.Add('BA=29');
+    aList.Add('CE=23');
+    aList.Add('DF=53');
+    aList.Add('ES=32');
+    aList.Add('GO=52');
+    aList.Add('MA=21');
+    aList.Add('MT=51');
+    aList.Add('MS=50');
+    aList.Add('MG=31');
+    aList.Add('PA=15');
+    aList.Add('PB=25');
+    aList.Add('PR=41');
+    aList.Add('PE=26');
+    aList.Add('PI=22');
+    aList.Add('RJ=33');
+    aList.Add('RN=24');
+    aList.Add('RS=43');
+    aList.Add('RO=11');
+    aList.Add('RR=14');
+    aList.Add('SC=42');
+    aList.Add('SP=35');
+    aList.Add('SE=28');
+    aList.Add('TO=17');
+  end;
+
+function GetCodeUF(Const aUF : String) : String;
+var
+  _listUF : TStringList;
+begin
+  _listUF := TStringList.Create;
+  Try
+     PopulaListaUF(_listUF);
+     Result := _ListUF.Values[aUF];
+  Finally
+    _listUF.Free;
+  End;
+end;
+
+function ValidaCPF(aCPF: string): Boolean;
+var
+  i: Integer;
+  Want: Char;
+  Wvalid: Boolean;
+  Wdigit1, Wdigit2: Integer;
+
+begin
+	Wdigit1 := 0;
+	Wdigit2 := 0;
+
+	Want := aCPF[1];
+	Delete(aCPF, pos('.',aCPF), 1)  //verificar a possivel implicancia em usar 'pos' ao invez de 'ansipos'
+	Delete(aCPF, pos('.',aCPF), 1)  //verificar a possivel implicancia em usar 'pos' ao invez de 'ansipos'
+	Delete(aCPF, pos('-',aCPF), 1)  //verificar a possivel implicancia em usar 'pos' ao invez de 'ansipos'
+
+	// testar se o cpf é repetido como 111.111.111-11
+	for i := 1 to Length(aCPF) do
+	begin
+		if aCPF[i] <> Want then
+		begin
+			Wvalid := true; // se o cpf possui um digito diferente ele passou no primeiro teste
+			break;
+		end;
+	  end;
+
+	// se o cpf é composto por numeros repetido retorna falso
+	if not Wvalid then
+	begin
+		Result := False;
+		Exit;
+	end;
+
+	// executa o calculo para o primeiro verificador
+	for i := 1 to 9 do
+	begin
+		Wdigit1 := Wdigit1 + (StrToInt(aCPF[10 - i]) * (i + 1));
+	end;
+
+	Wdigit1 := ((11 - (Wdigit1 mod 11)) mod 11) mod 10;
+
+	{ 	formula do primeiro verificador
+		soma=1°*2+2°*3+3°*4.. até 9°*10
+		digito1 = 11 - soma mod 11
+		se digito > 10 digito1 =0
+	}
+
+	// verifica se o 1° digito confere
+	if IntToStr(Wdigit1) <> aCPF[10] then
+	begin
+		Result := False;
+		Exit;
+	end;
+
+	for I := 1 to 10 do
+	begin
+		Wdigit2 := Wdigit2 + (StrToInt(aCPF[11 - I]) * (I + 1));
+	end;
+
+	Wdigit2 := ((11 - (Wdigit2 mod 11)) mod 11) mod 10;
+	{ 	formula do segundo verificador
+		soma=1°*2+2°*3+3°*4.. até 10°*11
+		digito1 = 11 - soma mod 11
+		se digito > 10 digito1 =0
+	}
+
+	// confere o 2° digito verificador
+	if IntToStr(Wdigit2) <> aCPF[11] then
+	begin
+		Result := False;
+		Exit;
+	end;
+
+	// se chegar até aqui o cpf é valido
+	Result := true;
+end;
+
+{******************* ValidaAutenticidadeDv E Dependencias ************************}
+
+Function CompleteDataEmis(aAAMM : string) : string;
+  begin
+    result := Format('%s-%s-%s',['20' + Copy(aAAMM,1,2), Copy(aAAMM,3,2), '01']);
+  end;
+
+procedure LoadParams(var aAno, aMes,aCNPJ : String);
+var
+  Agora_: TDateTime;
+  Ano_, Mes_, Dia_: Word;
+begin
+	Agora_ := Now;
+	DecodeDate(Agora_, Ano_, Mes_, Dia_);
+	aMes := PadC(IntToStr(Mes_), 2,'0',True);
+	aAno := Copy(IntToStr(Ano_), 3, 2);
+	Try
+		StrToInt64(aCNPJ);
+	except
+		raiseException(Format('O campo CNPJ: %s deve ser um número Inteiro', [aCNPJ]));
+	end;
+end;
+
+procedure Checkparams(var aCodigo,aTpEmis,aDtEmissao,aUF,aCNPJ,aModelo,aNRNota,aCodigo : String);
+  begin
+    if length(aCodigo) > 8 then
+      raiseException(Format('O Código da nota(cNF) "%s", excede o máximo de 8 dígitos (Manual 4.01)',[aCodigo]));
+
+    if length(atpEmis) <> 1 then
+      raiseException(Format('O valor do tipo de emissão(tpEmis) "%s" é inesperado.',[aCodigo]));
+
+    if Length(aDtEmissao) <> 10 then
+      raiseException(Format('%s Data de Emissão no Formato inválido. Utilizar YYYY-MM-DD', [aDtEmissao]));
+
+    if (aUF = '') or (aCNPJ = '') or (aModelo = '') or
+       (aNRNota = '') or (aCodigo = '') or (aTpEmis = '') then
+      raiseException(Format
+        ('Os Campos: Código da UF Emitente =  %s' + #13 +
+          'CNPJ do Emitente = %s ' + #13 +
+          'Código do Modelo do Documento Fiscal = %s ' + #13 +
+          'Número da Nota Fiscal = %s' + #13 +
+          'Tipo de emissão = %s' + #13 +
+          'Código (controle do sistema) Nota Fiscal = %s' + #13 +
+          'são campos obrigatórios para o cálculo do dígito verificador.',
+        [aUF, aCNPJ, aModelo, aNRNota, aTpEmis, aCodigo]));
+  end;
+
+
+Function DigVerificador(aValor: String; aBase: integer; aResto: boolean): string;
+var
+  _Soma: integer;
+  _Contador, _Peso, _Digito: integer;
+begin
+
+  _Soma := 0;
+  _Peso := 2;
+  for _Contador := Length(aValor) downto 1 do
+  begin
+    _Soma := _Soma + (StrToInt(aValor[_Contador]) * _Peso);
+    if _Peso < aBase then
+      _Peso := _Peso + 1
+    else
+      _Peso := 2;
+  end;
+
+  if aResto then
+    Result := IntToStr(_Soma mod 11)
+  else
+  begin
+    _Digito := 11 - (_Soma mod 11);
+    if (_Digito > 9) then
+      _Digito := 0;
+    Result := IntToStr(_Digito);
+  end
+
+end;
+
+
+
+  function CalculaDV(const aAno,aMes,aUF,aCNPJ,aModelo,aSerie,aNRNota,atpEmis,aCodigo:String) : string;
+  begin
+    result := DigVerificador(PadC(aUF, 2,'0',True) +
+                             aAno +
+                             aMes +
+                             aCNPJ +
+                             aModelo +
+                             PadC(aSerie, 3,'0',True) +
+                             PadC(aNRNota, 9,'0',True) +
+                             atpEmis +
+                             PadC(aCodigo, 8,'0',True),9,false);
+  end;
+
+function CalculaChaveVm40(const aDtEmissao, aUF, aCNPJ, aModelo, aSerie, aNRNota, aTpEmis, aCodigo: String): String;
+var
+  Mes, Ano, DV, tpEmis : String;
+  begin
+  Result := '';
+
+  LoadParams(Ano, Mes,aCNPJ);
+  TpEmis := aTpEmis;
+  CheckParams(aCodigo,tpEmis,aDtEmissao,aUF,aCNPJ,aModelo,aNRNota,aCodigo);
+
+  Mes := Copy(aDtEmissao, 6, 2);
+  Ano := Copy(aDtEmissao, 3, 2);
+  DV  := CalculaDV(Ano,Mes,aUF,aCNPJ,aModelo,aSerie,aNRNota,tpEmis,aCodigo);
+
+  Result := (PadC(aUF, 2,'0',True) + Ano + Mes + aCNPJ + aModelo + PadC(aSerie, 3,'0',True)) + PadC (aNRNota, 9,'0',True) + tpEmis + PadC(aCodigo, 8,'0',True) + DV;
+
+  // Result:=aChave;
+
+end;
+
+function CalculaChaveVm30(aDtEmissao, aUF, aCNPJ, aModelo, aSerie, aNRNota, aCodigo: String): String;
+var
+  Agora_: TDateTime;
+  Ano_, Mes_, Dia_: Word;
+  Mes, Ano, DV: String;
+
+begin
+  Result := '';
+  Agora_ := Now;
+  DecodeDate(Agora_, Ano_, Mes_, Dia_);
+  Mes := PadC(IntToStr(Mes_), 2,'0',True);
+  Ano := Copy(IntToStr(Ano_), 3, 2);
+
+  Mes := Copy(aDtEmissao, 6, 2);
+  Ano := Copy(aDtEmissao, 3, 2);
+
+  if Length(aDtEmissao) <> 10 then
+    raiseException(Format(
+      '%s Data de Emissão no Formato inválido. Utilizar YYYY-MM-DD',
+      [aDtEmissao]));
+
+  if (aUF = '') or (aCNPJ = '') or (aModelo = '') or (aNRNota = '') or
+    (aCodigo = '') then
+    RaiseException(Format('Os Campos: Código da UF Emitente =  %s' + #13 +
+        'CNPJ do Emitente = %s ' + #13 +
+        'Código do Modelo do Documento Fiscal = %s ' + #13 +
+        'Número da Nota Fiscal = %s' + #13 +
+        'Código (controle do sistema) Nota Fiscal = %s' + #13 +
+        'são campos obrigatórios para o cálculo do dígito verificador.',
+      [aUF, aCNPJ, aModelo, aNRNota, aCodigo]));
+
+  Try
+    StrToInt64(aCNPJ);
+  except
+    RaiseException(Format(
+      'O campo CNPJ: %s deve ser um número Inteiro', [aCNPJ]));
+  end;
+
+  DV := DigVerificador(PadC(aUF, 2,'0',True) + Ano + Mes + aCNPJ + aModelo + PadC(aSerie, 3,'0',True) + PadC(aNRNota, 9,'0',True) + PadC(aCodigo, 9,'0',True),9,False);
+  Result := (PadC(aUF, 2,'0',True) + Ano + Mes + aCNPJ + aModelo + PadC(aSerie, 3,'0',True) + PadC(aNRNota, 9,'0',True) + PadC(aCodigo, 9,'0',True)) + DV;
+
+end;
+
+function DecodeChave (Const aChave : string; aVersaoManual : String) : TspdDecodeChaveNFe;
+begin
+  if Length(aChave) <> 44 then
+	RaiseException(Format('A Chave da NFe %s deve possuir exatamente 44 dígitos.',[aChave]));
+
+  Result.cUF := Copy(aChave,1,2);
+  result.AAMM := Copy(aChave,3,4);
+  result.CNPJ := Copy(aChave,7,14);
+  result.Modelo := Copy(aChave,21,2);
+  result.Serie := Copy(aChave,23,3);
+  result.nNF := Copy(aChave,26,9);
+  result.cDV := Copy(aChave,44,1);
+
+  case aVersaoManual of
+   'vm202a',
+   'vm30'   : begin
+              result.tpEmis := '';
+              result.cNF := Copy(aChave,35,9);
+            end;
+   'vm40',
+   'vm50',
+   'vm50a'  : begin
+              result.tpEmis := Copy(aChave,35,1);
+              result.cNF := Copy(aChave,36,8);
+            end;
+  else
+    RaiseException('Versão de Manual não suportada para decodificação.');
+  end;
+end;
+
+
+Function ValidaAutenticidadeDV(Const aChave : String; aVersaoManual : String) :Boolean;
+Var
+  _Dc : TspdDecodeChaveNFe;
+  _NewChave : string;
+begin
+  result := false;
+  _Dc := DecodeChave(aChave,aVersaoManual);
+  case aVersaoManual of
+   'vm202a',
+   'vm30' : _NewChave := CalculaChavevm30(CompleteDataEmis(_Dc.AAMM), _Dc.cUF, _dc.CNPJ, _dc.Modelo, _dc.Serie, _Dc.nNF, _dc.cNF);
+   'vm40',
+   'vm50',
+   'vm50a' : _NewChave := CalculaChavevm40(CompleteDataEmis(_Dc.AAMM), _Dc.cUF, _dc.CNPJ, _dc.Modelo, _dc.Serie, _Dc.nNF, _Dc.tpEmis, _dc.cNF);
+  end;
+
+  if Copy(_NewChave,44,1) = _Dc.cDV then
+     result := true;
+end;
+
+
+Function ValidaAutenticidadeDVCamposXML(Const aChaveNota, aDtEmi, aCUF, aCNPJ, aModelo, aSerie, aNNF, aTpEmis, aCNF : String; aVersaoManual : String) :Boolean;
+Var  
+  _NewChave : string;
+begin
+  result := false;
+    case aVersaoManual of
+   'vm202a',
+   'vm30' : _NewChave := CalculaChavevm30(aDtEmi, aCUF, aCNPJ, aModelo, aSerie, aNNF, aCNF);
+   'vm40',
+   'vm50',
+   'vm50a' : _NewChave := CalculaChavevm40(aDtEmi, aCUF, aCNPJ, aModelo, aSerie, aNNF, aTpEmis, aCNF);
+  end;
+
+  if Copy(_NewChave,44,1) = Copy(aChaveNota,44,1) then
+     result := true;	
+end;
+
+{***** Função que valida Regra GD01  *****}
+
+function ExisteAvulsa : Boolean;
+begin
+	Result := False;
+	if (FieldValue('NFe','CNPJ_D02').AsString <>'') or (FieldValue('NFe','xOrgao_D03').AsString <>'') or
+	(FieldValue('NFe', 'matr_D04').AsString <>'') or (FieldValue('NFe','xAgente_D05').AsString <>'') or
+	(FieldValue('NFe','fone_D06').AsString <>'') or (FieldValue('NFe','UF_D07').AsString <>'') or
+	(FieldValue('NFe','nDAR_D08').AsString <>'') or (FieldValue('NFe','dEmi_D09').AsString <>'') or
+	(FieldValue('NFe','vDAR_D10').AsString <>'') or (FieldValue('NFe','repEmi_D11').AsString <>'') or
+	(FieldValue('NFe','dPag_D12').AsString <>'') then
+		Result:= True;
+end;
+
+{**** Função que valida Regra GU01 ****** }
+function PossuiISSQN (aDataSet : TDataSet): Boolean;
+begin
+	Result := False;
+
+	if (aDataSet.FieldByName('vBC_U02').AsString <>'') or (aDataSet.FieldByName('vAliq_U03').AsString <>'') or
+	(aDataSet.FieldByName( 'vISSQN_U04').AsString <>'') or (aDataSet.FieldByName('cMunFG_U05').AsString <>'') or
+	(aDataSet.FieldByName('cListServ_U06').AsString <>'') then
+		Result:= True;
+end;
+
+
+
+Function CompareComTolerancia(Const aValue1, aValue2, aTolerancia : Extended) : Boolean;
+begin
+  result := false;
+  if ((aValue1 >= (aValue2 - aTolerancia)) and (aValue1 <= (aValue2 + aTolerancia))) then
+   result := true;
+end;
+
+
+function VerificaZeroEAN(const aEAN: String): Boolean;
+var
+  i: integer;
+begin
+  result := True;
+  for i := 1 to Length(aEAN) do
+	if copy(aEAN,i,1) <> '0' then
+	begin
+	  result := False;
+	  exit;
+	end;
+end;
+
+{ *** Fim função validaean ***}
+Function ValidaDvEAN(codigo : string) : boolean;
+var
+  var1,
+  var2,
+  total,
+  aux,
+  i : Integer;
+
+begin
+
+  var1 := 0;
+  var2 := 0;
+
+	case Length(Trim(codigo)) of
+	8,12,13,14:
+		begin
+			while length(codigo) <14 do
+				codigo := '0' + codigo;
+
+			for i:=1 to (length(codigo)-1) div 2 do
+			begin
+				var1 := var1 + (3 * StrToInt(codigo[(2*i)-1]));
+				var2 := var2 + (1 * StrToInt(codigo[(2*i)]));
+			end;
+
+			var1 := var1 + (3 * StrToInt(codigo[13]));
+
+			total := var1 + var2;
+
+			aux := total mod 10;
+
+			aux := 10 - aux;
+
+			if aux = 10 then
+				aux := 0;
+
+			if IntToStr(aux) = codigo[Length(codigo)]
+				then result := true
+				else result := false;
+		end;
+	0: result := True;
+	else
+		result := False;
+	end;
+end;
+
+function SomenteZeros(aText : String) : boolean;
+var
+  _i : integer;
+begin
+  result := True;
+  for _i:=0 to length(aText) do
+	if Copy(Trim(aText),_i,1) <> '0' then
+		result := False;
+end;
+
+function PosStr(SubTexto, Texto: Widestring): Integer;
+begin
+  Result := pos(SubTexto, Texto);
+end;
+
+Function GetValueTag(aTag, aTxt: String): String;
+Var
+  aPINI, aPFIN: integer;
+begin
+  aPINI := PosStr('<' + aTag + '>', aTxt) + (Length(aTag) + 2);
+  aPFIN := PosStr('</' + aTag + '>', aTxt);
+  Result := Copy(aTxt, aPINI, aPFIN - aPINI);
+end;
+
+procedure AdicionarAlerta(var aLista : TstringList; const aMSG,aItem : string);
+var
+  _list : TstringList;
+	i : integer;
+begin
+	_list := TstringList.Create;
+	try
+		if Trim(aMSG) <> '' then
+		begin
+			_list.text := Trim(aMSG);
+			for i := 0 to _list.count-1 do
+			begin
+				aLista.Add('Alerta[CSTCFOP]: Item '+aItem+': '+_list.strings[i]);
+			end;
+		end;
+	finally
+	  _list.Free;
+	end;
+end;
+
+procedure AdicionarAlertaICMS(var aLista : TstringList; const aMSG,aItem : string);
+var
+  _list : TstringList;
+	i : integer;
+begin
+	_list := TstringList.Create;
+	try
+		if Trim(aMSG) <> '' then
+		begin
+			_list.text := Trim(aMSG);
+			for i := 0 to _list.count-1 do
+			begin
+				aLista.Add('Alerta[ICMSUFDEST]: Item '+aItem+': '+_list.strings[i]);
+			end;
+		end;
+	finally
+	  _list.Free;
+	end;
+end;
+
+function ContaVirgula(aFrase: string): integer;
+var
+  i, ivtot: Integer;
+begin
+  ivTot := 0;
+  aFrase := Trim(aFrase);
+  for i := 1 to Length(aFrase) do
+  begin
+    if (aFrase[i] = ',') then
+      inc(ivTot);
+  end;
+  Result := ivTot;
+end;
+
+function ExisteEm(aValorProcurado, aLista: string): boolean;
+var
+  _delimitpos, j, QtdeLista: integer;
+  _ValorVerificado: string;
+begin
+  Result := False;
+  QtdeLista := ContaVirgula(aLista);
+  for j := 0 to QtdeLista do
+  begin
+	_delimitpos := Pos(',',aLista);
+    if _delimitpos > 0 then
+      _ValorVerificado := Copy(aLista,1,_delimitpos - 1)
+	else
+      _ValorVerificado := aLista;
+    if aValorProcurado = _ValorVerificado then
+      Result := True;
+	aLista := StringReplace(aLista,_ValorVerificado + ',','',[]);
+  end;
+end;
+
+
+function getPrimeiroDigito(const aText : string) : string;
+begin
+  Result := Copy(aText,1,1);
+end;
+
+function FormatFloat(const aFloat: extended) : string;
+var
+	_posPonto : integer;
+begin
+	Result := FloatTostr(aFloat);
+	_posPonto := Pos('.',Result);
+	Result := Copy(Result, 0, _posPonto + 2);
+end;
+
+Function ConcatenarValorTotal(aCampo, aValorInformado : string; aValorCalculado: Currency) : string;
+var
+	_valorCalculado : string;
+begin
+	_valorCalculado := CurrencyToXsdCurrency(aValorCalculado);
+	if aValorInformado = '' then
+		aValorInformado := 'Não Informado';
+	Result := Format('(%s informado: %s, %s calculado: %s)', [aCampo,aValorInformado,aCampo,_valorCalculado]);
+end;
+
+Function ConcatenarValorCalculado(aCampo, aValorInformado : string; aValorCalculado: Extended) : string;
+var
+	_valorCalculado : string;
+begin
+	_valorCalculado := FormatFloat(aValorCalculado);
+	if aValorInformado = '' then
+		aValorInformado := 'Não Informado';
+	Result := Format('( O campo: %s foi informado com o valor: %s e deve ser informado com o valor: %s )', [aCampo,aValorInformado,_valorCalculado]);
+end;
+
+Function ConcatenarValorMaximo(aCampo, aValorInformado : string; aValorMaximo: Extended) : string;
+var
+	_valorMaximo : string;
+begin
+	_valorMaximo := FormatFloat(aValorMaximo);
+	if aValorInformado = '' then
+		aValorInformado := 'Não Informado';
+	Result := Format('( O campo: %s foi informado com o valor: %s e deve ser informado com o valor: %s ou inferior )', [aCampo,aValorInformado,_valorMaximo]);
+end;
+
+Function ConcatenarNumItem(aNumItem : string) : string;
+begin	
+  result := Format(' [nItem:%s]',[aNumItem]); 
+end;
+
+function GetAliquotaPorEstado(const aEstadoOrigem, aEstadoDestino : string) : string;
+var
+	_ini : TspdIniFile;
+begin
+	_ini := TspdIniFile.Create(Params.Values['TabelaAliquotaPorEstado']);
+	try
+		Result :=  _ini.ReadString(UpperCase(aEstadoOrigem),UpperCase(aEstadoDestino),'');
+	finally
+		_ini.free;
+	end;
+end;
+
+function StrToExtended(Const aValue : String) : Extended;
+begin
+	result := StrToFloat(aValue);
+end;
+
+Function GetExtend(Const aValue : string) : Extended;
+begin
+  if (aValue <> '') then
+    result := StrToFloat(aValue)
+  else
+    result := 0;
+end;
+
+function CFOPdeDevolucao(const aCFOP: string): boolean;
+begin
+  Result := ExisteEm(aCFOP, '1201,1202,1203,1204,1208,1209,1410,1411,1503,1504,1553,' +
+                            '1660,1661,1662,1918,2201,2202,2203,2204,2208,2209,' +
+                            '2410,2411,2503,2504,2553,2660,2661,2662,2918,3201,' +
+                            '3202,3211,3503,3553,5201,5202,5208,5209,5210,5410,5411,' +
+                            '5412,5413,5503,5553,5555,5556,5660,5661,5662,5918,6201,' +
+                            '6202,6208,6209,6210,6410,6411,6412,6413,6503,6553,6555,' +
+							'1505,1506,1919,2505,2506,2919,5919,5921,6919,6921,' +
+                            '6556,6660,6661,6662,6918,7201,7202,7210,7211,7553,7556');
+end;
+
+function CFOPdeRetornoDeMercadoriaAnexoXIII(const aCFOP: string): boolean;
+begin
+  Result := ExisteEm(aCFOP, '1414,1415,1451,1452,1554,1664,1902,1903,1904,1906,1907,'+
+                            '1909,1913,1914,1916,1921,1925,2414,2415,2554,2664,2902,'+
+							'2903,2904,2906,2907,2909,2913,2914,2916,2921,2925,5664,'+
+							'5665,5902,5903,5906,5907,5909,5913,5916,5925,6664,6665,'+
+							'6902,6903,6906,6907,6909,6913,6916,6925');
+end;
+
+function GeraDV(aStr: string): string;
+var
+  Soma,I,J: Integer;
+begin
+  J := 1;
+  Soma := 0;
+  for I := Length(aStr) downto 1 do
+  begin
+    Soma := Soma + StrToInt(aStr[i]) * J;
+    Inc(J);
+  end;
+  Result := IntToStr(11 - (Soma mod 11));
+end;
+
+function GeraDVRecopi(aRecopi: string): string;
+var
+  DV1, DV2: string;
+begin
+  DV1 := GeraDV(aRecopi);
+  DV2 := GeraDV(aRecopi + DV1);
+  Result := DV1 + DV2;
+end;
+
+function ValidaRecopi(aRecopi: string): boolean;
+var
+  _RegexList: TStringList;
+  DV: string;
+begin
+  Result := False;
+  _RegexList := TStringList.Create;
+  try
+    _RegexList.Add('^(1|2)[0-9]{3}(0[1-9]|1[0-2])((0[1-9])|((1|2)[0-9])|3(0|1))((0|1)[0-9]|2[0-3])([0-5][0-9])([0-5][0-9])[0-9]{4}[0-9]{2}$');
+    if ReconhecerPadrao(aRecopi, _RegexList) <> -1 then
+    begin
+      DV := aRecopi[10] + aRecopi[11];
+      if GeraDVRecopi(aRecopi) = DV then
+        Result := True;
+    end;
+  finally
+    _RegexList.Free;
+  end;
+end;
+
+function ExisteExportacao(aItemDS: TDataSet) : Boolean;
+begin
+  Result := False;
+  if (aItemDS.FieldByName('nDraw_I51').AsString <> '') or
+     (aItemDS.FieldByName('nRE_I53').AsString <> '') or
+     (aItemDS.FieldByName('chNFe_I54').AsString <> '') or
+     (aItemDS.FieldByName('qExport_I55').AsString <> '') then
+    Result:= True;
+end;
+
+function NCMdePapel(const aNCM: string): boolean;
+begin
+  Result := ExisteEm(aNCM,
+    '48010010,48010090,48021000,48022010,48022090,48024010,48024090,48025410,'+
+    '48025491,48025499,48025510,48025591,48025592,48025599,48025610,48025692,'+
+    '48025693,48025699,48025710,48025792,48025793,48025799,48025810,48025891,'+
+    '48025892,48025899,48026110,48026191,48026192,48026199,48026210,48026291,'+
+    '48026292,48026299,48026910,48026991,48026992,48026999,48041100,48041900,'+
+    '48042100,48042900,48043110,48043190,48043910,48043990,48044100,48044200,'+
+    '48044900,48045100,48045200,48045910,48045990,48051100,48051200,48051900,'+
+    '48052400,48052500,48053000,48054010,48054090,48055000,48059100,48059210,'+
+    '48059290,48059300,48061000,48062000,48063000,48064000,48070000,48081000,'+
+    '48082000,48083000,48089000,48101310,48101381,48101382,48101389,48101390,'+
+    '48101410,48101481,48101482,48101489,48101490,48101910,48101981,48101982,'+
+    '48101989,48101990,48102210,48102290,48102910,48102990,48103110,48103190,'+
+    '48103210,48103290,48103910,48103990,48109210,48109290,48109910,48109990,'+
+    '48111010,48111090,48114110,48114190,48114910,48114990,48115110,48115121,'+
+    '48115122,48115123,48115129,48115130,48115910,48115921,48115922,48115923,'+
+    '48115929,48115930,48116010,48116090,48119010,48119090,48239091,48239099');
+end;
+
+function ValidarCenq(aCenq : string) : boolean;
+begin
+   Result := ExisteEm(aCenq,
+      '001,002,003,004,005,006,007,101,102,103,104,105,106,107,108,109,110,111,'+
+      '112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,'+
+      '130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,'+
+      '148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,301,302,303,'+
+      '304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,'+
+      '322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,'+
+      '340,341,342,343,344,345,346,347,348,349,350,351,601,602,603,604,605,606,'+
+      '607,608,999');
+end;
+
+function ValidarCodigoPais(aCodigoPais : string) : boolean;
+begin
+  Result := ExisteEm(aCodigoPais,
+    '0132,7560,0175,0230,0370,0400,0418,0434,0477,0531,0590,0639,0647,'+
+    '0655,0698,0728,0736,0779,0809,0817,0833,0850,0876,0884,2291,0906,'+
+    '132,175,230,370,400,418,434,477,531,590,639,647,655,698,728,736,'+
+    '779,809,817,833,850,876,884,906,'+
+    '0973,0981,1015,1058,1082,1112,0310,1155,1198,1279,1457,1414,1490,'+
+    '1504,1511,1546,1376,1538,7889,1589,1600,1635,5118,7412,1651,1694,'+
+    '1732,8885,1775,1830,1872,1902,1937,1961,1988,1953,1996,2321,7838,'+
+    '2356,2402,6874,2445,2399,2437,6289,2470,2461,2453,2496,2518,2534,'+
+    '2550,2593,8702,2674,2712,1619,2755,2810,6289,2852,2895,2917,2933,'+
+    '6289,2976,3018,3050,3093,3131,3174,3379,3255,3298,3344,3310,3417,'+
+    '5738,3450,3514,3557,3573,3611,3654,6289,3727,3697,3751,6289,3794,'+
+    '3832,3867,3883,3913,3999,3964,4030,4111,4200,4235,4260,4278,4316,'+
+    '4340,4383,4405,4421,4456,4472,4499,4502,4525,4553,4588,4618,4642,'+
+    '4677,3595,4723,4740,4766,4774,4855,4880,4936,0930,4995,4901,5053,'+
+    '4944,4952,4979,5010,5070,5088,5177,5215,5258,5282,5312,5355,5380,'+
+    '5428,5487,5568,5738,5754,5800,5452,5762,5860,5894,5932,5991,6033,'+
+    '6114,6076,6238,6254,6289,6408,6475,6602,6700,6750,6769,6858,6777,'+
+    '6904,6912,6971,7102,7153,6955,7005,7200,7056,7285,7358,7315,7447,'+
+    '7480,7501,7544,7595,7641,7676,7706,7722,7765,7803,7919,7820,7951,'+
+    '8001,8109,8052,8150,8206,8230,8249,8273,8281,8311,8338,8451,8478,'+
+    '5517,8486,8508,8583,8630,8664,8737,8753,8907,6653,8958');
+end;
+
+function ValidarCFOPExiste(aCFOP: string): boolean;
+begin
+  {Tabela baixa do Portal NFe dia 11/11/2016}
+  Result := ExisteEm(aCFOP,
+    '1101,1102,1111,1113,1116,1117,1118,1120,1121,1122,1124,1125,1126,1128,1151,'+
+    '1152,1153,1154,1201,1202,1203,1204,1205,1206,1207,1208,1209,1212,1251,1252,'+
+    '1253,1254,1255,1256,1257,1301,1302,1303,1304,1305,1306,1351,1352,1353,1354,'+
+    '1355,1356,1360,1401,1403,1406,1407,1408,1409,1410,1411,1414,1415,1451,1452,'+
+    '1501,1503,1504,1505,1506,1551,1552,1553,1554,1555,1556,1557,1601,1602,1603,'+
+    '1604,1605,1651,1652,1653,1658,1659,1660,1661,1662,1663,1664,1901,1902,1903,'+
+    '1904,1905,1906,1907,1908,1909,1910,1911,1912,1913,1914,1915,1916,1917,1918,'+
+    '1919,1920,1921,1922,1923,1924,1925,1926,1931,1932,1933,1934,1949,2101,2102,'+
+    '2111,2113,2116,2117,2118,2120,2121,2122,2124,2125,2126,2128,2151,2152,2153,'+
+    '2154,2201,2202,2203,2204,2205,2206,2207,2208,2209,2212,2251,2252,2253,2254,'+
+    '2255,2256,2257,2301,2302,2303,2304,2305,2306,2351,2352,2353,2354,2355,2356,'+
+    '2401,2403,2406,2407,2408,2409,2410,2411,2414,2415,2501,2503,2504,2505,2506,'+
+    '2551,2552,2553,2554,2555,2556,2557,2603,2651,2652,2652,2653,2658,2659,2660,'+
+    '2661,2662,2663,2664,2901,2902,2903,2904,2905,2906,2907,2908,2909,2910,2911,'+
+    '2912,2913,2914,2915,2916,2917,2918,2919,2920,2921,2922,2923,2924,2925,2931,'+
+    '2932,2933,2934,2949,3101,3102,3126,3127,3128,3129,3201,3202,3205,3206,3207,'+
+    '3211,3212,3251,3301,3351,3352,3353,3354,3355,3356,3503,3551,3553,3556,3651,'+
+    '3652,3653,3930,3949,5101,5102,5103,5104,5105,5106,5109,5110,5111,5112,5113,'+
+    '5114,5115,5116,5117,5118,5119,5120,5122,5123,5124,5125,5129,5151,5152,5153,'+
+    '5155,5156,5201,5202,5205,5206,5207,5208,5209,5210,5251,5252,5253,5254,5255,'+
+    '5256,5257,5258,5301,5302,5303,5304,5305,5306,5307,5351,5352,5353,5354,5355,'+
+    '5356,5357,5359,5360,5401,5402,5403,5405,5408,5409,5410,5411,5412,5413,5414,'+
+    '5415,5451,5501,5502,5503,5504,5505,5551,5552,5553,5554,5555,5556,5557,5601,'+
+    '5602,5603,5605,5606,5651,5652,5653,5654,5655,5656,5657,5658,5659,5660,5661,'+
+    '5662,5663,5664,5665,5666,5667,5901,5902,5903,5904,5905,5906,5907,5908,5909,'+
+    '5910,5911,5912,5913,5914,5915,5916,5917,5918,5919,5920,5921,5922,5923,5924,'+
+    '5925,5926,5927,5928,5929,5931,5932,5933,5934,5949,6101,6102,6103,6104,6105,'+
+    '6106,6107,6108,6109,6110,6111,6112,6113,6114,6115,6116,6117,6118,6119,6120,'+
+    '6122,6123,6124,6125,6129,6151,6152,6153,6155,6156,6201,6202,6205,6206,6207,'+
+    '6208,6209,6210,6251,6252,6253,6254,6255,6256,6257,6258,6301,6302,6303,6304,'+
+    '6305,6306,6307,6351,6352,6353,6354,6355,6356,6357,6359,6360,6401,6402,6403,'+
+    '6404,6408,6409,6410,6411,6412,6413,6414,6415,6501,6502,6503,6504,6505,6551,'+
+    '6552,6553,6554,6555,6556,6557,6603,6651,6652,6653,6654,6655,6656,6657,6658,'+
+    '6659,6660,6661,6662,6663,6664,6665,6666,6667,6901,6902,6903,6904,6905,6906,'+
+    '6907,6908,6909,6910,6911,6912,6913,6914,6915,6916,6917,6918,6919,6920,6921,'+
+    '6922,6923,6924,6925,6929,6931,6932,6933,6934,6949,7101,7102,7105,7106,7127,'+
+    '7129,7201,7202,7205,7206,7207,7210,7211,7212,7251,7301,7358,7501,7551,7553,'+
+    '7556,7651,7654,7667,7930,7949');
+end;
+
+function AdicionarZeroEsquerda(aValor: string; aTamanhoString: integer): string;
+var
+  i, _tamanho: integer;
+  _aux: string;
+begin
+  Result := aValor;
+  _aux := aValor;
+  _tamanho := Length(aValor);
+  aValor := '';
+  for i := 1 to aTamanhoString - _tamanho do
+  begin
+    aValor := '0' + aValor;
+    _aux := aValor + _aux;
+    Result := _aux;
+  end;
+end;
+
+function ExecuteRegexTest(aRegexTest, aString: string): boolean;
+var
+  _RegexList: TStringList;
+begin
+  Result := False;
+  _RegexList := TStringList.Create;
+  try
+    _RegexList.Add(aRegexTest);
+    if ReconhecerPadrao(aString, _RegexList) <> -1 then
+    begin
+      Result := True;
+    end;
+  finally
+    _RegexList.Free;
+  end;
+end;
+
+function CFOP_Em_Anexo4(aCFOP: string): boolean;
+begin
+  {Feito em 22/12/2016 a partir da NT 2013 005 v1.91}
+  Result := ExisteEm(aCFOP,
+    '1414,1415,1451,1452,1554,1664,1902,1903,1904,1906,1907,1909' +
+    ',1913,1914,1916,1921,1925,2414,2415,2554,2664,2902,2903,2904' +
+    ',2906,2907,2909,2913,2914,2916,2921,2925,5664,5665,5902,5903' +
+    ',5906,5907,5909,5913,5916,5925,6664,6665,6902,6903,6906,6907' +
+    ',6909,6913,6916,6925');
+end;
+
+function CFOP_Em_Anexo5(aCFOP: string): boolean;
+begin
+  {Feito em 22/12/2016 a partir da NT 2013 005 v1.91}
+  Result := ExisteEm(aCFOP,
+    '1205,1206,1207,2205,2206,2207,3205,3206,' +
+    '3207,5205,5206,5207,6205,6206,6207,7205,' +
+    '7206,7207');
+end;
+
+function CFOP_Em_Anexo4_Anexo6_5949_6949(aCFOP: string): boolean;
+begin
+  {Feito em 22/12/2016 a partir da NT 2013 005 v1.91}
+  Result := ExisteEm(aCFOP,
+    '1414,1415,1451,1452,1554,1664,1902,1903,1904,1906,1907,1909' +
+    ',1913,1914,1916,1921,1925,2414,2415,2554,2664,2902,2903,2904' +
+    ',2906,2907,2909,2913,2914,2916,2921,2925,5664,5665,5902,5903' +
+    ',5906,5907,5909,5913,5916,5925,6664,6665,6902,6903,6906,6907' +
+    ',6909,6913,6916,6925,5414,5415,5451,5501,5502,5504,5505,5554' +
+    ',5657,5663,5666,5901,5904,5905,5908,5910,5911,5912,5914,5915' +
+    ',5917,5920,5923,5924,5934,6414,6415,6501,6502,6504,6505,6554' +
+    ',6657,6663,6666,6901,6904,6905,6908,6910,6911,6912,6914,6915' +
+    ',6917,6920,6923,6924,6934,5949,6949');
+end;

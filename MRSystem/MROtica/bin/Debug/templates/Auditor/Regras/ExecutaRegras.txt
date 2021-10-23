@@ -1,0 +1,87 @@
+{ 
+  Variáveis externas disponíveis: 
+    Output: string; 
+    Datasets: TspdXSDDataset;
+}
+{$I Tipos.txt}  
+Var	
+	_Rejeicoes,_Handles, _output : TstringList;
+	_regrasCFOP,_regrasCEP,_xml,_nota, _validacao : string;	
+	_auxint, _numnotas, i : integer;
+
+{$I Funcoes.txt}
+{$I FuncoesUsuario.txt}
+{$I CST_CFOP\Regras.txt}	
+
+{$I CEP\ExecutaRegras.txt}
+{$I ..\Esquemas\ExpConsts.txt}
+{$I ..\Esquemas\Funcoes.txt}
+{$I ..\Esquemas\DefineMensagem.txt}
+
+{$I RegrasManualSefaz401\ExecutaRegras.txt}
+{$I NT004\ExecutaRegras.txt}
+{$I UpdateDETDatasets.txt}
+{$I NT005\ExecutaRegras.txt}
+{$I NT2012.003\ExecutaRegras.txt}
+{$I AliquotaPorEstado\ExecutaRegras.txt}
+	
+function GetVersaoXML: String;
+begin
+  Result := Params.Values['versao'];
+end;
+
+begin
+	_Rejeicoes := TstringList.Create;
+	_Handles := TstringList.Create;
+	_output := TstringList.Create;
+	try
+		_xml := input;
+		_numnotas :=  XmlSelectCountNode(_Xml, '//*[local-name()="NFe"]');
+		for i := 0 to _numnotas-1 do	
+		begin
+			_nota := XmlSelectItemIndexNode(_xml, '//*[local-name()="NFe"]',i); 
+			Datasets.LoadFromXMLContent(_nota);			
+			_validacao := ValidarEsquemaXML(_nota,'http://www.portalfiscal.inf.br/nfe',Datasets.XsdFile);
+			if trim(_validacao) = '' then
+			begin				
+				// os regras do cliente serão inseridas aqui
+				if GetVersaoXML = 'pl_006g' then 
+				  _Rejeicoes.Add(Trim(ExecutaRegrasManualSefaz401()))
+				else if GetVersaoXML = 'pl_006j' then
+					_Rejeicoes.Add(Trim(ExecutaRegrasNT005()))
+				else if GetVersaoXML = 'pl_006m' then
+					_Rejeicoes.Add(Trim(ExecutaRegrasNT2012_003()))	
+				else
+					_Rejeicoes.Add(Trim(ExecutaRegrasNT004()));
+
+				_Rejeicoes.text := Trim(_Rejeicoes.text);
+				if _Rejeicoes.text = '' then
+						_Rejeicoes.Add('XML Válido');
+					
+				// Valida as Alertas
+				_regrasCFOP := Trim(ValidarRegrasCFOP);
+				if _regrasCFOP <> '' then
+					_Rejeicoes.Add(_regrasCFOP);
+				
+				_regrasCEP := Trim(ExecutaRegrasCep);
+				if _regrasCEP <> '' then
+					_Rejeicoes.add(_regrasCEP);
+		
+				if not IsValidSignature(_nota) then
+					_Rejeicoes.add('Assinatura inválida');
+				if (Trim(_Rejeicoes.text) = '') or (PosStr('rejeição',LowerCase(_Rejeicoes.Text)) <= 0) then
+					_Rejeicoes.Add('XML Válido');
+			end else
+			begin				
+				_Rejeicoes.add(TraduzirMensagem(_validacao));
+			end;
+			_output.add(Trim(_Rejeicoes.Text) + '&spdHandleDlmt;' + Trim(_Handles.Text)+'&spdDlmt;');
+		end;			
+		Output := _output.text;
+		_Rejeicoes.clear;
+    finally
+		_Rejeicoes.Free;
+		_Handles.Free;
+		_output.free;
+	end;
+end.

@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://web-anamaria.no-ip.info/winoticaservice/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://web-anamaria.no-ip.info/winoticaservice/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://web-anamaria.no-ip.info/winoticaservice/">
+      <s:element name="Importa_produto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x_cod_tabela" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Importa_produtoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Importa_produtoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Saldo_produto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x_cod_produto" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="x_id_filial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Saldo_produtoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Saldo_produtoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="logar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="loja" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="cred" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="logarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="logarResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_com_andamentos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cod_os" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="filial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_com_andamentosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="os_com_andamentosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_filial_matriz">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tbinst">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="origem" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_filial_matrizResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans_filial_matrizResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_filial_matriz_ds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tbinst">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="origem" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dsRet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_filial_matriz_dsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans_filial_matriz_dsResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dsRet">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tem_fila">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="filial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tem_filaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="tem_filaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_matriz_filial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="filial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_matriz_filialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans_matriz_filialResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_matriz_filial_nreg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="filial" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="registros" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_matriz_filial_nregResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans_matriz_filial_nregResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Marca_transmitido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_fila" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="filial" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="dt" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Marca_transmitidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Marca_transmitidoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="devolve_importados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="devolve_importadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="devolve_importadosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="R360">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="di" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="df" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="R360Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="R360Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cf">
+        <s:complexType />
+      </s:element>
+      <s:element name="cfResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cfResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RPontuacao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="di" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="df" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RPontuacaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RPontuacaoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RGiro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="xcod_tab" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="di" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="df" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="xFilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RGiroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RGiroResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_in">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tOS">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="dsTrat">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_inResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="os_inResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_retrans">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nOS" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nFilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_retransResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="os_retransResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_Out">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nOS" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nFilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_OutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="os_OutResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_Out_labo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nOS" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nFilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_Out_laboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="os_Out_laboResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Importa_produtoSoapIn">
+    <wsdl:part name="parameters" element="tns:Importa_produto" />
+  </wsdl:message>
+  <wsdl:message name="Importa_produtoSoapOut">
+    <wsdl:part name="parameters" element="tns:Importa_produtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Saldo_produtoSoapIn">
+    <wsdl:part name="parameters" element="tns:Saldo_produto" />
+  </wsdl:message>
+  <wsdl:message name="Saldo_produtoSoapOut">
+    <wsdl:part name="parameters" element="tns:Saldo_produtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="logarSoapIn">
+    <wsdl:part name="parameters" element="tns:logar" />
+  </wsdl:message>
+  <wsdl:message name="logarSoapOut">
+    <wsdl:part name="parameters" element="tns:logarResponse" />
+  </wsdl:message>
+  <wsdl:message name="os_com_andamentosSoapIn">
+    <wsdl:part name="parameters" element="tns:os_com_andamentos" />
+  </wsdl:message>
+  <wsdl:message name="os_com_andamentosSoapOut">
+    <wsdl:part name="parameters" element="tns:os_com_andamentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="trans_filial_matrizSoapIn">
+    <wsdl:part name="parameters" element="tns:trans_filial_matriz" />
+  </wsdl:message>
+  <wsdl:message name="trans_filial_matrizSoapOut">
+    <wsdl:part name="parameters" element="tns:trans_filial_matrizResponse" />
+  </wsdl:message>
+  <wsdl:message name="trans_filial_matriz_dsSoapIn">
+    <wsdl:part name="parameters" element="tns:trans_filial_matriz_ds" />
+  </wsdl:message>
+  <wsdl:message name="trans_filial_matriz_dsSoapOut">
+    <wsdl:part name="parameters" element="tns:trans_filial_matriz_dsResponse" />
+  </wsdl:message>
+  <wsdl:message name="tem_filaSoapIn">
+    <wsdl:part name="parameters" element="tns:tem_fila" />
+  </wsdl:message>
+  <wsdl:message name="tem_filaSoapOut">
+    <wsdl:part name="parameters" element="tns:tem_filaResponse" />
+  </wsdl:message>
+  <wsdl:message name="trans_matriz_filialSoapIn">
+    <wsdl:part name="parameters" element="tns:trans_matriz_filial" />
+  </wsdl:message>
+  <wsdl:message name="trans_matriz_filialSoapOut">
+    <wsdl:part name="parameters" element="tns:trans_matriz_filialResponse" />
+  </wsdl:message>
+  <wsdl:message name="trans_matriz_filial_nregSoapIn">
+    <wsdl:part name="parameters" element="tns:trans_matriz_filial_nreg" />
+  </wsdl:message>
+  <wsdl:message name="trans_matriz_filial_nregSoapOut">
+    <wsdl:part name="parameters" element="tns:trans_matriz_filial_nregResponse" />
+  </wsdl:message>
+  <wsdl:message name="Marca_transmitidoSoapIn">
+    <wsdl:part name="parameters" element="tns:Marca_transmitido" />
+  </wsdl:message>
+  <wsdl:message name="Marca_transmitidoSoapOut">
+    <wsdl:part name="parameters" element="tns:Marca_transmitidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="devolve_importadosSoapIn">
+    <wsdl:part name="parameters" element="tns:devolve_importados" />
+  </wsdl:message>
+  <wsdl:message name="devolve_importadosSoapOut">
+    <wsdl:part name="parameters" element="tns:devolve_importadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="R360SoapIn">
+    <wsdl:part name="parameters" element="tns:R360" />
+  </wsdl:message>
+  <wsdl:message name="R360SoapOut">
+    <wsdl:part name="parameters" element="tns:R360Response" />
+  </wsdl:message>
+  <wsdl:message name="cfSoapIn">
+    <wsdl:part name="parameters" element="tns:cf" />
+  </wsdl:message>
+  <wsdl:message name="cfSoapOut">
+    <wsdl:part name="parameters" element="tns:cfResponse" />
+  </wsdl:message>
+  <wsdl:message name="RPontuacaoSoapIn">
+    <wsdl:part name="parameters" element="tns:RPontuacao" />
+  </wsdl:message>
+  <wsdl:message name="RPontuacaoSoapOut">
+    <wsdl:part name="parameters" element="tns:RPontuacaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RGiroSoapIn">
+    <wsdl:part name="parameters" element="tns:RGiro" />
+  </wsdl:message>
+  <wsdl:message name="RGiroSoapOut">
+    <wsdl:part name="parameters" element="tns:RGiroResponse" />
+  </wsdl:message>
+  <wsdl:message name="os_inSoapIn">
+    <wsdl:part name="parameters" element="tns:os_in" />
+  </wsdl:message>
+  <wsdl:message name="os_inSoapOut">
+    <wsdl:part name="parameters" element="tns:os_inResponse" />
+  </wsdl:message>
+  <wsdl:message name="os_retransSoapIn">
+    <wsdl:part name="parameters" element="tns:os_retrans" />
+  </wsdl:message>
+  <wsdl:message name="os_retransSoapOut">
+    <wsdl:part name="parameters" element="tns:os_retransResponse" />
+  </wsdl:message>
+  <wsdl:message name="os_OutSoapIn">
+    <wsdl:part name="parameters" element="tns:os_Out" />
+  </wsdl:message>
+  <wsdl:message name="os_OutSoapOut">
+    <wsdl:part name="parameters" element="tns:os_OutResponse" />
+  </wsdl:message>
+  <wsdl:message name="os_Out_laboSoapIn">
+    <wsdl:part name="parameters" element="tns:os_Out_labo" />
+  </wsdl:message>
+  <wsdl:message name="os_Out_laboSoapOut">
+    <wsdl:part name="parameters" element="tns:os_Out_laboResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="Importa_produto">
+      <wsdl:input message="tns:Importa_produtoSoapIn" />
+      <wsdl:output message="tns:Importa_produtoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Saldo_produto">
+      <wsdl:input message="tns:Saldo_produtoSoapIn" />
+      <wsdl:output message="tns:Saldo_produtoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="logar">
+      <wsdl:input message="tns:logarSoapIn" />
+      <wsdl:output message="tns:logarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="os_com_andamentos">
+      <wsdl:input message="tns:os_com_andamentosSoapIn" />
+      <wsdl:output message="tns:os_com_andamentosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="trans_filial_matriz">
+      <wsdl:input message="tns:trans_filial_matrizSoapIn" />
+      <wsdl:output message="tns:trans_filial_matrizSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="trans_filial_matriz_ds">
+      <wsdl:input message="tns:trans_filial_matriz_dsSoapIn" />
+      <wsdl:output message="tns:trans_filial_matriz_dsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tem_fila">
+      <wsdl:input message="tns:tem_filaSoapIn" />
+      <wsdl:output message="tns:tem_filaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="trans_matriz_filial">
+      <wsdl:input message="tns:trans_matriz_filialSoapIn" />
+      <wsdl:output message="tns:trans_matriz_filialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="trans_matriz_filial_nreg">
+      <wsdl:input message="tns:trans_matriz_filial_nregSoapIn" />
+      <wsdl:output message="tns:trans_matriz_filial_nregSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Marca_transmitido">
+      <wsdl:input message="tns:Marca_transmitidoSoapIn" />
+      <wsdl:output message="tns:Marca_transmitidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="devolve_importados">
+      <wsdl:input message="tns:devolve_importadosSoapIn" />
+      <wsdl:output message="tns:devolve_importadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="R360">
+      <wsdl:input message="tns:R360SoapIn" />
+      <wsdl:output message="tns:R360SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cf">
+      <wsdl:input message="tns:cfSoapIn" />
+      <wsdl:output message="tns:cfSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RPontuacao">
+      <wsdl:input message="tns:RPontuacaoSoapIn" />
+      <wsdl:output message="tns:RPontuacaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RGiro">
+      <wsdl:input message="tns:RGiroSoapIn" />
+      <wsdl:output message="tns:RGiroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="os_in">
+      <wsdl:input message="tns:os_inSoapIn" />
+      <wsdl:output message="tns:os_inSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="os_retrans">
+      <wsdl:input message="tns:os_retransSoapIn" />
+      <wsdl:output message="tns:os_retransSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="os_Out">
+      <wsdl:input message="tns:os_OutSoapIn" />
+      <wsdl:output message="tns:os_OutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="os_Out_labo">
+      <wsdl:input message="tns:os_Out_laboSoapIn" />
+      <wsdl:output message="tns:os_Out_laboSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Importa_produto">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/Importa_produto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Saldo_produto">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/Saldo_produto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logar">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/logar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_com_andamentos">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_com_andamentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_filial_matriz">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/trans_filial_matriz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_filial_matriz_ds">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/trans_filial_matriz_ds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tem_fila">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/tem_fila" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_matriz_filial">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/trans_matriz_filial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_matriz_filial_nreg">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/trans_matriz_filial_nreg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Marca_transmitido">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/Marca_transmitido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolve_importados">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/devolve_importados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="R360">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/R360" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cf">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/cf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RPontuacao">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/RPontuacao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RGiro">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/RGiro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_in">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_in" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_retrans">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_retrans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_Out">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_Out" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_Out_labo">
+      <soap:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_Out_labo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Importa_produto">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/Importa_produto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Saldo_produto">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/Saldo_produto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logar">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/logar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_com_andamentos">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_com_andamentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_filial_matriz">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/trans_filial_matriz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_filial_matriz_ds">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/trans_filial_matriz_ds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tem_fila">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/tem_fila" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_matriz_filial">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/trans_matriz_filial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_matriz_filial_nreg">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/trans_matriz_filial_nreg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Marca_transmitido">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/Marca_transmitido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolve_importados">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/devolve_importados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="R360">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/R360" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cf">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/cf" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RPontuacao">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/RPontuacao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RGiro">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/RGiro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_in">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_in" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_retrans">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_retrans" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_Out">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_Out" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_Out_labo">
+      <soap12:operation soapAction="http://web-anamaria.no-ip.info/winoticaservice/os_Out_labo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://web-anamaria.no-ip.info/wins/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://web-anamaria.no-ip.info/wins/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

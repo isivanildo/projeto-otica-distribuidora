@@ -1,0 +1,145 @@
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.vbprojResolveAssemblyReference.cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.Resources.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.vbproj.GenerateResource.Cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winoticaonline.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winoticaonline.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winoticaonline.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\AjaxControlToolkit.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\AjaxMin.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\HtmlAgilityPack.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.Data.Edm.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.Data.OData.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\System.Spatial.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winotica_util.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winotica_util.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winotica_util.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\HtmlAgilityPack.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\HtmlAgilityPack.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.Data.Edm.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.Data.OData.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\System.Spatial.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\de\System.Spatial.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\es\System.Spatial.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\fr\System.Spatial.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\it\System.Spatial.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ja\System.Spatial.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ko\System.Spatial.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ru\System.Spatial.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winoticaonline.dll.config
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winoticaonline.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winoticaonline.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winoticaonline.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\AjaxControlToolkit.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\AjaxMin.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\HtmlAgilityPack.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.Data.Edm.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.Data.OData.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\System.Spatial.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winotica_util.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winotica_util.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\winotica_util.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\HtmlAgilityPack.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\HtmlAgilityPack.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.Data.Edm.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.Data.OData.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\System.Spatial.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\de\System.Spatial.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\es\System.Spatial.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\fr\System.Spatial.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\it\System.Spatial.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ja\System.Spatial.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ko\System.Spatial.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\ru\System.Spatial.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.vbprojResolveAssemblyReference.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.Resources.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.vbproj.GenerateResource.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.vbproj.CoreCompileInputs.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.vbproj.CopyComplete
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winoticaonline\obj\Debug\winoticaonline.pdb

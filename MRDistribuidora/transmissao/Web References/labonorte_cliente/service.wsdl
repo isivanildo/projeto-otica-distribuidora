@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.labonorte.com.br/mroticaservicelabo/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.labonorte.com.br/mroticaservicelabo/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.labonorte.com.br/mroticaservicelabo/">
+      <s:element name="Saldo_produto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x_cod_produto" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="x_id_filial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Saldo_produtoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Saldo_produtoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="logar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="loja" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="cred" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="logarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="logarResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_filial_matriz">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tbinst">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="origem" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="trans_filial_matrizResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="trans_filial_matrizResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="andamentos_OS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x_id_filial" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="x_os" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="andamentos_OSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="andamentos_OSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fila_produtos">
+        <s:complexType />
+      </s:element>
+      <s:element name="fila_produtosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fila_produtosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fila_produtos_ok">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_fila" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fila_produtos_okResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fila_produtos_okResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Importa_produto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x_cod_tabela" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Importa_produtoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Importa_produtoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fila_trigger">
+        <s:complexType />
+      </s:element>
+      <s:element name="fila_triggerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fila_triggerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="marca_trigger_ok">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_fila" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="marca_trigger_okResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="marca_trigger_okResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_in">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tOS">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="dsTrat">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_inResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="os_inResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_in_trans">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tOS">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="dsTrat">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="os_in_transResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="os_in_transResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Pedido_balcao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num_pedido" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Pedido_balcaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Pedido_balcaoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaidaExtra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_Filial" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="os" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="OD" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="OE" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="motivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaidaExtraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaidaExtraResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="extras">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="di" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="df" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="extrasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="extrasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codosini" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="codosfim" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idfilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaOSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOSFiliaisLabonorteData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="di" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="df" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOSFiliaisLabonorteDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaOSFiliaisLabonorteDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOSFiliaisLabonortePedido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numPedido" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idFilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOSFiliaisLabonortePedidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaOSFiliaisLabonortePedidoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOSFiliaisLabonorteNumero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codos" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idFilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOSFiliaisLabonorteNumeroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaOSFiliaisLabonorteNumeroResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOSFiliaisLabonorteOS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="osIni" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="osFim" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idFilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaOSFiliaisLabonorteOSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaOSFiliaisLabonorteOSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaAndamentoOS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codos" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idfilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaAndamentoOSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaAndamentoOSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FilaEnvioMatriz">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idfila" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="origem" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="gerado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="destino" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="instrucao" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="datainc" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="dataproc" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FilaEnvioMatrizResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="atualizaFilaEnvio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idfila" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="origem" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="data" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="atualizaFilaEnvioResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="verificaImportados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idfila" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="origem" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verificaImportadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="verificaImportadosResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FilaRetornoMatriz">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="filial" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nReg" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FilaRetornoMatrizResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FilaRetornoMatrizResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="atualizaExportado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idfila" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="destino" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="data" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="atualizaExportadoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="importaPedido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numpedido" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idfilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaPedidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaPedidoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaPedidoData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idfilial" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="di" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="df" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaPedidoDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaPedidoDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaPedidoItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numpedido" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idfilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaPedidoItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaPedidoItemResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaPedidoServico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numpedido" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idfilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaPedidoServicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaPedidoServicoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaFatura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idfilial" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="di" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="df" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaFaturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaFaturaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaFaturaNumero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codfatura" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idfilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaFaturaNumeroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaFaturaNumeroResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaFaturaItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codfatura" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idfilial" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaFaturaItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaFaturaItemResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaMovimentoMaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dtIni" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtFim" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="importaMovimentoMasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="importaMovimentoMasterResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FilaRetornoLabonorte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="filial" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nReg" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FilaRetornoLabonorteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FilaRetornoLabonorteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Saldo_produtoSoapIn">
+    <wsdl:part name="parameters" element="tns:Saldo_produto" />
+  </wsdl:message>
+  <wsdl:message name="Saldo_produtoSoapOut">
+    <wsdl:part name="parameters" element="tns:Saldo_produtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="logarSoapIn">
+    <wsdl:part name="parameters" element="tns:logar" />
+  </wsdl:message>
+  <wsdl:message name="logarSoapOut">
+    <wsdl:part name="parameters" element="tns:logarResponse" />
+  </wsdl:message>
+  <wsdl:message name="trans_filial_matrizSoapIn">
+    <wsdl:part name="parameters" element="tns:trans_filial_matriz" />
+  </wsdl:message>
+  <wsdl:message name="trans_filial_matrizSoapOut">
+    <wsdl:part name="parameters" element="tns:trans_filial_matrizResponse" />
+  </wsdl:message>
+  <wsdl:message name="andamentos_OSSoapIn">
+    <wsdl:part name="parameters" element="tns:andamentos_OS" />
+  </wsdl:message>
+  <wsdl:message name="andamentos_OSSoapOut">
+    <wsdl:part name="parameters" element="tns:andamentos_OSResponse" />
+  </wsdl:message>
+  <wsdl:message name="fila_produtosSoapIn">
+    <wsdl:part name="parameters" element="tns:fila_produtos" />
+  </wsdl:message>
+  <wsdl:message name="fila_produtosSoapOut">
+    <wsdl:part name="parameters" element="tns:fila_produtosResponse" />
+  </wsdl:message>
+  <wsdl:message name="fila_produtos_okSoapIn">
+    <wsdl:part name="parameters" element="tns:fila_produtos_ok" />
+  </wsdl:message>
+  <wsdl:message name="fila_produtos_okSoapOut">
+    <wsdl:part name="parameters" element="tns:fila_produtos_okResponse" />
+  </wsdl:message>
+  <wsdl:message name="Importa_produtoSoapIn">
+    <wsdl:part name="parameters" element="tns:Importa_produto" />
+  </wsdl:message>
+  <wsdl:message name="Importa_produtoSoapOut">
+    <wsdl:part name="parameters" element="tns:Importa_produtoResponse" />
+  </wsdl:message>
+  <wsdl:message name="fila_triggerSoapIn">
+    <wsdl:part name="parameters" element="tns:fila_trigger" />
+  </wsdl:message>
+  <wsdl:message name="fila_triggerSoapOut">
+    <wsdl:part name="parameters" element="tns:fila_triggerResponse" />
+  </wsdl:message>
+  <wsdl:message name="marca_trigger_okSoapIn">
+    <wsdl:part name="parameters" element="tns:marca_trigger_ok" />
+  </wsdl:message>
+  <wsdl:message name="marca_trigger_okSoapOut">
+    <wsdl:part name="parameters" element="tns:marca_trigger_okResponse" />
+  </wsdl:message>
+  <wsdl:message name="os_inSoapIn">
+    <wsdl:part name="parameters" element="tns:os_in" />
+  </wsdl:message>
+  <wsdl:message name="os_inSoapOut">
+    <wsdl:part name="parameters" element="tns:os_inResponse" />
+  </wsdl:message>
+  <wsdl:message name="os_in_transSoapIn">
+    <wsdl:part name="parameters" element="tns:os_in_trans" />
+  </wsdl:message>
+  <wsdl:message name="os_in_transSoapOut">
+    <wsdl:part name="parameters" element="tns:os_in_transResponse" />
+  </wsdl:message>
+  <wsdl:message name="Pedido_balcaoSoapIn">
+    <wsdl:part name="parameters" element="tns:Pedido_balcao" />
+  </wsdl:message>
+  <wsdl:message name="Pedido_balcaoSoapOut">
+    <wsdl:part name="parameters" element="tns:Pedido_balcaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaidaExtraSoapIn">
+    <wsdl:part name="parameters" element="tns:SaidaExtra" />
+  </wsdl:message>
+  <wsdl:message name="SaidaExtraSoapOut">
+    <wsdl:part name="parameters" element="tns:SaidaExtraResponse" />
+  </wsdl:message>
+  <wsdl:message name="extrasSoapIn">
+    <wsdl:part name="parameters" element="tns:extras" />
+  </wsdl:message>
+  <wsdl:message name="extrasSoapOut">
+    <wsdl:part name="parameters" element="tns:extrasResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaOSSoapIn">
+    <wsdl:part name="parameters" element="tns:importaOS" />
+  </wsdl:message>
+  <wsdl:message name="importaOSSoapOut">
+    <wsdl:part name="parameters" element="tns:importaOSResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaOSFiliaisLabonorteDataSoapIn">
+    <wsdl:part name="parameters" element="tns:importaOSFiliaisLabonorteData" />
+  </wsdl:message>
+  <wsdl:message name="importaOSFiliaisLabonorteDataSoapOut">
+    <wsdl:part name="parameters" element="tns:importaOSFiliaisLabonorteDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaOSFiliaisLabonortePedidoSoapIn">
+    <wsdl:part name="parameters" element="tns:importaOSFiliaisLabonortePedido" />
+  </wsdl:message>
+  <wsdl:message name="importaOSFiliaisLabonortePedidoSoapOut">
+    <wsdl:part name="parameters" element="tns:importaOSFiliaisLabonortePedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaOSFiliaisLabonorteNumeroSoapIn">
+    <wsdl:part name="parameters" element="tns:importaOSFiliaisLabonorteNumero" />
+  </wsdl:message>
+  <wsdl:message name="importaOSFiliaisLabonorteNumeroSoapOut">
+    <wsdl:part name="parameters" element="tns:importaOSFiliaisLabonorteNumeroResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaOSFiliaisLabonorteOSSoapIn">
+    <wsdl:part name="parameters" element="tns:importaOSFiliaisLabonorteOS" />
+  </wsdl:message>
+  <wsdl:message name="importaOSFiliaisLabonorteOSSoapOut">
+    <wsdl:part name="parameters" element="tns:importaOSFiliaisLabonorteOSResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaAndamentoOSSoapIn">
+    <wsdl:part name="parameters" element="tns:importaAndamentoOS" />
+  </wsdl:message>
+  <wsdl:message name="importaAndamentoOSSoapOut">
+    <wsdl:part name="parameters" element="tns:importaAndamentoOSResponse" />
+  </wsdl:message>
+  <wsdl:message name="FilaEnvioMatrizSoapIn">
+    <wsdl:part name="parameters" element="tns:FilaEnvioMatriz" />
+  </wsdl:message>
+  <wsdl:message name="FilaEnvioMatrizSoapOut">
+    <wsdl:part name="parameters" element="tns:FilaEnvioMatrizResponse" />
+  </wsdl:message>
+  <wsdl:message name="atualizaFilaEnvioSoapIn">
+    <wsdl:part name="parameters" element="tns:atualizaFilaEnvio" />
+  </wsdl:message>
+  <wsdl:message name="atualizaFilaEnvioSoapOut">
+    <wsdl:part name="parameters" element="tns:atualizaFilaEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="verificaImportadosSoapIn">
+    <wsdl:part name="parameters" element="tns:verificaImportados" />
+  </wsdl:message>
+  <wsdl:message name="verificaImportadosSoapOut">
+    <wsdl:part name="parameters" element="tns:verificaImportadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="FilaRetornoMatrizSoapIn">
+    <wsdl:part name="parameters" element="tns:FilaRetornoMatriz" />
+  </wsdl:message>
+  <wsdl:message name="FilaRetornoMatrizSoapOut">
+    <wsdl:part name="parameters" element="tns:FilaRetornoMatrizResponse" />
+  </wsdl:message>
+  <wsdl:message name="atualizaExportadoSoapIn">
+    <wsdl:part name="parameters" element="tns:atualizaExportado" />
+  </wsdl:message>
+  <wsdl:message name="atualizaExportadoSoapOut">
+    <wsdl:part name="parameters" element="tns:atualizaExportadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaPedidoSoapIn">
+    <wsdl:part name="parameters" element="tns:importaPedido" />
+  </wsdl:message>
+  <wsdl:message name="importaPedidoSoapOut">
+    <wsdl:part name="parameters" element="tns:importaPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaPedidoDataSoapIn">
+    <wsdl:part name="parameters" element="tns:importaPedidoData" />
+  </wsdl:message>
+  <wsdl:message name="importaPedidoDataSoapOut">
+    <wsdl:part name="parameters" element="tns:importaPedidoDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaPedidoItemSoapIn">
+    <wsdl:part name="parameters" element="tns:importaPedidoItem" />
+  </wsdl:message>
+  <wsdl:message name="importaPedidoItemSoapOut">
+    <wsdl:part name="parameters" element="tns:importaPedidoItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaPedidoServicoSoapIn">
+    <wsdl:part name="parameters" element="tns:importaPedidoServico" />
+  </wsdl:message>
+  <wsdl:message name="importaPedidoServicoSoapOut">
+    <wsdl:part name="parameters" element="tns:importaPedidoServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaFaturaSoapIn">
+    <wsdl:part name="parameters" element="tns:importaFatura" />
+  </wsdl:message>
+  <wsdl:message name="importaFaturaSoapOut">
+    <wsdl:part name="parameters" element="tns:importaFaturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaFaturaNumeroSoapIn">
+    <wsdl:part name="parameters" element="tns:importaFaturaNumero" />
+  </wsdl:message>
+  <wsdl:message name="importaFaturaNumeroSoapOut">
+    <wsdl:part name="parameters" element="tns:importaFaturaNumeroResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaFaturaItemSoapIn">
+    <wsdl:part name="parameters" element="tns:importaFaturaItem" />
+  </wsdl:message>
+  <wsdl:message name="importaFaturaItemSoapOut">
+    <wsdl:part name="parameters" element="tns:importaFaturaItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="importaMovimentoMasterSoapIn">
+    <wsdl:part name="parameters" element="tns:importaMovimentoMaster" />
+  </wsdl:message>
+  <wsdl:message name="importaMovimentoMasterSoapOut">
+    <wsdl:part name="parameters" element="tns:importaMovimentoMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="FilaRetornoLabonorteSoapIn">
+    <wsdl:part name="parameters" element="tns:FilaRetornoLabonorte" />
+  </wsdl:message>
+  <wsdl:message name="FilaRetornoLabonorteSoapOut">
+    <wsdl:part name="parameters" element="tns:FilaRetornoLabonorteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="Saldo_produto">
+      <wsdl:input message="tns:Saldo_produtoSoapIn" />
+      <wsdl:output message="tns:Saldo_produtoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="logar">
+      <wsdl:input message="tns:logarSoapIn" />
+      <wsdl:output message="tns:logarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="trans_filial_matriz">
+      <wsdl:input message="tns:trans_filial_matrizSoapIn" />
+      <wsdl:output message="tns:trans_filial_matrizSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="andamentos_OS">
+      <wsdl:input message="tns:andamentos_OSSoapIn" />
+      <wsdl:output message="tns:andamentos_OSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fila_produtos">
+      <wsdl:input message="tns:fila_produtosSoapIn" />
+      <wsdl:output message="tns:fila_produtosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fila_produtos_ok">
+      <wsdl:input message="tns:fila_produtos_okSoapIn" />
+      <wsdl:output message="tns:fila_produtos_okSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Importa_produto">
+      <wsdl:input message="tns:Importa_produtoSoapIn" />
+      <wsdl:output message="tns:Importa_produtoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fila_trigger">
+      <wsdl:input message="tns:fila_triggerSoapIn" />
+      <wsdl:output message="tns:fila_triggerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="marca_trigger_ok">
+      <wsdl:input message="tns:marca_trigger_okSoapIn" />
+      <wsdl:output message="tns:marca_trigger_okSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="os_in">
+      <wsdl:input message="tns:os_inSoapIn" />
+      <wsdl:output message="tns:os_inSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="os_in_trans">
+      <wsdl:input message="tns:os_in_transSoapIn" />
+      <wsdl:output message="tns:os_in_transSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Pedido_balcao">
+      <wsdl:input message="tns:Pedido_balcaoSoapIn" />
+      <wsdl:output message="tns:Pedido_balcaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaidaExtra">
+      <wsdl:input message="tns:SaidaExtraSoapIn" />
+      <wsdl:output message="tns:SaidaExtraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="extras">
+      <wsdl:input message="tns:extrasSoapIn" />
+      <wsdl:output message="tns:extrasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaOS">
+      <wsdl:input message="tns:importaOSSoapIn" />
+      <wsdl:output message="tns:importaOSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonorteData">
+      <wsdl:input message="tns:importaOSFiliaisLabonorteDataSoapIn" />
+      <wsdl:output message="tns:importaOSFiliaisLabonorteDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonortePedido">
+      <wsdl:input message="tns:importaOSFiliaisLabonortePedidoSoapIn" />
+      <wsdl:output message="tns:importaOSFiliaisLabonortePedidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonorteNumero">
+      <wsdl:input message="tns:importaOSFiliaisLabonorteNumeroSoapIn" />
+      <wsdl:output message="tns:importaOSFiliaisLabonorteNumeroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonorteOS">
+      <wsdl:input message="tns:importaOSFiliaisLabonorteOSSoapIn" />
+      <wsdl:output message="tns:importaOSFiliaisLabonorteOSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaAndamentoOS">
+      <wsdl:input message="tns:importaAndamentoOSSoapIn" />
+      <wsdl:output message="tns:importaAndamentoOSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FilaEnvioMatriz">
+      <wsdl:input message="tns:FilaEnvioMatrizSoapIn" />
+      <wsdl:output message="tns:FilaEnvioMatrizSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="atualizaFilaEnvio">
+      <wsdl:input message="tns:atualizaFilaEnvioSoapIn" />
+      <wsdl:output message="tns:atualizaFilaEnvioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verificaImportados">
+      <wsdl:input message="tns:verificaImportadosSoapIn" />
+      <wsdl:output message="tns:verificaImportadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FilaRetornoMatriz">
+      <wsdl:input message="tns:FilaRetornoMatrizSoapIn" />
+      <wsdl:output message="tns:FilaRetornoMatrizSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="atualizaExportado">
+      <wsdl:input message="tns:atualizaExportadoSoapIn" />
+      <wsdl:output message="tns:atualizaExportadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaPedido">
+      <wsdl:input message="tns:importaPedidoSoapIn" />
+      <wsdl:output message="tns:importaPedidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaPedidoData">
+      <wsdl:input message="tns:importaPedidoDataSoapIn" />
+      <wsdl:output message="tns:importaPedidoDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaPedidoItem">
+      <wsdl:input message="tns:importaPedidoItemSoapIn" />
+      <wsdl:output message="tns:importaPedidoItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaPedidoServico">
+      <wsdl:input message="tns:importaPedidoServicoSoapIn" />
+      <wsdl:output message="tns:importaPedidoServicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaFatura">
+      <wsdl:input message="tns:importaFaturaSoapIn" />
+      <wsdl:output message="tns:importaFaturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaFaturaNumero">
+      <wsdl:input message="tns:importaFaturaNumeroSoapIn" />
+      <wsdl:output message="tns:importaFaturaNumeroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaFaturaItem">
+      <wsdl:input message="tns:importaFaturaItemSoapIn" />
+      <wsdl:output message="tns:importaFaturaItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="importaMovimentoMaster">
+      <wsdl:input message="tns:importaMovimentoMasterSoapIn" />
+      <wsdl:output message="tns:importaMovimentoMasterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FilaRetornoLabonorte">
+      <wsdl:input message="tns:FilaRetornoLabonorteSoapIn" />
+      <wsdl:output message="tns:FilaRetornoLabonorteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Saldo_produto">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/Saldo_produto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logar">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/logar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_filial_matriz">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/trans_filial_matriz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="andamentos_OS">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/andamentos_OS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fila_produtos">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/fila_produtos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fila_produtos_ok">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/fila_produtos_ok" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Importa_produto">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/Importa_produto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fila_trigger">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/fila_trigger" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="marca_trigger_ok">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/marca_trigger_ok" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_in">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/os_in" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_in_trans">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/os_in_trans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pedido_balcao">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/Pedido_balcao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaidaExtra">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/SaidaExtra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="extras">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/extras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOS">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonorteData">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOSFiliaisLabonorteData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonortePedido">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOSFiliaisLabonortePedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonorteNumero">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOSFiliaisLabonorteNumero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonorteOS">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOSFiliaisLabonorteOS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaAndamentoOS">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaAndamentoOS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FilaEnvioMatriz">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/FilaEnvioMatriz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="atualizaFilaEnvio">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/atualizaFilaEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificaImportados">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/verificaImportados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FilaRetornoMatriz">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/FilaRetornoMatriz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="atualizaExportado">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/atualizaExportado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaPedido">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaPedidoData">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaPedidoData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaPedidoItem">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaPedidoItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaPedidoServico">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaPedidoServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaFatura">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaFatura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaFaturaNumero">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaFaturaNumero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaFaturaItem">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaFaturaItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaMovimentoMaster">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaMovimentoMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FilaRetornoLabonorte">
+      <soap:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/FilaRetornoLabonorte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Saldo_produto">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/Saldo_produto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logar">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/logar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="trans_filial_matriz">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/trans_filial_matriz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="andamentos_OS">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/andamentos_OS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fila_produtos">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/fila_produtos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fila_produtos_ok">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/fila_produtos_ok" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Importa_produto">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/Importa_produto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fila_trigger">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/fila_trigger" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="marca_trigger_ok">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/marca_trigger_ok" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_in">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/os_in" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="os_in_trans">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/os_in_trans" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Pedido_balcao">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/Pedido_balcao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaidaExtra">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/SaidaExtra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="extras">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/extras" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOS">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonorteData">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOSFiliaisLabonorteData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonortePedido">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOSFiliaisLabonortePedido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonorteNumero">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOSFiliaisLabonorteNumero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaOSFiliaisLabonorteOS">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaOSFiliaisLabonorteOS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaAndamentoOS">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaAndamentoOS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FilaEnvioMatriz">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/FilaEnvioMatriz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="atualizaFilaEnvio">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/atualizaFilaEnvio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verificaImportados">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/verificaImportados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FilaRetornoMatriz">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/FilaRetornoMatriz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="atualizaExportado">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/atualizaExportado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaPedido">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaPedido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaPedidoData">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaPedidoData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaPedidoItem">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaPedidoItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaPedidoServico">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaPedidoServico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaFatura">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaFatura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaFaturaNumero">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaFaturaNumero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaFaturaItem">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaFaturaItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importaMovimentoMaster">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/importaMovimentoMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FilaRetornoLabonorte">
+      <soap12:operation soapAction="http://www.labonorte.com.br/mroticaservicelabo/FilaRetornoLabonorte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://www.labonorte.com.br/mroticaservicelabo/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://www.labonorte.com.br/mroticaservicelabo/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

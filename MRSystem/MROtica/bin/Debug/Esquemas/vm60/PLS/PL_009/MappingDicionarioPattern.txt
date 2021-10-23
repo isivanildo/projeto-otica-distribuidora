@@ -1,0 +1,12 @@
+[DICIONARIO_PATTERN]
+XSDElementName=DicionarioPattern
+XSDFile=DicionarioPattern.xsd
+XSDStartNode=
+IgnoredXPaths=
+UseNamespacePrefixes=0
+XMLHeader=
+RootAttributes=
+
+[DicionarioPattern]
+Pattern=DicionarioPattern/registro/pattern
+Mensagem=DicionarioPattern/registro/mensagem

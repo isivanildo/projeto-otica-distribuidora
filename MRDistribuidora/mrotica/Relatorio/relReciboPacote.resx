@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="vendorCityRow.Weight" type="System.Double, mscorlib">
+    <value>0.58181786019664261</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="xrPanel3.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>240, 243, 245</value>
+  </data>
+  <data name="customerCountry.TextFormatString" xml:space="preserve">
+    <value>Fones / {0}</value>
+  </data>
+  <data name="total.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 27pt</value>
+  </data>
+  <data name="customerCountry.Text" xml:space="preserve">
+    <value>CustomerCountry</value>
+  </data>
+  <data name="total.Weight" type="System.Double, mscorlib">
+    <value>0.83240374861650335</value>
+  </data>
+  <data name="totalCaption.Text" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="vendorCity.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="quantity.Weight" type="System.Double, mscorlib">
+    <value>0.18517281652217346</value>
+  </data>
+  <data name="invoiceTotalTableRow2.Weight" type="System.Double, mscorlib">
+    <value>1.3210798682220846</value>
+  </data>
+  <data name="invoiceTotalTable.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>311, 0</value>
+  </data>
+  <data name="detailTableRow2.Weight" type="System.Double, mscorlib">
+    <value>10.58</value>
+  </data>
+  <data name="total2.TextFormatString" xml:space="preserve">
+    <value>{0:R$ #,##0.00}</value>
+  </data>
+  <data name="customerTable.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>420, 99.99997</value>
+  </data>
+  <data name="customerCity.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="detailTableCell5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold</value>
+  </data>
+  <data name="TopMargin.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="unitPrice.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="vendorContactName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="vendorContactName.Text" xml:space="preserve">
+    <value>VendorContactName</value>
+  </data>
+  <data name="total2Caption.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>48, 54, 64</value>
+  </data>
+  <data name="customerCountryRow.Weight" type="System.Double, mscorlib">
+    <value>0.58181796653647988</value>
+  </data>
+  <data name="customerAddressRow.Weight" type="System.Double, mscorlib">
+    <value>0.58181796653648</value>
+  </data>
+  <data name="xrLine1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>0.0001926422, 70</value>
+  </data>
+  <data name="vendorAddress.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="vendorTable.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>25, 100</value>
+  </data>
+  <data name="total2Caption.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="vendorNameRow.Weight" type="System.Double, mscorlib">
+    <value>0.87272678379915458</value>
+  </data>
+  <data name="CustomSqlQuery1.Sql" xml:space="preserve">
+    <value>SELECT pcd.cod_pacote, pcd.cod_cliente, pcd.cod_filial_cliente, pcd.item,
+pcd.cod_produto, p.produto, pcd.preco_produto, pcd.desconto_produto, 
+pcd.qtde_produto, pcd.preco_final_produto, pcd.status_item, 
+case when p.cod_lente IS NULL then p.produto
+else (select lentes_blocos.nome_lente as nome from lentes_blocos where
+cod_lente = pcd.cod_produto) end as descricao_prod,
+(SELECT SUM(Contratada - Utilizado) AS saldo FROM saldos_pacotes(pcd.cod_produto,
+pcd.cod_filial_cliente, pcd.cod_cliente) as saldos 
+where(cod_Pacote = pcd.cod_pacote)) as Saldo, pc.data, c.razao_social, c.cnpj, c.endereco, 
+c.complemento, c.bairro, c.cep, c.municipio, c.uf, c.fones from 
+Pacote_cliente_detalhes pcd inner join pacote_cliente pc on 
+pcd.cod_Pacote = pc.cod_Pacote inner join produtos p
+on pcd.cod_produto = p.cod_produto 
+inner join cliente c on c.cod_cliente = pcd.cod_cliente and 
+c.cod_filial_cliente = pcd.cod_filial_cliente
+where pcd.cod_cliente = @codigocliente
+and pcd.cod_filial_cliente = @codigofilial
+and pcd.cod_Pacote = @codigopacote order by item</value>
+  </data>
+  <data name="xrPanel2.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>700, 110</value>
+  </data>
+  <data name="total.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>48, 54, 64</value>
+  </data>
+  <data name="codigofilial.Description" xml:space="preserve">
+    <value>Parameter1</value>
+  </data>
+  <data name="invoiceDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="unitPrice.Weight" type="System.Double, mscorlib">
+    <value>0.27775922158537275</value>
+  </data>
+  <data name="totalCaption.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>48, 54, 64</value>
+  </data>
+  <data name="GroupHeader2.HeightF" type="System.Single, mscorlib">
+    <value>220</value>
+  </data>
+  <data name="xrPanel3.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>0, 0</value>
+  </data>
+  <data name="invoiceDateRow.Weight" type="System.Double, mscorlib">
+    <value>0.72209877320573135</value>
+  </data>
+  <data name="lineTotal.TextFormatString" xml:space="preserve">
+    <value>{0:R$ #,##0.00}</value>
+  </data>
+  <data name="customerAddress.Weight" type="System.Double, mscorlib">
+    <value>1.3674159916636131</value>
+  </data>
+  <data name="productDescription.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 8.75pt</value>
+  </data>
+  <data name="invoiceInfoTable.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>25.00001, 10.00001</value>
+  </data>
+  <data name="BottomMargin.HeightF" type="System.Single, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="lineTotalCaption.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="detailTableCell2.Weight" type="System.Double, mscorlib">
+    <value>0.27775922158537275</value>
+  </data>
+  <data name="invoiceDate.Weight" type="System.Double, mscorlib">
+    <value>0.912698488401723</value>
+  </data>
+  <data name="xrLine1.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>211, 203, 200</value>
+  </data>
+  <data name="totalCaption.Weight" type="System.Double, mscorlib">
+    <value>0.83240374853486521</value>
+  </data>
+  <data name="invoiceTotalTable.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>364.0001, 110</value>
+  </data>
+  <data name="detailTable.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>650.0001, 70</value>
+  </data>
+  <data name="vendorContactName.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="customerCity.Weight" type="System.Double, mscorlib">
+    <value>1.3674159916636131</value>
+  </data>
+  <data name="total2.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>BottomRight</value>
+  </data>
+  <data name="total2.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="vendorCity.Text" xml:space="preserve">
+    <value>VendorCity</value>
+  </data>
+  <data name="codigopacote.Description" xml:space="preserve">
+    <value>Parameter1</value>
+  </data>
+  <data name="SqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iU3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0iY29kX3BhY290ZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImNvZF9jbGllbnRlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iY29kX2ZpbGlhbF9jbGllbnRlIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iaXRlbSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImNvZF9wcm9kdXRvIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icHJvZHV0byIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJwcmVjb19wcm9kdXRvIiBUeXBlPSJEb3VibGUiIC8+PEZpZWxkIE5hbWU9ImRlc2NvbnRvX3Byb2R1dG8iIFR5cGU9IkRvdWJsZSIgLz48RmllbGQgTmFtZT0icXRkZV9wcm9kdXRvIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0icHJlY29fZmluYWxfcHJvZHV0byIgVHlwZT0iRG91YmxlIiAvPjxGaWVsZCBOYW1lPSJzdGF0dXNfaXRlbSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJkZXNjcmljYW9fcHJvZCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJTYWxkbyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImRhdGEiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJyYXphb19zb2NpYWwiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY25waiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJlbmRlcmVjbyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjb21wbGVtZW50byIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJiYWlycm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY2VwIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Im11bmljaXBpbyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJ1ZiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmb25lcyIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <data name="$this.Margins" type="System.Drawing.Printing.Margins, System.Drawing">
+    <value>75, 75, 75, 125</value>
+  </data>
+  <data name="customerCity.Text" xml:space="preserve">
+    <value>CustomerCity</value>
+  </data>
+  <data name="xrPanel2.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>6.357829E-05, 0</value>
+  </data>
+  <data name="TopMargin.HeightF" type="System.Single, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="invoiceInfoTable.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>255, 67.48</value>
+  </data>
+  <data name="totalCaption.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="vendorCountry.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="quantityCaption.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="productNameCaption.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="totalCaptionRow.Weight" type="System.Double, mscorlib">
+    <value>0.41551542553740262</value>
+  </data>
+  <data name="GroupFooter1.HeightF" type="System.Single, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="invoiceDate.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="total.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>TopRight</value>
+  </data>
+  <data name="xrPanel1.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>7.152557E-05, 0</value>
+  </data>
+  <data name="xrPanel1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>700, 220</value>
+  </data>
+  <data name="productNameCaption.Text" xml:space="preserve">
+    <value>PRODUTO</value>
+  </data>
+  <data name="customerCountry.Weight" type="System.Double, mscorlib">
+    <value>1.3674159916636131</value>
+  </data>
+  <data name="customerNameRow.Weight" type="System.Double, mscorlib">
+    <value>0.87272687850147868</value>
+  </data>
+  <data name="detailTableCell5.Weight" type="System.Double, mscorlib">
+    <value>0.35182792450819356</value>
+  </data>
+  <data name="invoiceTotalTableRow1.Weight" type="System.Double, mscorlib">
+    <value>0.41275249766448796</value>
+  </data>
+  <data name="SubBand1.HeightF" type="System.Single, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="productDescription.Weight" type="System.Double, mscorlib">
+    <value>1.0591885550567879</value>
+  </data>
+  <data name="vendorLogo.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>143, 68.29166</value>
+  </data>
+  <data name="headerTable.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>650, 35</value>
+  </data>
+  <data name="invoiceDate.TextFormatString" xml:space="preserve">
+    <value>{0:dd/MM/yyyy}</value>
+  </data>
+  <data name="lineTotalCaption.Weight" type="System.Double, mscorlib">
+    <value>0.30785032120391059</value>
+  </data>
+  <data name="total2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 40pt</value>
+  </data>
+  <data name="vendorLogo.ImageSource" xml:space="preserve">
+    <value>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</value>
+  </data>
+  <data name="headerTableRow.Weight" type="System.Double, mscorlib">
+    <value>11.5</value>
+  </data>
+  <data name="detailTable.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>25.00006, 0</value>
+  </data>
+  <data name="customerName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="invoiceNumber.TextFormatString" xml:space="preserve">
+    <value>Pacote / {0}</value>
+  </data>
+  <data name="totalCaption.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.5pt</value>
+  </data>
+  <data name="headerTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="vendorAddressRow.Weight" type="System.Double, mscorlib">
+    <value>0.58181786019664261</value>
+  </data>
+  <data name="total2Caption.Text" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="vendorLogo.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>25, 25</value>
+  </data>
+  <data name="codigocliente.Description" xml:space="preserve">
+    <value>Parameter1</value>
+  </data>
+  <data name="productDescription.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>Gray</value>
+  </data>
+  <data name="customerName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16pt</value>
+  </data>
+  <data name="productName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>BottomLeft</value>
+  </data>
+  <data name="BottomMargin.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9.75pt</value>
+  </data>
+  <data name="total2Caption.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="quantityCaption.Weight" type="System.Double, mscorlib">
+    <value>0.16202672591596154</value>
+  </data>
+  <data name="invoiceNumberRow.Weight" type="System.Double, mscorlib">
+    <value>0.76137257033012162</value>
+  </data>
+  <data name="quantity.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="unitPriceCaption.Text" xml:space="preserve">
+    <value>PREÇO</value>
+  </data>
+  <data name="CalculatedField1.DisplayName" xml:space="preserve">
+    <value>LineTotal</value>
+  </data>
+  <data name="unitPriceCaption.Weight" type="System.Double, mscorlib">
+    <value>0.24304010337647838</value>
+  </data>
+  <data name="totalTable.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>240, 243, 245</value>
+  </data>
+  <data name="lineTotal.Weight" type="System.Double, mscorlib">
+    <value>0.35182792450819356</value>
+  </data>
+  <data name="total2.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="GroupHeader1.HeightF" type="System.Single, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="detailTableCell1.Weight" type="System.Double, mscorlib">
+    <value>0.18517281652217346</value>
+  </data>
+  <data name="totalTable.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>455, 0</value>
+  </data>
+  <data name="xrPanel2.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>240, 243, 245</value>
+  </data>
+  <data name="detailTable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold</value>
+  </data>
+  <data name="lineTotalCaption.Text" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="invoiceNumber.Weight" type="System.Double, mscorlib">
+    <value>0.912698488401723</value>
+  </data>
+  <data name="vendorCountry.Text" xml:space="preserve">
+    <value>VendorCountry</value>
+  </data>
+  <data name="vendorCountry.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="customerAddress.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="customerTable.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>254.999939, 90</value>
+  </data>
+  <data name="vendorTable.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>255, 110</value>
+  </data>
+  <data name="vendorCountryRow.Weight" type="System.Double, mscorlib">
+    <value>0.58181797116959633</value>
+  </data>
+  <data name="LineTotalCalcField.DisplayName" xml:space="preserve">
+    <value>LineTotal</value>
+  </data>
+  <data name="customerCountry.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleRight</value>
+  </data>
+  <data name="vendorCity.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="headerTable.LocationFloat" type="DevExpress.Utils.PointFloat, DevExpress.Data.v18.2">
+    <value>25.00003, 10.00001</value>
+  </data>
+  <data name="xrLine1.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>699.9998, 2</value>
+  </data>
+  <data name="productName.Weight" type="System.Double, mscorlib">
+    <value>1.0591885550567879</value>
+  </data>
+  <data name="vendorName.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="quantityCaption.Text" xml:space="preserve">
+    <value>QTDE</value>
+  </data>
+  <data name="customerCityRow.Weight" type="System.Double, mscorlib">
+    <value>0.58181796653648</value>
+  </data>
+  <data name="unitPriceCaption.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="unitPriceCaption.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="Detail.HeightF" type="System.Single, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="lineTotal.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="productNameCaption.Weight" type="System.Double, mscorlib">
+    <value>0.92679294563676229</value>
+  </data>
+  <data name="xrPanel1.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>240, 243, 245</value>
+  </data>
+  <data name="vendorName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16pt</value>
+  </data>
+  <data name="xrPanel3.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>700, 45</value>
+  </data>
+  <data name="total.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="invoiceNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 19pt</value>
+  </data>
+  <data name="Detail.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="total2.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>48, 54, 64</value>
+  </data>
+  <data name="detailTableRow1.Weight" type="System.Double, mscorlib">
+    <value>10.58</value>
+  </data>
+  <data name="total2Caption.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="totalRow.Weight" type="System.Double, mscorlib">
+    <value>0.99723707212708534</value>
+  </data>
+  <data name="total.TextFormatString" xml:space="preserve">
+    <value>{0:R$ 0.00}</value>
+  </data>
+  <data name="vendorContactNameRow.Weight" type="System.Double, mscorlib">
+    <value>0.58181786680216163</value>
+  </data>
+  <data name="invoiceNumber.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>TopLeft</value>
+  </data>
+  <data name="totalTable.SizeF" type="System.Drawing.SizeF, System.Drawing">
+    <value>2, 85</value>
+  </data>
+  <data name="CalculatedField2.DisplayName" xml:space="preserve">
+    <value>LineTotal</value>
+  </data>
+  <data name="vendorAddress.Weight" type="System.Double, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="vendorAddress.Text" xml:space="preserve">
+    <value>VendorAddress</value>
+  </data>
+  <data name="lineTotalCaption.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="totalCaption.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>BottomRight</value>
+  </data>
+  <data name="total2Caption.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.5pt</value>
+  </data>
+  <data name="vendorName.TextAlignment" type="DevExpress.XtraPrinting.TextAlignment, DevExpress.Data.v18.2">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="unitPrice.TextFormatString" xml:space="preserve">
+    <value>{0:R$ 0.00}</value>
+  </data>
+  <data name="customerName.Weight" type="System.Double, mscorlib">
+    <value>1.3674159916636131</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="SqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

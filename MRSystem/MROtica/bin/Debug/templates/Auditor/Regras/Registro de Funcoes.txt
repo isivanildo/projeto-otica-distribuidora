@@ -1,0 +1,33 @@
+'*' São as funções principais, que necessitam ser registradas
+'-' São as funções internas das funcões principais
+
+Funções
+
+*Function ValidaCodigoMunicipio(Const aCodigoMun : string) : Boolean;
+     - EstaNaListaDeExcecoes;
+     - CalcDigVerificadorCodMunicipio
+
+*function ValidaCNPJ(Cnpj: String): Boolean;
+     - function DupeString
+     - function BuscaCaracteresValidos
+
+*function GetCodeUF(Const aUF : String) : String;
+     - PopulaListaUF
+
+*Function CompareComTolerancia(Const aValue1, aValue2, aTolerancia : Extended) : Boolean; 
+
+*function ValidaCPF(aCPF: string): Boolean;
+
+*function XmlDateToDateTime(aXmlDate : String) : TDateTime;
+     - function GetAno(aXMLDate : String) : Word; 
+     - function GetMes(aXMLDate : String) : Word;
+     - function GetDia(aXMLDate : String) : Word;
+
+*function PossuiCampoPreenchido(Const aDataSetName : string): boolean;
+
+*Function ValidaAutenticidadeDV(Const aChave : String; aVersaoManual : TVersaoManual) :Boolean;
+
+*Function CompareComTolerancia(Const aValue1, aValue2, aTolerancia : Extended) : Boolean;
+
+//Verificar
+*TspdNFeRule.CheckDataSet;

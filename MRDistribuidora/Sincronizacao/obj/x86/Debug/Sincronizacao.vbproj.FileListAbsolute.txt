@@ -1,0 +1,16 @@
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\bin\Debug\Sincronizacao.exe.config
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\bin\Debug\Sincronizacao.exe
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\bin\Debug\Sincronizacao.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\bin\Debug\Sincronizacao.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\obj\x86\Debug\Sincronizacao.Form1.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\obj\x86\Debug\Sincronizacao.Resources.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\obj\x86\Debug\Sincronizacao.exe
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\obj\x86\Debug\Sincronizacao.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\obj\x86\Debug\Sincronizacao.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\bin\Debug\winotica_util.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\bin\Debug\winotica_util.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\bin\Debug\winotica_util.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\Sincronizacao\bin\Debug\config.xml

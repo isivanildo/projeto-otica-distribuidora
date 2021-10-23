@@ -1,0 +1,19 @@
+{ 
+  Variáveis externas disponíveis: 
+    PathXsd: string;
+    MappingXsdFileName: string;
+    Input: string;
+    Datasets: TspdXSDDataset;
+}
+
+begin
+
+  Datasets.XsdFile := PathXsd + Params.Values['XsdFile'];
+  Datasets.ConfigSection := '-';
+  Datasets.XsdElementName := 'NFe';
+  Datasets.MappingFileName := MappingXsdFileName;
+  Datasets.CreateXSDDataset;
+  
+  {Datasets.LoadFromXMLContent(input);}
+
+end.

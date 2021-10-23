@@ -1,0 +1,24 @@
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\bin\Release\winotica_util.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\bin\Release\winotica_util.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\bin\Release\winotica_util.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.frmSenha.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.frmTrocaSenha.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.Resources.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\ResGen.read.1.tlog
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\ResGen.write.1.tlog
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\bin\Release\winotica_util.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\bin\Release\winotica_util.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\bin\Release\winotica_util.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.vbprojResolveAssemblyReference.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.frmSenha.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.frmTrocaSenha.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.Resources.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.vbproj.GenerateResource.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.vbproj.CoreCompileInputs.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\winotica_util\obj\Release\winotica_util.pdb

@@ -1,0 +1,13 @@
+C:\MRSystem\MRDistribuidora\winotica_util\bin\Debug\mrotica_util.dll
+C:\MRSystem\MRDistribuidora\winotica_util\bin\Debug\mrotica_util.pdb
+C:\MRSystem\MRDistribuidora\winotica_util\bin\Debug\mrotica_util.xml
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.vbprojAssemblyReference.cache
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.Form1.resources
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.frmSenha.resources
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.frmTrocaSenha.resources
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.Resources.resources
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.vbproj.GenerateResource.cache
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.vbproj.CoreCompileInputs.cache
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.dll
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.xml
+C:\MRSystem\MRDistribuidora\winotica_util\obj\Debug\mrotica_util.pdb

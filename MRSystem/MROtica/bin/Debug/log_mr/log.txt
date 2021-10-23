@@ -1,0 +1,1462 @@
+Data e hora do log: 28/07/2019 10:00:21
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 31
+====================================================================================
+
+Data e hora do log: 28/07/2019 10:01:05
+
+System.InvalidOperationException: ExecuteScalar: propriedade Connection não foi inicializada.
+   em System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   em MRUtil.Usuario.UsuarioLogado(Int32 usuario, String senha) na C:\MRSystem\MRSystem\MRUtil\Usuario.cs:linha 30
+====================================================================================
+
+Data e hora do log: 28/07/2019 10:03:22
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 32
+====================================================================================
+
+Data e hora do log: 28/07/2019 10:03:43
+
+System.InvalidOperationException: ExecuteScalar: propriedade Connection não foi inicializada.
+   em System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   em MRUtil.Usuario.UsuarioLogado(Int32 usuario, String senha) na C:\MRSystem\MRSystem\MRUtil\Usuario.cs:linha 30
+====================================================================================
+
+Data e hora do log: 28/07/2019 10:36:31
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 25
+====================================================================================
+
+Data e hora do log: 28/07/2019 10:38:15
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 39
+====================================================================================
+
+Data e hora do log: 28/07/2019 10:41:17
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 25
+====================================================================================
+
+Data e hora do log: 28/07/2019 10:41:17
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 39
+====================================================================================
+
+Data e hora do log: 28/07/2019 10:41:17
+
+System.InvalidOperationException: ExecuteScalar: propriedade Connection não foi inicializada.
+   em System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   em MRUtil.Usuario.UsuarioLogado(Int32 usuario, String senha) na C:\MRSystem\MRSystem\MRUtil\Usuario.cs:linha 30
+====================================================================================
+
+Data e hora do log: 28/07/2019 10:41:58
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 25
+====================================================================================
+
+Data e hora do log: 28/07/2019 11:34:08
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 25
+====================================================================================
+
+Data e hora do log: 28/07/2019 11:34:21
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 39
+====================================================================================
+
+Data e hora do log: 28/07/2019 11:35:35
+
+System.Data.SqlClient.SqlException (0x80131904): Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: SQL Network Interfaces, error: 26 - Erro ao Localizar Servidor/Instância Especificada)
+   em System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 39
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+====================================================================================
+
+Data e hora do log: 28/07/2019 11:39:22
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 25
+====================================================================================
+
+Data e hora do log: 28/07/2019 11:39:22
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 39
+====================================================================================
+
+Data e hora do log: 28/07/2019 11:46:32
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 25
+====================================================================================
+
+Data e hora do log: 28/07/2019 11:46:32
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 39
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:22:15
+
+System.InvalidOperationException: A conexão não foi fechada. O estado atual da conexão é aberta.
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:22:19
+
+System.InvalidOperationException: A conexão não foi fechada. O estado atual da conexão é aberta.
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:22:22
+
+System.InvalidOperationException: A conexão não foi fechada. O estado atual da conexão é aberta.
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:22:43
+
+System.InvalidOperationException: A conexão não foi fechada. O estado atual da conexão é aberta.
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:23:02
+
+System.InvalidOperationException: A conexão não foi fechada. O estado atual da conexão é aberta.
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:23:12
+
+System.InvalidOperationException: A conexão não foi fechada. O estado atual da conexão é aberta.
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:23:42
+
+System.InvalidOperationException: A conexão não foi fechada. O estado atual da conexão é aberta.
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:24:30
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:24:39
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:26:52
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 12:28:18
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 34
+====================================================================================
+
+Data e hora do log: 28/07/2019 13:48:38
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+====================================================================================
+
+Data e hora do log: 28/07/2019 13:48:41
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+====================================================================================
+
+Data e hora do log: 28/07/2019 13:48:45
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+====================================================================================
+
+Data e hora do log: 28/07/2019 13:48:49
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+====================================================================================
+
+Data e hora do log: 28/07/2019 13:50:43
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+====================================================================================
+
+Data e hora do log: 28/07/2019 13:50:44
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:14:47
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 36
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:14:51
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 36
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:14:54
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 36
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:16:23
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 36
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:19:23
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:20:11
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:21:28
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:23:07
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 36
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:23:23
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 36
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:25:25
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 35
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:26:57
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 35
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:27:52
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 35
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:28:10
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 35
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:36:49
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 35
+====================================================================================
+
+Data e hora do log: 28/07/2019 16:38:20
+
+System.ArgumentException: Não há suporte para a palavra-chave: 'data source1'.
+   em System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   em System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   em System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   em System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   em System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   em System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   em System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 35
+====================================================================================
+
+Data e hora do log: 29/07/2019 07:25:36
+
+System.Data.SqlClient.SqlException (0x80131904): Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: SQL Network Interfaces, error: 26 - Erro ao Localizar Servidor/Instância Especificada)
+   em System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+====================================================================================
+
+Data e hora do log: 09/08/2019 20:15:14
+
+System.Data.SqlClient.SqlException (0x80131904): Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: SQL Network Interfaces, error: 26 - Erro ao Localizar Servidor/Instância Especificada)
+   em System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+====================================================================================
+
+Data e hora do log: 12/08/2019 13:48:53
+
+System.Data.SqlClient.SqlException (0x80131904): Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: SQL Network Interfaces, error: 26 - Erro ao Localizar Servidor/Instância Especificada)
+   em System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+====================================================================================
+
+Data e hora do log: 12/08/2019 20:44:30
+
+System.InvalidOperationException: Fill: Propriedade SelectCommand.Connection não foi inicializada.
+   em System.Data.Common.DbDataAdapter.GetConnection3(DbDataAdapter adapter, IDbCommand command, String method)
+   em System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   em System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   em System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   em MRUtil.ConexaoDB.CarregaTabela(String instrucaoSQL, DataTable tabela) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 72
+====================================================================================
+
+Data e hora do log: 12/08/2019 20:46:44
+
+System.InvalidOperationException: Fill: Propriedade SelectCommand.Connection não foi inicializada.
+   em System.Data.Common.DbDataAdapter.GetConnection3(DbDataAdapter adapter, IDbCommand command, String method)
+   em System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   em System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   em System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   em MRUtil.ConexaoDB.CarregaTabela(String instrucaoSQL, DataTable tabela) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 72
+====================================================================================
+
+Data e hora do log: 13/08/2019 00:14:29
+
+System.Data.SqlClient.SqlException (0x80131904): Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: SQL Network Interfaces, error: 26 - Erro ao Localizar Servidor/Instância Especificada)
+   em System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+====================================================================================
+
+Data e hora do log: 17/08/2019 09:56:40
+
+System.Data.SqlClient.SqlException (0x80131904): Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: SQL Network Interfaces, error: 26 - Erro ao Localizar Servidor/Instância Especificada)
+   em System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 38
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+====================================================================================
+
+Data e hora do log: 17/08/2019 14:39:57
+
+System.InvalidOperationException: ExecuteNonQuery: propriedade Connection não foi inicializada.
+   em System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaReg(String instrucaoSQL, Boolean exporta) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 102
+====================================================================================
+
+Data e hora do log: 17/08/2019 14:42:18
+
+System.InvalidOperationException: ExecuteNonQuery: propriedade Connection não foi inicializada.
+   em System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaReg(String instrucaoSQL, Boolean exporta) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 102
+====================================================================================
+
+Data e hora do log: 17/08/2019 15:17:12
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA567B05C4A0B'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (20).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 132
+ClientConnectionId:5821fd72-d5cb-4dc0-9140-e279ac25b369
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 17/08/2019 15:18:58
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA567B05C4A0B'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (21).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 132
+ClientConnectionId:75e07628-7085-4f8d-87ce-550bfb3ef977
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 17/08/2019 18:12:10
+
+System.InvalidOperationException: Tempo limite expirado. O período de tempo limite foi atingido antes que fosse obtida uma conexão do pool. Isso pode ter ocorrido porque todas as conexões do pool estavam em uso e o tamanho máximo do pool foi atingido.
+   em System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 40
+====================================================================================
+
+Data e hora do log: 17/08/2019 18:18:18
+
+System.InvalidOperationException: Tempo limite expirado. O período de tempo limite foi atingido antes que fosse obtida uma conexão do pool. Isso pode ter ocorrido porque todas as conexões do pool estavam em uso e o tamanho máximo do pool foi atingido.
+   em System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 40
+====================================================================================
+
+Data e hora do log: 17/08/2019 19:24:29
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA567B05C4A0B'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (21).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:57bef6f6-786c-418d-ab0a-3c7c29d2da34
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 17/08/2019 20:18:10
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA567B05C4A0B'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (22).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:9948ab57-eb2d-45aa-a902-0e664a4af4df
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 17/08/2019 23:28:45
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA567B05C4A0B'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (23).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:08ccc673-269f-46e1-b0ba-77bc6dfb17e8
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 16:14:16
+
+System.Data.SqlClient.SqlException (0x80131904): Erro de estouro aritmético ao converter int no tipo de dados numeric.
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaExcluiReg(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 104
+ClientConnectionId:7ce9df01-537a-45f2-bf01-22b1585ae8fa
+Error Number:8115,State:8,Class:16
+====================================================================================
+
+Data e hora do log: 18/08/2019 16:15:20
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Cst_Fisc__DAB7A5830F449535'. Não é possível inserir a chave duplicada no objeto 'dbo.Cst_Fiscal'. O valor de chave duplicada é (0, 1, 1, 17.00).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:7e3829e6-31fe-48c8-829c-5336132e85ad
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 16:29:43
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA567B05C4A0B'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (24).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:94f025ee-2191-4d89-b930-f9b3ebfce756
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 16:30:33
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Cst_Fisc__DAB7A5830F449535'. Não é possível inserir a chave duplicada no objeto 'dbo.Cst_Fiscal'. O valor de chave duplicada é (0, 1, 1, 17.00).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaExcluiReg(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 104
+ClientConnectionId:94f025ee-2191-4d89-b930-f9b3ebfce756
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 16:36:10
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA567B05C4A0B'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (25).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:d0698e9a-9d0a-48a2-a004-81954fc47978
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 16:36:33
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Cst_Fisc__DAB7A5830F449535'. Não é possível inserir a chave duplicada no objeto 'dbo.Cst_Fiscal'. O valor de chave duplicada é (0, 1, 2, 17.00).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:f7ee8ac0-c051-4820-a2f9-20f12a955131
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 16:38:02
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA567B05C4A0B'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (26).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:f7ee8ac0-c051-4820-a2f9-20f12a955131
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 16:38:02
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Cst_Fisc__DAB7A5830F449535'. Não é possível inserir a chave duplicada no objeto 'dbo.Cst_Fiscal'. O valor de chave duplicada é (0, 2, 3, 17.00).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:8a57a966-2907-425a-9e3c-664847459200
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 18:06:29
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA567B05C4A0B'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (27).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:23f4962c-788b-4c54-873c-5bccae805467
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 18:06:29
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Cst_Fisc__DAB7A5830F449535'. Não é possível inserir a chave duplicada no objeto 'dbo.Cst_Fiscal'. O valor de chave duplicada é (27, 1, 1, 17.00).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:3a08d69b-e233-4b41-8c2c-043ec70b967a
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 19:53:23
+
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'cst' inválido.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaExcluiReg(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 104
+ClientConnectionId:9ac0eb8d-fd53-4f35-9e9a-a5eba91124f6
+Error Number:207,State:1,Class:16
+====================================================================================
+
+Data e hora do log: 18/08/2019 19:58:14
+
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'cst' inválido.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaExcluiReg(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 104
+ClientConnectionId:2f8995d7-dc96-4736-b7a7-d43c74e5e57e
+Error Number:207,State:1,Class:16
+====================================================================================
+
+Data e hora do log: 18/08/2019 19:59:53
+
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'cst' inválido.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaExcluiReg(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 104
+ClientConnectionId:34b16aa4-2495-4ccf-8fef-080995a71953
+Error Number:207,State:1,Class:16
+====================================================================================
+
+Data e hora do log: 18/08/2019 20:01:52
+
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'cst' inválido.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaExcluiReg(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 104
+ClientConnectionId:8458ccc0-6f52-4db6-845d-5d7a9e895ee2
+Error Number:207,State:1,Class:16
+====================================================================================
+
+Data e hora do log: 18/08/2019 20:05:39
+
+System.InvalidOperationException: ExecuteNonQuery: propriedade CommandText não foi inicializada
+   em System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaExcluiReg(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 104
+====================================================================================
+
+Data e hora do log: 18/08/2019 20:22:46
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA56742E991D9'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (17).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:e9d43950-02cc-4821-be88-0b664960aba5
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 20:22:46
+
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'pfcp' inválido.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaExcluiReg(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 104
+ClientConnectionId:e9d43950-02cc-4821-be88-0b664960aba5
+Error Number:207,State:1,Class:16
+====================================================================================
+
+Data e hora do log: 18/08/2019 20:27:44
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA56742E991D9'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (18).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:fe3af6d8-3530-4b94-a3c9-3bf757435392
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 18/08/2019 20:27:44
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__CstFisca__24043CD5DC08674F'. Não é possível inserir a chave duplicada no objeto 'dbo.CstFiscal'. O valor de chave duplicada é (18, 1, 00, 1).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:ddaa41d8-f619-48f8-b8ed-b5aaa51e42ba
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 19/08/2019 19:55:54
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA56742E991D9'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (19).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:3364fb90-0119-4cfe-8b22-03dff65d95c8
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 19/08/2019 19:56:47
+
+System.Data.SqlClient.SqlException (0x80131904): Nome de coluna 'Estrangeira_Adquirida_no_mercado_interno' inválido.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.SalvaAtualizaExcluiReg(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 104
+ClientConnectionId:3364fb90-0119-4cfe-8b22-03dff65d95c8
+Error Number:207,State:1,Class:16
+====================================================================================
+
+Data e hora do log: 19/08/2019 20:01:15
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA56742E991D9'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (20).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:b1afc130-62b1-418a-afbd-e2f6a8bd27ee
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 19/08/2019 20:57:03
+
+System.Data.SqlClient.SqlException (0x80131904): Erro de rede ou específico à instância ao estabelecer conexão com o SQL Server. O servidor não foi encontrado ou não estava acessível. Verifique se o nome da instância está correto e se o SQL Server está configurado para permitir conexões remotas. (provider: SQL Network Interfaces, error: 26 - Erro ao Localizar Servidor/Instância Especificada)
+   em System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   em System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 40
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+====================================================================================
+
+Data e hora do log: 19/08/2019 21:21:58
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA56742E991D9'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (21).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:b7bc580e-0044-4a0c-afab-9fe7d9994930
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 19/08/2019 21:22:39
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__CstFisca__24043CD5DC08674F'. Não é possível inserir a chave duplicada no objeto 'dbo.CstFiscal'. O valor de chave duplicada é (21, 1, 00, 0).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:a3ef40b5-0464-4895-a921-a632ca8df045
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 19/08/2019 21:24:22
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA56742E991D9'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (22).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:9c450e42-c1ed-4a3e-ace0-a341620580cd
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 19/08/2019 21:24:34
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__CstFisca__24043CD5DC08674F'. Não é possível inserir a chave duplicada no objeto 'dbo.CstFiscal'. O valor de chave duplicada é (22, 2, 00, 0).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:79cf5f66-a061-4510-95b7-0716a9b3c941
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 19/08/2019 21:49:44
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__Natureza__74CFA56742E991D9'. Não é possível inserir a chave duplicada no objeto 'dbo.NaturezaOperacao'. O valor de chave duplicada é (23).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:446679e7-5675-40f6-ab91-da2cce7920ab
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 19/08/2019 21:50:02
+
+System.Data.SqlClient.SqlException (0x80131904): Violação da restrição PRIMARY KEY 'PK__CstFisca__24043CD5DC08674F'. Não é possível inserir a chave duplicada no objeto 'dbo.CstFiscal'. O valor de chave duplicada é (23, 1, 00, 0).
+A instrução foi finalizada.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em MRUtil.ConexaoDB.Exporta(String instrucaoSQL) na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 134
+ClientConnectionId:57f05669-6c24-46c0-bab1-e95a4b5bef1c
+Error Number:2627,State:1,Class:14
+====================================================================================
+
+Data e hora do log: 05/09/2019 19:59:50
+
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'C:\MRSystem\MRSystem\MROtica\bin\Debug\confignovo.xml'.
+Nome do arquivo: 'C:\MRSystem\MRSystem\MROtica\bin\Debug\confignovo.xml'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   em System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   em System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   em System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   em System.Threading.CompressedStack.runTryCode(Object userData)
+   em System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   em System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   em System.Xml.XmlTextReaderImpl.OpenUrl()
+   em System.Xml.XmlTextReaderImpl.Read()
+   em System.Xml.XmlTextReader.Read()
+   em System.Xml.XmlReader.MoveToContent()
+   em System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   em System.Data.DataSet.ReadXml(String fileName)
+   em MRUtil.Arquivo.ArquivoConfig(String strCaminho) na C:\MRSystem\MRSystem\MRUtil\Arquivo.cs:linha 31
+====================================================================================
+
+Data e hora do log: 05/09/2019 19:59:50
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.Criptografia.Descriptografar(String strText, String sDecrKey) na C:\MRSystem\MRSystem\MRUtil\Criptografia.cs:linha 51
+   em MRUtil.Criptografia.TextoDescriptografado(String strText) na C:\MRSystem\MRSystem\MRUtil\Criptografia.cs:linha 20
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 21
+====================================================================================
+
+Data e hora do log: 05/09/2019 19:59:53
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 40
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:00:29
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 40
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:03:05
+
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'C:\MRSystem\MRSystem\MROtica\bin\Debug\confignovo.xml'.
+Nome do arquivo: 'C:\MRSystem\MRSystem\MROtica\bin\Debug\confignovo.xml'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   em System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   em System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   em System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   em System.Threading.CompressedStack.runTryCode(Object userData)
+   em System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   em System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   em System.Xml.XmlTextReaderImpl.OpenUrl()
+   em System.Xml.XmlTextReaderImpl.Read()
+   em System.Xml.XmlTextReader.Read()
+   em System.Xml.XmlReader.MoveToContent()
+   em System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   em System.Data.DataSet.ReadXml(String fileName)
+   em MRUtil.Arquivo.ArquivoConfig(String strCaminho) na C:\MRSystem\MRSystem\MRUtil\Arquivo.cs:linha 31
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:03:05
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.Criptografia.Descriptografar(String strText, String sDecrKey) na C:\MRSystem\MRSystem\MRUtil\Criptografia.cs:linha 51
+   em MRUtil.Criptografia.TextoDescriptografado(String strText) na C:\MRSystem\MRSystem\MRUtil\Criptografia.cs:linha 20
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 21
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:03:07
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 40
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:03:29
+
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'C:\MRSystem\MRSystem\MROtica\bin\Debug\confignovo.xml'.
+Nome do arquivo: 'C:\MRSystem\MRSystem\MROtica\bin\Debug\confignovo.xml'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   em System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   em System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   em System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   em System.Threading.CompressedStack.runTryCode(Object userData)
+   em System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   em System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   em System.Xml.XmlTextReaderImpl.OpenUrl()
+   em System.Xml.XmlTextReaderImpl.Read()
+   em System.Xml.XmlTextReader.Read()
+   em System.Xml.XmlReader.MoveToContent()
+   em System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   em System.Data.DataSet.ReadXml(String fileName)
+   em MRUtil.Arquivo.ArquivoConfig(String strCaminho) na C:\MRSystem\MRSystem\MRUtil\Arquivo.cs:linha 31
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:03:29
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.Criptografia.Descriptografar(String strText, String sDecrKey) na C:\MRSystem\MRSystem\MRUtil\Criptografia.cs:linha 51
+   em MRUtil.Criptografia.TextoDescriptografado(String strText) na C:\MRSystem\MRSystem\MRUtil\Criptografia.cs:linha 20
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 21
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:03:59
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 40
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:04:36
+
+System.IO.FileNotFoundException: Não foi possível localizar o arquivo 'C:\MRSystem\MRSystem\MROtica\bin\Debug\confignovo.xml'.
+Nome do arquivo: 'C:\MRSystem\MRSystem\MROtica\bin\Debug\confignovo.xml'
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   em System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   em System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   em System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   em System.Threading.CompressedStack.runTryCode(Object userData)
+   em System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   em System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   em System.Xml.XmlTextReaderImpl.OpenUrl()
+   em System.Xml.XmlTextReaderImpl.Read()
+   em System.Xml.XmlTextReader.Read()
+   em System.Xml.XmlReader.MoveToContent()
+   em System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   em System.Data.DataSet.ReadXml(String fileName)
+   em MRUtil.Arquivo.ArquivoConfig(String strCaminho) na C:\MRSystem\MRSystem\MRUtil\Arquivo.cs:linha 31
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:04:36
+
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em MRUtil.Criptografia.Descriptografar(String strText, String sDecrKey) na C:\MRSystem\MRSystem\MRUtil\Criptografia.cs:linha 51
+   em MRUtil.Criptografia.TextoDescriptografado(String strText) na C:\MRSystem\MRSystem\MRUtil\Criptografia.cs:linha 20
+   em MRUtil.ConexaoDB..ctor() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 21
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:04:39
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 40
+====================================================================================
+
+Data e hora do log: 05/09/2019 20:04:45
+
+System.InvalidOperationException: A propriedade ConnectionString não foi inicializada.
+   em System.Data.SqlClient.SqlConnection.PermissionDemand()
+   em System.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   em System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   em System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   em System.Data.SqlClient.SqlConnection.Open()
+   em MRUtil.ConexaoDB.AbreConexaoBanco() na C:\MRSystem\MRSystem\MRUtil\ConexaoDB.cs:linha 40
+====================================================================================
+

@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EF6B528-17B1-4FA3-980B-FE927B44F591}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RegistroProducao.My.MyApplication</StartupObject>
+    <RootNamespace>RegistroProducao</RootNamespace>
+    <AssemblyName>RegistroProducao</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>otheroptions.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Registro_producao/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RegistroProducao.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RegistroProducao.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports.Chart, Version=5.2.1331.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL" />
+    <Reference Include="ActiveReports.Design3">
+      <HintPath>..\..\..\..\Visual Studio 2008\Projects\winotica\winotica\bin\ActiveReports.Design3.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.PdfExport, Version=5.2.1331.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Visual Studio 2008\Projects\winotica\winoticaweb\Bin\ActiveReports.PdfExport.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Viewer3, Version=5.2.1331.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Visual Studio 2008\Projects\winotica\winotica\bin\ActiveReports.Viewer3.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports3, Version=5.2.1331.2, Culture=neutral, PublicKeyToken=cc4967777c49a3ff, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\Visual Studio 2008\Projects\winotica\winoticaweb\Bin\ActiveReports3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="winotica_util">
+      <HintPath>..\winotica_util\bin\Debug\winotica_util.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmRetificacaoOS.Designer.vb">
+      <DependentUpon>frmRetificacaoOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetificacaoOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAndamentosOS.Designer.vb">
+      <DependentUpon>frmAndamentosOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAndamentosOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAndamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAndamentos.Designer.vb">
+      <DependentUpon>frmAndamentos.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAndamentosOSOtica.Designer.vb">
+      <DependentUpon>frmAndamentosOSOtica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAndamentosOSOtica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAviso.Designer.vb">
+      <DependentUpon>frmAviso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAviso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvisoOS.Designer.vb">
+      <DependentUpon>frmAvisoOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvisoOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContTratamentos.Designer.vb">
+      <DependentUpon>frmContTratamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContTratamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpedicao.Designer.vb">
+      <DependentUpon>frmExpedicao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpedicao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRpt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaidaExtra.Designer.vb">
+      <DependentUpon>frmSaidaExtra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaidaExtra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolTrocaProd.Designer.vb">
+      <DependentUpon>frmSolTrocaProd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolTrocaProd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrocaBase.Designer.vb">
+      <DependentUpon>frmTrocaBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrocaBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="rptAndamentos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptOS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAndamentos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAndamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAndamentosOSOtica.resx">
+      <DependentUpon>frmAndamentosOSOtica.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAviso.resx">
+      <DependentUpon>frmAviso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContTratamentos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContTratamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpedicao.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmExpedicao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRpt.resx">
+      <DependentUpon>frmRpt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaidaExtra.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSaidaExtra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolTrocaProd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSolTrocaProd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrocaBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTrocaBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="frmRetificacaoOS.resx">
+      <DependentUpon>frmRetificacaoOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAndamentosOS.resx">
+      <DependentUpon>frmAndamentosOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvisoOS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAvisoOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAndamentos.resx">
+      <DependentUpon>rptAndamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptOS.resx">
+      <DependentUpon>rptOS.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="otheroptions.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

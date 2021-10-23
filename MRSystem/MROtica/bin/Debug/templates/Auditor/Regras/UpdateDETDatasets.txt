@@ -1,0 +1,744 @@
+procedure CreateArrayFieldsICMS00(var fields: array of String);
+begin
+	setLength(fields, 6);
+	fields[0] := 'orig';
+	fields[1] := 'CST';
+	fields[2] := 'modBC';
+	fields[3] := 'vBC';
+	fields[4] := 'pICMS';
+	fields[5] := 'vICMS';
+end;
+
+procedure CreateArrayXMLICMS00(var fields: array of String);
+begin
+	setLength(fields, 6);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CST_N12';
+	fields[2] := 'modBC_N13';
+	fields[3] := 'vBC_N15';
+	fields[4] := 'pICMS_N16';
+	fields[5] := 'vICMS_N17';
+end;
+
+procedure CreateArrayFieldsICMS10(var fields: array of String);
+begin
+	setLength(fields, 12);
+	fields[0] := 'orig';
+	fields[1] := 'CST';
+	fields[2] := 'modBC';
+	fields[3] := 'vBC';
+	fields[4] := 'pICMS';
+	fields[5] := 'vICMS';
+	fields[6] := 'modBCST';
+	fields[7] := 'pMVAST';
+	fields[8] := 'pRedBCST';
+	fields[9] := 'vBCST';
+	fields[10] := 'pICMSST';
+	fields[11] := 'vICMSST';
+end;
+
+procedure CreateArrayXMLICMS10(var fields: array of String);
+begin
+	setLength(fields, 12);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CST_N12';
+	fields[2] := 'modBC_N13';
+	fields[3] := 'vBC_N15';
+	fields[4] := 'pICMS_N16';
+	fields[5] := 'vICMS_N17';
+	fields[6] := 'modBCST_N18';
+	fields[7] := 'pMVAST_N19';
+	fields[8] := 'pRedBCST_N20';
+	fields[9] := 'vBCST_N21';
+	fields[10] := 'pICMSST_N22';
+	fields[11] := 'vICMSST_N23';
+end;
+
+procedure CreateArrayFieldsICMS2051(var fields: array of String);
+begin
+	setLength(fields, 7);
+	fields[0] := 'orig';
+	fields[1] := 'CST';
+	fields[2] := 'modBC';
+	fields[3] := 'pRedBC';
+	fields[4] := 'vBC';
+	fields[5] := 'pICMS';
+	fields[6] := 'vICMS';
+end;
+
+procedure CreateArrayXMLICMS2051(var fields: array of String);
+begin
+	setLength(fields, 7);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CST_N12';
+	fields[2] := 'modBC_N13';
+	fields[3] := 'pRedBC_N14';
+	fields[4] := 'vBC_N15';
+	fields[5] := 'pICMS_N16';
+	fields[6] := 'vICMS_N17';
+end;
+
+procedure CreateArrayFieldsICMS30(var fields: array of String);
+begin
+	setLength(fields, 8);
+	fields[0] := 'orig';
+	fields[1] := 'CST';
+	fields[2] := 'modBCST';
+	fields[3] := 'pMVAST';
+	fields[4] := 'pRedBCST';
+	fields[5] := 'vBCST';
+	fields[6] := 'pICMSST';
+	fields[7] := 'vICMSST';
+end;
+
+procedure CreateArrayXMLICMS30(var fields: array of String);
+begin
+	setLength(fields, 8);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CST_N12';
+	fields[2] := 'modBCST_N18';
+	fields[3] := 'pMVAST_N19';
+	fields[4] := 'pRedBCST_N20';
+	fields[5] := 'vBCST_N21';
+	fields[6] := 'pICMSST_N22';
+	fields[7] := 'vICMSST_N23';	
+end;
+
+procedure CreateArrayFieldsICMS404150(var fields: array of String);
+begin
+	setLength(fields, 4);
+	fields[0] := 'orig';
+	fields[1] := 'CST';
+	fields[2] := 'vICMS';
+	fields[3] := 'motDesICMS';	
+end;
+
+procedure CreateArrayXMLICMS404150(var fields: array of String);
+begin
+	setLength(fields, 4);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CST_N12';
+	fields[2] := 'vICMS_N17';
+	fields[3] := 'motDesICMS_N28';	
+end;
+
+procedure CreateArrayFieldsICMS60(var fields: array of String);
+begin
+	setLength(fields, 4);
+	fields[0] := 'orig';
+	fields[1] := 'CST';
+	fields[2] := 'vBCSTRet';
+	fields[3] := 'vICMSSTRet';
+  fields[4] := 'pRedBCEfet';
+	fields[5] := 'vBCEfet';
+	fields[6] := 'pICMSEfet';
+	fields[7] := 'vICMSEfet';
+end;
+
+procedure CreateArrayXMLICMS60(var fields: array of String);
+begin
+	setLength(fields, 4);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CST_N12';
+	fields[2] := 'vBCSTRet_N26';
+	fields[3] := 'vICMSSTRet_N27';
+  fields[4] := 'pRedBCEfet_34';
+	fields[5] := 'vBCEfet_35';
+	fields[6] := 'pICMSEfet_36';
+	fields[7] := 'vICMSEfet_37';
+end;
+
+procedure CreateArrayFieldsICMS7090(var fields: array of String);
+begin
+	setLength(fields, 13);
+	fields[0] := 'orig';
+	fields[1] := 'CST';
+	fields[2] := 'modBC';
+	fields[3] := 'vBC';
+	fields[4] := 'pRedBC';
+	fields[5] := 'pICMS';
+	fields[6] := 'vICMS';
+	fields[7] := 'modBCST';
+	fields[8] := 'pMVAST';
+	fields[9] := 'pRedBCST';
+	fields[10] := 'vBCST';
+	fields[11] := 'pICMSST';
+	fields[12] := 'vICMSST';
+end;
+
+procedure CreateArrayXMLICMS7090(var fields: array of String);
+begin
+	setLength(fields, 13);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CST_N12';
+	fields[2] := 'modBC_N13';
+	fields[3] := 'vBC_N15';
+	fields[4] := 'pRedBC_N14';
+	fields[5] := 'pICMS_N16';
+	fields[6] := 'vICMS_N17';
+	fields[7] := 'modBCST_N18';
+	fields[8] := 'pMVAST_N19';
+	fields[9] := 'pRedBCST_N20';
+	fields[10] := 'vBCST_N21';
+	fields[11] := 'pICMSST_N22';
+	fields[12] := 'vICMSST_N23'	
+end;
+
+procedure CreateArrayFieldsICMSPart(var fields: array of String);
+begin
+	setLength(fields, 15);
+	fields[0] := 'orig';
+	fields[1] := 'CST';
+	fields[2] := 'modBC';
+	fields[3] := 'vBC';
+	fields[4] := 'pRedBC';
+	fields[5] := 'pICMS';
+	fields[6] := 'vICMS';
+	fields[7] := 'modBCST';
+	fields[8] := 'pMVAST';
+	fields[9] := 'pRedBCST';
+	fields[10] := 'vBCST';
+	fields[11] := 'pICMSST';
+	fields[12] := 'vICMSST';
+	fields[13] := 'UFST';
+	fields[14] := 'pBCOp';
+	
+end;
+
+procedure CreateArrayXMLICMSPart(var fields: array of String);
+begin
+	setLength(fields, 15);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CST_N12';
+	fields[2] := 'modBC_N13';
+	fields[3] := 'vBC_N15';
+	fields[4] := 'pRedBC_N14';
+	fields[5] := 'pICMS_N16';
+	fields[6] := 'vICMS_N17';
+	fields[7] := 'modBCST_N18';
+	fields[8] := 'pMVAST_N19';
+	fields[9] := 'pRedBCST_N20';
+	fields[10] := 'vBCST_N21';
+	fields[11] := 'pICMSST_N22';
+	fields[12] := 'vICMSST_N23'
+	fields[13] := 'UFST_N24';
+	fields[14] := 'pBCOp_N25';		
+end;
+
+procedure CreateArrayFieldsICMSRepasse(var fields: array of String);
+begin
+	setLength(fields, 6);
+	fields[0] := 'orig';
+	fields[1] := 'CST';
+	fields[2] := 'vBCSTRet';
+	fields[3] := 'vICMSSTRet';
+	fields[4] := 'vBCSTDest';
+	fields[5] := 'vICMSSTDest';	
+end;
+
+procedure CreateArrayXMLICMSRepasse(var fields: array of String);
+begin
+	setLength(fields, 6);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CST_N12';
+	fields[2] := 'vBCSTRet_N26';
+	fields[3] := 'vICMSSTRet_N27';
+	fields[4] := 'vBCSTDest_N31';
+	fields[5] := 'vICMSSTDest_N32';			
+end;
+
+procedure CreateArrayFieldsICMS101(var fields: array of String);
+begin
+	setLength(fields, 4);
+	fields[0] := 'orig';
+	fields[1] := 'CSOSN';
+	fields[2] := 'pCredSN';
+	fields[3] := 'vCredICMSSN';	
+end;
+
+procedure CreateArrayXMLICMS101(var fields: array of String);
+begin
+	setLength(fields, 4);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CSOSN_N12a';
+	fields[2] := 'pCredSN_N29';
+	fields[3] := 'vCredICMSSN_N30';				
+end;
+
+procedure CreateArrayFieldsICMS102(var fields: array of String);
+begin
+	setLength(fields, 2);
+	fields[0] := 'orig';
+	fields[1] := 'CSOSN';
+end;
+
+procedure CreateArrayXMLICMS102(var fields: array of String);
+begin
+	setLength(fields, 2);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CSOSN_N12a';
+end;
+
+procedure CreateArrayFieldsICMS201(var fields: array of String);
+begin
+	setLength(fields, 10);
+	fields[0] := 'orig';
+	fields[1] := 'CSOSN';
+	fields[2] := 'modBCST';
+	fields[3] := 'pMVAST';
+	fields[4] := 'pRedBCST';
+	fields[5] := 'vBCST';
+	fields[6] := 'pICMSST';
+	fields[7] := 'vICMSST';
+	fields[8] := 'pCredSN';
+	fields[9] := 'vCredICMSSN';
+end;
+
+procedure CreateArrayXMLICMS201(var fields: array of String);
+begin
+	setLength(fields, 10);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CSOSN_N12a';
+	fields[2] := 'modBCST_N18';
+	fields[3] := 'pMVAST_N19';
+	fields[4] := 'pRedBCST_N20';
+	fields[5] := 'vBCST_N21';
+	fields[6] := 'pICMSST_N22';
+	fields[7] := 'vICMSST_N23';
+	fields[8] := 'pCredSN_N29';
+	fields[9] := 'vCredICMSSN_N30';
+end;
+
+procedure CreateArrayFieldsICMS202(var fields: array of String);
+begin
+	setLength(fields, 8);
+	fields[0] := 'orig';
+	fields[1] := 'CSOSN';
+	fields[2] := 'modBCST';
+	fields[3] := 'pMVAST';
+	fields[4] := 'pRedBCST';
+	fields[5] := 'vBCST';
+	fields[6] := 'pICMSST';
+	fields[7] := 'vICMSST';
+end;
+
+procedure CreateArrayXMLICMS202(var fields: array of String);
+begin
+	setLength(fields, 8);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CSOSN_N12a';
+	fields[2] := 'modBCST_N18';
+	fields[3] := 'pMVAST_N19';
+	fields[4] := 'pRedBCST_N20';
+	fields[5] := 'vBCST_N21';
+	fields[6] := 'pICMSST_N22';
+	fields[7] := 'vICMSST_N23';
+end;
+
+procedure CreateArrayFieldsICMS500(var fields: array of String);
+begin
+	setLength(fields, 4);
+	fields[0] := 'orig';
+	fields[1] := 'CSOSN';
+	fields[2] := 'vBCSTRet';
+	fields[3] := 'vICMSSTRet';
+	fields[4] := 'pRedBCEfet';
+	fields[5] := 'vBCEfet';
+	fields[6] := 'pICMSEfet';
+	fields[7] := 'vICMSEfet';
+end;
+
+procedure CreateArrayXMLICMS500(var fields: array of String);
+begin
+	setLength(fields, 4);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CSOSN_N12a';
+	fields[2] := 'vBCSTRet_N26';
+	fields[3] := 'vICMSSTRet_N27';
+	fields[4] := 'pRedBCEfet_34';
+	fields[5] := 'vBCEfet_35';
+	fields[6] := 'pICMSEfet_36';
+	fields[7] := 'vICMSEfet_37';
+end;
+
+procedure CreateArrayFieldsICMS900(var fields: array of String);
+begin
+	setLength(fields, 15);
+	fields[0] := 'orig';
+	fields[1] := 'CSOSN';
+	fields[2] := 'modBC';
+	fields[3] := 'vBC';
+	fields[4] := 'pRedBC';
+	fields[5] := 'pICMS';
+	fields[6] := 'vICMS';
+	fields[7] := 'modBCST';
+	fields[8] := 'pMVAST';
+	fields[9] := 'pRedBCST';
+	fields[10] := 'vBCST';
+	fields[11] := 'pICMSST';
+	fields[12] := 'vICMSST';
+	fields[13] := 'pCredSN';
+	fields[14] := 'vCredICMSSN';	
+end;
+
+procedure CreateArrayXMLICMS900(var fields: array of String);
+begin
+	setLength(fields, 15);
+	fields[0] := 'orig_N11';
+	fields[1] := 'CSOSN_N12a';
+	fields[2] := 'modBC_N13';
+	fields[3] := 'vBC_N15';
+	fields[4] := 'pRedBC_N14';
+	fields[5] := 'pICMS_N16';
+	fields[6] := 'vICMS_N17';
+	fields[7] := 'modBCST_N18';
+	fields[8] := 'pMVAST_N19';
+	fields[9] := 'pRedBCST_N20';
+	fields[10] := 'vBCST_N21';
+	fields[11] := 'pICMSST_N22';
+	fields[12] := 'vICMSST_N23';
+	fields[13] := 'pCredSN_N29';
+	fields[14] := 'vCredICMSSN_N30';	
+end;
+
+procedure CreateArrayXMLIPI(var fields: array of String);
+begin
+	setLength(fields, 11);	
+	fields[0] := 'clEnq_O02';
+	fields[1] := 'CNPJProd_O03';
+	fields[2] := 'cSelo_O04';
+	fields[3] := 'qSelo_O05';
+	fields[4] := 'cEnq_O06';
+	fields[5] := 'CST_O09';
+	fields[6] := 'vBC_O10';
+	fields[7] := 'pIPI_O13';
+	fields[8] := 'qUnid_O11';
+	fields[9] := 'vUnid_O12';
+	fields[10] := 'vIPI_O14';
+end;
+
+procedure CreateArrayFieldsIPI(var fields: array of String);
+begin
+	setLength(fields, 11);	
+	fields[0] := 'clEnq';
+	fields[1] := 'CNPJProd';
+	fields[2] := 'cSelo';
+	fields[3] := 'qSelo';
+	fields[4] := 'cEnq';
+	fields[5] := 'CST';
+	fields[6] := 'vBC';
+	fields[7] := 'pIPI';
+	fields[8] := 'qUnid';
+	fields[9] := 'vUnid';
+	fields[10] := 'vIPI';
+end;
+
+procedure CreateArrayXMLPIS(var fields: array of String);
+begin
+	setLength(fields, 7);	
+	fields[0] := 'CST_Q06';
+	fields[1] := 'vBC_Q07';
+	fields[2] := 'pPIS_Q08';
+	fields[3] := 'vPIS_Q09';
+	fields[4] := 'qBCProd_Q10';
+	fields[5] := 'vAliqProd_Q11';
+	fields[6] := 'CST_Q02';	
+end;
+
+procedure CreateArrayFieldsPIS(var fields: array of String);
+begin
+	setLength(fields, 7);	
+	fields[0] := 'CST';
+	fields[1] := 'vBC';
+	fields[2] := 'pPIS';
+	fields[3] := 'vPIS';
+	fields[4] := 'qBCProd';
+	fields[5] := 'vAliqProd';
+	fields[6] := 'CST';	
+end;
+
+procedure CreateArrayXMLPISNT(var fields: array of String);
+begin
+	setLength(fields, 1);	
+	fields[0] := 'CST_Q02';
+end;
+
+procedure CreateArrayFieldsPISNT(var fields: array of String);
+begin
+	setLength(fields, 1);	
+	fields[0] := 'CST';
+end;
+
+procedure CreateArrayXMLCOFINS(var fields: array of String);
+begin
+	setLength(fields, 6);
+	fields[0] := 'CST_S06';
+	fields[1] := 'vBC_S07';
+	fields[2] := 'pCOFINS_S08';
+	fields[3] := 'vCOFINS_S11';
+	fields[4] := 'qBCProd_S09';
+	fields[5] := 'vAliqProd_S10';
+end;
+
+procedure CreateArrayFieldsCOFINS(var fields: array of String);
+begin
+	setLength(fields, 6);
+	fields[0] := 'CST';
+	fields[1] := 'vBC';
+	fields[2] := 'pCOFINS';
+	fields[3] := 'vCOFINS';
+	fields[4] := 'qBCProd';
+	fields[5] := 'vAliqProd';
+end;
+
+procedure CreateArrayXMLCOFINSNT(var fields: array of String);
+begin
+	setLength(fields, 1);
+	fields[0] := 'CST_S06';	
+end;
+
+procedure CreateArrayFieldsCOFINSNT(var fields: array of String);
+begin
+	setLength(fields, 1);
+	fields[0] := 'CST';	
+end;
+
+procedure CreateICMSIpiDataSet;
+var
+	_DS : TSpdXSDClientDataSet;
+	_xPath, _xPathICMS, _xPathPIS, _xPathCOFINS, _node, _Valor, _nItem: String;
+	_possuiICMS: boolean;
+	j: integer;
+	_fieldICMS: array of string;
+	_xmlICMS: array of string;
+	
+	_xmlIPI: array of string;
+	_fieldIPI: array of string;
+	
+	_xmlPIS: array of string;
+	_fieldPIS: array of string;
+	
+	_xmlCOFINS: array of string;
+	_fieldCOFINS: array of string;
+	
+begin
+	//Update Det DataSet	
+	_DS := FindDataSet('det');		
+	_DS.First;
+	While Not _DS.Eof Do
+	begin
+		_nItem := _DS.FieldByName('nItem_H02').asString;		
+		OutputDebugString('Det NItem: ' + _nItem);
+		_DS.Edit;
+		_possuiICMS := False;
+		_xPathICMS := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="ICMS"]';
+		if XmlSelectNodeValue(Input, _xPathICMS, _Valor) then
+		begin
+			//Update ICMS DataSet (Partilha)	
+			if not _possuiICMS then
+			begin 
+				_xPath := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="ICMS"]//*[local-name()="ICMSPart"]';			
+				if XmlSelectNodeValue(Input, _xPath, _Valor) then
+				begin
+				  _node := XmlSelect(Input, _xPathICMS);
+				  _possuiICMS := True;	 
+				  CreateArrayFieldsICMSPart(_fieldICMS);
+				  CreateArrayXMLICMSPart(_xmlICMS);	
+				  for j := 0 to Length(_fieldICMS)-1 do
+				  begin
+					  _DS.FieldByName(_xmlICMS[j]).asString := GetValueTag(_fieldICMS[j],_node);
+					  OutputDebugString('ICMS ' + _fieldICMS[j] + ': ' + _Valor);
+				  end;
+				end;
+			end;
+			
+			//Update ICMS DataSet (Repasse)
+			if not _possuiICMS then
+			begin
+				_xPath := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="ICMS"]//*[local-name()="ICMSST"]';			
+				if XmlSelectNodeValue(Input, _xPath, _Valor) then
+				begin
+				  _node := XmlSelect(Input, _xPathICMS);	
+				  _possuiICMS := True;
+				  CreateArrayFieldsICMSRepasse(_fieldICMS);
+				  CreateArrayXMLICMSRepasse(_xmlICMS);	
+				  for j := 0 to Length(_fieldICMS)-1 do
+				  begin
+					  _DS.FieldByName(_xmlICMS[j]).asString := GetValueTag(_fieldICMS[j],_node);
+					  OutputDebugString('ICMS ' + _fieldICMS[j] + ': ' + _Valor);
+				  end;
+				end;
+			end;
+		
+			//Update ICMS DataSet (CST)
+			if not _possuiICMS then
+			begin
+				_xPath := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="ICMS"]//*[local-name()="CST"]';			
+				if XmlSelectNodeValue(Input, _xPath, _Valor) then
+				begin
+				  _node := XmlSelect(Input, _xPathICMS);
+				  _possuiICMS := True;
+				  case AnsiIndexText(_Valor, ['00','10','20','30','40','41','50','51','60','70','90']) of
+						0: 
+						begin
+							CreateArrayFieldsICMS00(_fieldICMS);
+							CreateArrayXMLICMS00(_xmlICMS);
+						end;
+						1: 
+						begin
+							CreateArrayFieldsICMS10(_fieldICMS);
+							CreateArrayXMLICMS10(_xmlICMS);
+						end;
+						2,7: 
+						begin
+							CreateArrayFieldsICMS2051(_fieldICMS);
+							CreateArrayXMLICMS2051(_xmlICMS);
+						end;
+						3: 
+						begin
+							CreateArrayFieldsICMS30(_fieldICMS);
+							CreateArrayXMLICMS30(_xmlICMS);
+						end;
+						4,5,6: 
+						begin
+							CreateArrayFieldsICMS404150(_fieldICMS);
+							CreateArrayXMLICMS404150(_xmlICMS);
+						end;
+						8: 
+						begin
+							CreateArrayFieldsICMS60(_fieldICMS);
+							CreateArrayXMLICMS60(_xmlICMS);
+						end;
+						9,10: 
+						begin
+							CreateArrayFieldsICMS7090(_fieldICMS);
+							CreateArrayXMLICMS7090(_xmlICMS);
+						end;
+				  end;
+				  for j := 0 to Length(_fieldICMS)-1 do
+				  begin					
+					  _DS.FieldByName(_xmlICMS[j]).asString := GetValueTag(_fieldICMS[j],_node);
+					  OutputDebugString('ICMS ' + _fieldICMS[j] + ': ' + _Valor);
+				  end;
+				end;
+			end;
+
+			//Update ICMS DataSet (CSOSN)
+			if not _possuiICMS then
+			begin
+				_xPath := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="ICMS"]//*[local-name()="CSOSN"]';			
+				if XmlSelectNodeValue(Input, _xPath, _Valor) then
+				begin
+				  _node := XmlSelect(Input, _xPathICMS);	
+				  _possuiICMS := True;
+				  case AnsiIndexText(_Valor, ['101','102','103','300','400','201','202','203','500','900']) of
+						0: 
+						begin
+							CreateArrayFieldsICMS101(_fieldICMS);
+							CreateArrayXMLICMS101(_xmlICMS);
+						end;
+						1,2,3,4: 
+						begin
+							CreateArrayFieldsICMS102(_fieldICMS);
+							CreateArrayXMLICMS102(_xmlICMS);
+						end;
+						5: 
+						begin
+							CreateArrayFieldsICMS201(_fieldICMS);
+							CreateArrayXMLICMS201(_xmlICMS);
+						end;
+						6,7: 
+						begin
+							CreateArrayFieldsICMS202(_fieldICMS);
+							CreateArrayXMLICMS202(_xmlICMS);
+						end;
+						8: 
+						begin
+							CreateArrayFieldsICMS500(_fieldICMS);
+							CreateArrayXMLICMS500(_xmlICMS);
+						end;
+						9: 
+						begin
+							CreateArrayFieldsICMS900(_fieldICMS);
+							CreateArrayXMLICMS900(_xmlICMS);
+						end;
+				  end;		  
+				  for j := 0 to Length(_fieldICMS)-1 do
+				  begin					
+					  _DS.FieldByName(_xmlICMS[j]).asString := GetValueTag(_fieldICMS[j],_node);
+					  OutputDebugString('ICMS ' + _fieldICMS[j] + ': ' + _Valor);
+				  end;
+				end;
+			end;
+		end;
+
+		//Update IPI DataSet
+		if _possuiICMS then
+		begin
+			_xPath := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="IPI"]';			
+			if XmlSelectNodeValue(Input, _xPath, _Valor) then
+			begin
+			  _node := XmlSelect(Input, _xPath);	
+			  CreateArrayXMLIPI(_xmlIPI);
+			  CreateArrayFieldsIPI(_fieldIPI);	
+			  for j := 0 to Length(_fieldIPI)-1 do
+			  begin					
+				    _DS.FieldByName(_xmlIPI[j]).asString := GetValueTag(_fieldIPI[j],_node);
+					OutputDebugString('IPI ' + _fieldIPI[j] + ': ' + _Valor);
+			  end;
+			end;
+		end;
+		
+		//Update PIS DataSet
+		_xPath := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="PIS"]//*[local-name()="CST"]';
+		if XmlSelectNodeValue(Input, _xPath, _Valor) then
+		begin
+		  _xPathPIS := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="PIS"]';	
+		  _node := XmlSelect(Input, _xPathPIS);
+		  case AnsiIndexText(_Valor, ['04','06','07','08','09']) of
+				0..4: 
+				begin
+					CreateArrayXMLPISNT(_xmlPIS);
+					CreateArrayFieldsPISNT(_fieldPIS);
+				end
+				else
+				begin
+					CreateArrayXMLPIS(_xmlPIS);
+					CreateArrayFieldsPIS(_fieldPIS);
+				end;
+		  end;	
+		  for j := 0 to Length(_fieldPIS)-1 do
+		  begin					
+				_DS.FieldByName(_xmlPIS[j]).asString := GetValueTag(_fieldPIS[j],_node);			
+				OutputDebugString('PIS ' + _fieldPIS[j] + ': ' + _Valor);
+		  end;
+		end;
+		
+		//Update COFINS DataSet
+		_xPath := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="COFINS"]//*[local-name()="CST"]';			
+		if XmlSelectNodeValue(Input, _xPath, _Valor) then
+		begin
+		  _xPathCOFINS := '//*[local-name()="det" and @nItem="' + _nItem + '"]//*[local-name()="COFINS"]';	
+		  _node := XmlSelect(Input, _xPathCOFINS);
+		  case AnsiIndexText(_Valor, ['04','06','07','08','09']) of
+				0..4: 
+				begin
+					CreateArrayXMLCOFINSNT(_xmlCOFINS);
+					CreateArrayFieldsCOFINSNT(_fieldCOFINS);
+				end
+				else
+				begin
+					CreateArrayXMLCOFINS(_xmlCOFINS);
+					CreateArrayFieldsCOFINS(_fieldCOFINS);
+				end;
+		  end;
+		  for j := 0 to Length(_fieldCOFINS)-1 do
+		  begin					
+				_DS.FieldByName(_xmlCOFINS[j]).asString := GetValueTag(_fieldCOFINS[j],_node);			
+				OutputDebugString('COFINS ' + _fieldCOFINS[j] + ': ' + _Valor);
+		  end;
+		end;  
+		_DS.Post;
+		_DS.Next;
+	end;	
+end;

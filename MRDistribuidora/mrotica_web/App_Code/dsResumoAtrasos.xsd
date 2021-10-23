@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsResumoAtrasos" targetNamespace="http://tempuri.org/dsResumoAtrasos.xsd" xmlns:mstns="http://tempuri.org/dsResumoAtrasos.xsd" xmlns="http://tempuri.org/dsResumoAtrasos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="winoticaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="winoticaConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.winoticaConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="winoticaConnectionString (Web.config)" DbObjectName="winotica.dbo.Titulos_Atraso_resumo" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select resumo.nome_cliente,resumo.titulos_atraso_15 as ate15, 
+resumo.titulos_atraso_30 as ate30,resumo.titulos_atraso_60 as ate60, 
+resumo.titulos_atraso_90 as ate90, 
+resumo.titulos_atraso_mais_90 as acima90, 
+        (resumo.titulos_a_vencer + resumo.cheques_a_vencer) as a_vencer 
+from        titulos_atraso_resumo() as Resumo 
+        where (titulos_atraso_15 &lt;&gt; 0) 
+        or titulos_atraso_30 &lt;&gt; 0 
+        or titulos_atraso_60 &lt;&gt; 0 
+        or titulos_atraso_90 &lt;&gt; 0 
+        or titulos_atraso_mais_90 &lt;&gt; 0 
+        or (resumo.titulos_a_vencer + resumo.cheques_a_vencer) &lt;&gt; 0 
+        order by titulos_atraso_mais_90 desc,titulos_atraso_90 desc,titulos_atraso_60 desc, titulos_atraso_30 desc,titulos_atraso_15 desc</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nome_cliente" DataSetColumn="nome_cliente" />
+              <Mapping SourceColumn="ate15" DataSetColumn="ate15" />
+              <Mapping SourceColumn="ate30" DataSetColumn="ate30" />
+              <Mapping SourceColumn="ate60" DataSetColumn="ate60" />
+              <Mapping SourceColumn="ate90" DataSetColumn="ate90" />
+              <Mapping SourceColumn="acima90" DataSetColumn="acima90" />
+              <Mapping SourceColumn="a_vencer" DataSetColumn="a_vencer" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsResumoAtrasos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsResumoAtrasos" msprop:Generator_UserDSName="dsResumoAtrasos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="atrasos" msprop:Generator_TableClassName="atrasosDataTable" msprop:Generator_TableVarName="tableatrasos" msprop:Generator_RowChangedName="atrasosRowChanged" msprop:Generator_TablePropName="atrasos" msprop:Generator_RowDeletingName="atrasosRowDeleting" msprop:Generator_RowChangingName="atrasosRowChanging" msprop:Generator_RowEvHandlerName="atrasosRowChangeEventHandler" msprop:Generator_RowDeletedName="atrasosRowDeleted" msprop:Generator_RowClassName="atrasosRow" msprop:Generator_UserTableName="atrasos" msprop:Generator_RowEvArgName="atrasosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nome_cliente" msprop:Generator_ColumnVarNameInTable="columnNome_cliente" msprop:Generator_ColumnPropNameInRow="Nome_cliente" msprop:Generator_ColumnPropNameInTable="Nome_clienteColumn" msprop:Generator_UserColumnName="Nome_cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="ate15" msprop:Generator_ColumnVarNameInTable="columnate15" msprop:Generator_ColumnPropNameInRow="ate15" msprop:Generator_ColumnPropNameInTable="ate15Column" msprop:Generator_UserColumnName="ate15" type="xs:double" minOccurs="0" />
+              <xs:element name="ate30" msprop:Generator_ColumnVarNameInTable="columnate30" msprop:Generator_ColumnPropNameInRow="ate30" msprop:Generator_ColumnPropNameInTable="ate30Column" msprop:Generator_UserColumnName="ate30" type="xs:double" minOccurs="0" />
+              <xs:element name="ate60" msprop:Generator_ColumnVarNameInTable="columnate60" msprop:Generator_ColumnPropNameInRow="ate60" msprop:Generator_ColumnPropNameInTable="ate60Column" msprop:Generator_UserColumnName="ate60" type="xs:double" minOccurs="0" />
+              <xs:element name="acima90" msprop:Generator_ColumnVarNameInTable="columnacima90" msprop:Generator_ColumnPropNameInRow="acima90" msprop:Generator_ColumnPropNameInTable="acima90Column" msprop:Generator_UserColumnName="acima90" type="xs:double" minOccurs="0" />
+              <xs:element name="a_vencer" msprop:Generator_ColumnVarNameInTable="columna_vencer" msprop:Generator_ColumnPropNameInRow="a_vencer" msprop:Generator_ColumnPropNameInTable="a_vencerColumn" msprop:Generator_UserColumnName="a_vencer" type="xs:double" minOccurs="0" />
+              <xs:element name="ate90" msprop:Generator_ColumnVarNameInTable="columnate90" msprop:Generator_ColumnPropNameInRow="ate90" msprop:Generator_ColumnPropNameInTable="ate90Column" msprop:Generator_UserColumnName="ate90" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nome_cliente" msprop:Generator_ColumnVarNameInTable="columnnome_cliente" msprop:Generator_ColumnPropNameInRow="nome_cliente" msprop:Generator_ColumnPropNameInTable="nome_clienteColumn" msprop:Generator_UserColumnName="nome_cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ate15" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnate15" msprop:Generator_ColumnPropNameInRow="ate15" msprop:Generator_ColumnPropNameInTable="ate15Column" msprop:Generator_UserColumnName="ate15" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ate30" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnate30" msprop:Generator_ColumnPropNameInRow="ate30" msprop:Generator_ColumnPropNameInTable="ate30Column" msprop:Generator_UserColumnName="ate30" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ate60" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnate60" msprop:Generator_ColumnPropNameInRow="ate60" msprop:Generator_ColumnPropNameInTable="ate60Column" msprop:Generator_UserColumnName="ate60" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ate90" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnate90" msprop:Generator_ColumnPropNameInRow="ate90" msprop:Generator_ColumnPropNameInTable="ate90Column" msprop:Generator_UserColumnName="ate90" type="xs:decimal" minOccurs="0" />
+              <xs:element name="acima90" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnacima90" msprop:Generator_ColumnPropNameInRow="acima90" msprop:Generator_ColumnPropNameInTable="acima90Column" msprop:Generator_UserColumnName="acima90" type="xs:decimal" minOccurs="0" />
+              <xs:element name="a_vencer" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columna_vencer" msprop:Generator_ColumnPropNameInRow="a_vencer" msprop:Generator_ColumnPropNameInTable="a_vencerColumn" msprop:Generator_UserColumnName="a_vencer" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

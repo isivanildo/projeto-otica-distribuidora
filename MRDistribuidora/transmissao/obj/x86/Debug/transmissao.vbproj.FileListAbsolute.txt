@@ -1,0 +1,36 @@
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\config.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\Transmissão.exe.config
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\Transmissão.exe
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\Transmissão.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\Transmissão.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\winotica_util.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\winotica_util.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\winotica_util.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.vbprojResolveAssemblyReference.cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.frmConfiguracao.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.frmMain.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.frmPedidoData.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.Resources.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.vbproj.GenerateResource.Cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\Transmissão.exe
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\Transmissão.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\Transmissão.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\config.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\Transmissão.exe.config
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\Transmissão.exe
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\Transmissão.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\Transmissão.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\winotica_util.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\winotica_util.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\bin\Debug\winotica_util.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.frmConfiguracao.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.frmMain.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.frmPedidoData.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.Resources.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.vbproj.GenerateResource.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.vbproj.CoreCompileInputs.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.vbproj.CopyComplete
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\Transmissão.exe
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\Transmissão.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\Transmissão.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\transmissao\obj\x86\Debug\transmissao.vbprojResolveAssemblyReference.cache

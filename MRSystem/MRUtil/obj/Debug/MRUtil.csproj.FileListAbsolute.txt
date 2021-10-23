@@ -1,0 +1,12 @@
+C:\MRSystem\MRSystem\MRUtil\bin\Debug\MRUtil.dll.config
+C:\MRSystem\MRSystem\MRUtil\bin\Debug\MRUtil.dll
+C:\MRSystem\MRSystem\MRUtil\bin\Debug\MRUtil.pdb
+C:\MRSystem\MRSystem\MRUtil\obj\Debug\MRUtil.csprojAssemblyReference.cache
+C:\MRSystem\MRSystem\MRUtil\obj\Debug\MRUtil.Formulario.FrmAviso.resources
+C:\MRSystem\MRSystem\MRUtil\obj\Debug\MRUtil.Formulario.frmSenha.resources
+C:\MRSystem\MRSystem\MRUtil\obj\Debug\MRUtil.Properties.Resources.resources
+C:\MRSystem\MRSystem\MRUtil\obj\Debug\MRUtil.csproj.GenerateResource.cache
+C:\MRSystem\MRSystem\MRUtil\obj\Debug\MRUtil.dll.licenses
+C:\MRSystem\MRSystem\MRUtil\obj\Debug\MRUtil.csproj.CoreCompileInputs.cache
+C:\MRSystem\MRSystem\MRUtil\obj\Debug\MRUtil.dll
+C:\MRSystem\MRSystem\MRUtil\obj\Debug\MRUtil.pdb

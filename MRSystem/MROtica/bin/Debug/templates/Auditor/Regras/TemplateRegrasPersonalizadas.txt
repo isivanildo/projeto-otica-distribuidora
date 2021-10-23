@@ -1,0 +1,100 @@
+{ 
+  Variáveis externas disponíveis: 
+    Output: string; 
+    Datasets: TspdXSDDataset;
+}	
+{$I Tipos.txt}  
+Var	
+	_DS,_DSAux, _DSAux2: TDataSet;
+	_TotParcial, _TotParcial2 : Extended;	
+	_TotICMS51 : Extended;
+	_Valida : Boolean;
+	_aux,_aux2,_regrasExtras : string;
+	_auxint, _numnotas, i, j, k, l : integer;
+	_auxdouble : Double;
+	_array : Array of String;
+	_XML,_nota, _validacao : string;
+	_decodedChave : TspdDecodeChaveNFe;
+	_data : string;
+	_Rejeicoes, _AcumladorRejeicoes, _Handles, _output : TstringList;	
+
+{$I Funcoes.txt}
+
+{$I UpdateDETDatasets.txt}
+
+//funções importadas do BD
+%s
+
+{$I CST_CFOP\Regras.txt}	
+
+{$I CEP\ExecutaRegras.txt}
+
+{$I ICMSUFDest\Regras.txt}
+
+{$I ..\Esquemas\ExpConsts.txt}
+
+{$I ..\Esquemas\Funcoes.txt}
+
+{$I ..\Esquemas\DefineMensagem.txt}	
+
+begin
+	_regrasExtras := '';
+	_Rejeicoes := TstringList.Create;
+	_AcumladorRejeicoes := TstringList.Create;
+	_Handles := TstringList.Create;
+	_output := TstringList.Create;
+	try
+		_xml := input;
+		_numnotas :=  XmlSelectCountNode(_Xml, '//*[local-name()="NFe"]');
+		if _numnotas > 0 then
+		begin
+			for i := 0 to _numnotas-1 do	
+			begin
+				_nota := XmlSelectItemIndexNode(_xml, '//*[local-name()="NFe"]',i); 				 
+				Datasets.LoadFromXMLContent(_nota);							
+				_validacao := ValidarEsquemaXML(_nota,'http://www.portalfiscal.inf.br/nfe',Datasets.XsdFile);
+				if Params.values['versaomanual'] = 'vm50' then
+					_data := '01/01/2014'
+				else
+					_data := FormatarData(FieldValue('NFe','dhEmi_B09').AsString);
+				if trim(_validacao) = '' then
+				begin				
+					// os regras do cliente serão inseridas aqui
+					%s	
+					
+					if trim(Params.Values['ValidarAssinatura']) <> 'false' then
+					begin
+						if not IsValidSignature(_nota) then
+						begin
+							_Rejeicoes.add('Assinatura inválida');
+						end;
+					end;
+					_valida := true;
+					if not(PosStr('rejeição',LowerCase(_Rejeicoes.Text)) <= 0) then				
+						_Valida := false;
+					if not(PosStr('Assinatura inválida',_Rejeicoes.Text) <= 0) then
+						_valida := false;
+						
+					if (Trim(_Rejeicoes.text) = '') or (_Valida) then
+					begin
+						_Rejeicoes.Add('XML Válido');
+					end;
+				end 
+				else
+				begin				
+					_Rejeicoes.add(TraduzirMensagem(_validacao));
+				end;
+				_output.add(Trim(_Rejeicoes.Text) + '&spdHandleDlmt;' +'&spdDlmt;');
+				_Rejeicoes.clear;
+			end;			
+			Output := _output.text;
+		end
+		else
+			Output := 'Falha de Esquema: Não existem notas validas neste xml, para realizar a  validação, a nota deve conter o elemento NFe.';
+    finally
+		_Rejeicoes.Free;
+    _AcumladorRejeicoes.Free;
+		_Handles.Free;
+		_output.free;
+	end;
+end.

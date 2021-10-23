@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="VB" CodeBehind="ServicoWeb.asmx.vb" Class="winoticawebservice.ServicoWeb" %>

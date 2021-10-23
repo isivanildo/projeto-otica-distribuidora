@@ -1,0 +1,9 @@
+C:\MRSystem\Recursos\Referencias\Boleto2.Net\Boleto2Net.dll
+C:\MRSystem\Recursos\Referencias\Boleto2.Net\Boleto2Net.pdb
+C:\MRSystem\MRDistribuidora\Boleto\Boleto\obj\Debug\Boleto.csprojAssemblyReference.cache
+C:\MRSystem\MRDistribuidora\Boleto\Boleto\obj\Debug\Boleto2Net.Html.resources
+C:\MRSystem\MRDistribuidora\Boleto\Boleto\obj\Debug\Boleto.csproj.GenerateResource.cache
+C:\MRSystem\MRDistribuidora\Boleto\Boleto\obj\Debug\Boleto.csproj.CoreCompileInputs.cache
+C:\MRSystem\MRDistribuidora\Boleto\Boleto\obj\Debug\Boleto.csproj.CopyComplete
+C:\MRSystem\MRDistribuidora\Boleto\Boleto\obj\Debug\Boleto2Net.dll
+C:\MRSystem\MRDistribuidora\Boleto\Boleto\obj\Debug\Boleto2Net.pdb

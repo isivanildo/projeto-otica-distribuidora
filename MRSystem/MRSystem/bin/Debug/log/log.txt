@@ -1,0 +1,16 @@
+Data e hora do log: 18/07/2019 22:40:29
+
+Devart.Data.PostgreSql.PgSqlException (0x80004005): password authentication failed for user "postgres"
+   em Devart.Data.PostgreSql.a.a(PgSqlConnection A_0)
+   em Devart.Data.PostgreSql.a..ctor(g A_0, PgSqlConnection A_1)
+   em Devart.Data.PostgreSql.i.a(DbConnectionOptions A_0, Object A_1, DbConnectionBase A_2)
+   em Devart.Common.DbConnectionFactory.a(DbConnectionPool A_0, DbConnectionOptions A_1, DbConnectionBase A_2)
+   em Devart.Common.DbConnectionPool.a(DbConnectionBase A_0)
+   em Devart.Common.DbConnectionPool.GetObject(DbConnectionBase owningConnection)
+   em Devart.Common.DbConnectionFactory.b(DbConnectionBase A_0)
+   em Devart.Common.DbConnectionClosed.Open(DbConnectionBase outerConnection)
+   em Devart.Common.DbConnectionBase.Open()
+   em Devart.Data.PostgreSql.PgSqlConnection.Open()
+   em MRSystem.classes.Conexao.AbreConexao() na C:\MRSystem\MRSystem\MRSystem\classes\Conexao.cs:linha 34
+====================================================================================
+

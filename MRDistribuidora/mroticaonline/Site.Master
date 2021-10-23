@@ -1,0 +1,73 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="mroticaonline.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/estilo.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<script language="javascript" type="text/javascript" src="Scripts/funcoes.js">
+</script>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    mrotica ONLINE
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Cadastro">
+                            <asp:MenuItem NavigateUrl="~/Clientes.aspx" Text="Clientes" Value="Clientes">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Fornecedor" Value="Fornecedor"></asp:MenuItem>
+                            <asp:MenuItem Text="Usuários" Value="Usuários"></asp:MenuItem>
+                            <asp:MenuItem Text="Perfil" Value="Perfil"></asp:MenuItem>
+                            <asp:MenuItem Text="Lentes e Blocos" Value="Lentes e Blocos"></asp:MenuItem>
+                            <asp:MenuItem Text="Tabela de Lentes" Value="Tabela de Lentes"></asp:MenuItem>
+                            <asp:MenuItem Text="Serviços" Value="Serviços"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Gerencial"/>
+                        <asp:MenuItem Text="Balcão" Value="Balcão">
+                            <asp:MenuItem Text="Andamentos OS" Value="Andamentos OS"></asp:MenuItem>
+                            <asp:MenuItem Text="Aviso OS" Value="Aviso OS"></asp:MenuItem>
+                            <asp:MenuItem Text="Saldos" Value="Saldos"></asp:MenuItem>
+                            <asp:MenuItem Text="Saldos Óticas" Value="Saldos Óticas"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Estoque" Value="Estoque"></asp:MenuItem>
+                        <asp:MenuItem Text="Caixa" Value="Caixa"></asp:MenuItem>
+                        <asp:MenuItem Text="Utilitários" Value="Utilitários"></asp:MenuItem>
+                        <asp:MenuItem Text="Financeiro" Value="Financeiro"></asp:MenuItem>
+                        <asp:MenuItem Text="Comercial" Value="Comercial"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

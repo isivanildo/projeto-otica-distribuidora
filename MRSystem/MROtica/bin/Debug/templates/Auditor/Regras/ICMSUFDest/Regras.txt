@@ -1,0 +1,44 @@
+function ValidarCalcICMSUFDest : string;
+var	
+	_ResultadoValidacao : TStringList;	
+	_DSItem : TDataSet;    
+begin	
+	_ResultadoValidacao := TStringList.Create;	
+	try		
+		_TotParcial := 0;
+		_DSItem := FindDataSet('det');
+		_DSItem.First;
+
+		while not _DSItem.Eof do          
+		begin	     	
+			if (_DSItem.FieldByName('vBCUFDest_NA03').AsString <> '') then   
+		     begin				
+		     	if (StrToFloat(_DSItem.FieldByName('pICMSUFDest_NA07').AsString) - 
+		     		StrToFloat(_DSItem.FieldByName('pICMSInter_NA09').AsString)) <>
+		     		StrToFloat(_DSItem.FieldByName('pICMSInterPart_NA11').AsString) then
+		     	begin								
+			     	AdicionarAlertaICMS(_ResultadoValidacao,'Valor do diferencial da alíquota ou percentual do ICMS relativo ao Fundo de Combate à Pobreza (FCP) na UF de destino incorreto.',
+			     			_DSItem.FieldByName('nItem_H02').AsString);			 		
+		     	end
+		     	else
+		     	begin								
+					_TotParcial := StrToFloat(_DSItem.FieldByName('vBCUFDest_NA03').AsString)  * 
+					StrToFloat('0.' + Copy(_DSItem.FieldByName('pICMSInterPart_NA11').AsString,1,pos('.',_DSItem.FieldByName('pICMSInterPart_NA11').AsString) - 1));
+		     			
+					
+		     		if (StrToFloat(_DSItem.FieldByName('vICMSUFDest_NA15').AsString)  <> (_TotParcial * 0.40))  or 
+							(StrToFloat(_DSItem.FieldByName('vICMSUFRemet_NA17').AsString) <> (_TotParcial * 0.60)) then    			
+					begin
+						AdicionarAlertaICMS(_ResultadoValidacao,'O cálculo da partilha do ICMS incorreto.',_DSItem.FieldByName('nItem_H02').AsString);
+			 										
+					end;
+		     	end;
+		 		
+		     end;
+			_DSItem.Next;
+		end;
+		Result := trim(_ResultadoValidacao.Text);
+	finally		
+		_ResultadoValidacao.Free;
+	end;	
+end;

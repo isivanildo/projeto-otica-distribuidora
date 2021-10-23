@@ -1,0 +1,63 @@
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\config.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\Registro_producao.exe
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\Registro_producao.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\Registro_producao.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\winotica_util.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\winotica_util.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\winotica_util.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\registro_producao.vbprojResolveAssemblyReference.cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAndamentos.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAndamentosOSOtica.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAviso.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmContTratamentos.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmExpedicao.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmMain.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmRpt.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmSaidaExtra.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmSolTrocaProd.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmTrocaBase.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.Resources.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmRetificacao.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAndamentosOS.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAvisoOS.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.rptAndamentos.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.rptOS.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\registro_producao.vbproj.GenerateResource.Cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.exe.licenses
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.exe
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAndamentos.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAndamentosOSOtica.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAviso.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmContTratamentos.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmExpedicao.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmMain.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmRpt.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmSaidaExtra.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmSolTrocaProd.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmTrocaBase.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.Resources.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmRetificacao.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAndamentosOS.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.frmAvisoOS.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.rptAndamentos.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.rptOS.resources
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\registro_producao.vbproj.GenerateResource.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.exe.licenses
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\registro_producao.vbproj.CoreCompileInputs.cache
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\config.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\Registro_producao.exe
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\Registro_producao.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\Registro_producao.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\ActiveReports.Design3.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\ActiveReports.PdfExport.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\ActiveReports.Viewer3.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\ActiveReports3.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\winotica_util.dll
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\winotica_util.pdb
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\bin\Debug\winotica_util.xml
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\registro_producao.vbproj.CopyComplete
+C:\Users\Ernani\OneDrive\VS Projects\Visual Studio 2010\Projects\winotica_distribuidora\registro_producao\obj\Debug\Registro_producao.exe

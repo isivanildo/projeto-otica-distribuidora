@@ -1,0 +1,7 @@
+_DS := FindDataSet('det');
+_DS.First;
+While not _DS.Eof do
+begin	
+	%s
+	_DS.Next;
+end;

@@ -1,0 +1,12 @@
+type
+	TspdDecodeChaveNFe = record
+		cUF : string;
+		AAMM : string;
+		CNPJ : string;
+		Modelo : string;
+		Serie : string;
+		nNF : string;
+		tpEmis : string;
+		cNF : string;
+		cDV : string;
+	  end;

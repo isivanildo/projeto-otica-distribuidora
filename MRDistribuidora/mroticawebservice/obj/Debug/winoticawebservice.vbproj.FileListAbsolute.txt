@@ -1,0 +1,13 @@
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\bin\winoticawebservice.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\bin\winoticawebservice.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\bin\winoticawebservice.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\obj\Debug\winoticawebservice.Resources.resources
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\obj\Debug\ResGen.read.1.tlog
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\obj\Debug\ResGen.write.1.tlog
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\obj\Debug\winoticawebservice.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\obj\Debug\winoticawebservice.xml
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\obj\Debug\winoticawebservice.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\bin\winotica_util.dll
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\bin\winotica_util.pdb
+C:\Users\Ivanildo\Documents\Visual Studio 2010\Projects\winotica_distribuidora\winoticawebservice\bin\winotica_util.xml

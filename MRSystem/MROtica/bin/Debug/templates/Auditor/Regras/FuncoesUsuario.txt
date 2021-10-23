@@ -1,0 +1,770 @@
+// FieldValue('NFe','versao_A02');
+// Versão do leiaute
+Function fu_NFe_VersaoLeiaute  : string;
+begin
+  Result := FieldValue('NFe','versao_A02').AsString;
+end;
+	
+// FieldValue('NFe','Id_A03');
+// Identificador da TAG para assinatura
+Function fu_NFe_IdentificadorNFe : string;
+begin
+  Result := FieldValue('NFe','Id_A03').AsString;
+end;
+
+// FieldValue('NFe','cUF_B02');
+// Código UF do emitente do Documento Fiscal 
+Function fu_NFe_UFEmitenteNFe  : string;
+begin
+  Result := FieldValue('NFe','cUF_B02').AsString;
+end;
+
+// FieldValue('NFe','mod_B06');
+// Código do Modelo do Documento Fiscal 
+Function fu_NFe_CodigoModeloDocumentoFiscal : string;
+begin
+  Result := FieldValue('NFe','mod_B06').AsString;
+end;
+
+// FieldValue('NFe','serie_B07');
+// Série da NFe
+Function fu_NFe_SerieNFe : string;
+begin
+  Result := FieldValue('NFe','serie_B07').AsString;
+end;
+
+// FieldValue('NFe','nNF_B08');
+// Número NFe
+Function fu_NFe_NumeroNFe  : string;
+begin
+  Result := FieldValue('NFe','nNF_B08').AsString;
+end;
+
+// FieldValue('NFe','dEmi_B09');
+// Data de Emissão NFe
+Function fu_NFe_DataEmissaoNFe : string;
+begin
+  Result := FieldValue('NFe','dEmi_B09').AsString;
+end;
+
+// FieldValue('NFe','dSaiEnt_B10');
+// Data de Saída ou da Entrada da Mercadoria/Produto 
+Function fu_NFe_DataSaidaEntradaProduto : string;
+begin
+  Result := FieldValue('NFe','dSaiEnt_B10').AsString;
+end;
+
+// FieldValue('NFe','cMunFG_B12');
+// Código do Município de Ocorrência do Fato Gerador
+Function fu_NFe_CodigoMunicipioOcorrencia  : string;
+begin
+  Result := FieldValue('NFe','cMunFG_B12').AsString;
+end;
+
+// FieldValue('NFREF','refNFe_B13');
+// Chaves de Acesso da NF-e Feferenciada 
+Function fu_NFRef_ChaveAcessoNFeReferenciada : string;
+begin
+  Result := FieldValue('NFREF','refNFe_B13').AsString;
+end;
+
+// FieldValue('NFREF','CNPJ_B17');
+// CNPJ dos Emitentes Referenciados
+Function fu_NFRef_CNPJEmitenteNFeReferenciada1A : string;
+begin
+  Result := FieldValue('NFREF','CNPJ_B17').AsString;
+end;
+
+// FieldValue('NFref','CNPJ_B20d');
+// CNPJ do Emitente Produtor Referenciada 
+Function fu_NFRef_CNPJEmitenteProdutorRuralReferenciada : string;
+begin
+  Result := FieldValue('NFref','CNPJ_B20d').AsString;
+end;
+
+// FieldValue('NFref','CPF_B20e');
+// CPF do Emitente Referenciada
+Function fu_NFRef_CPFEmitenteProdutorRuralReferenciada : string;
+begin
+  Result := FieldValue('NFref','CPF_B20e').AsString;
+end;
+
+// FieldValue('NFref','refCTE_B20i')
+// Chave de Acesso do CT-e Referenciada
+Function fu_NFRef_ChaveAcessoCTeReferenciada : string;
+begin
+  Result := FieldValue('NFref','refCTE_B20i').AsString;
+end;
+
+// FieldValue('NFe','tpEmis_B22');
+// Tipo de Emissão da NF-e
+Function fu_NFe_TipoEmissaoNFe : string;
+begin
+  Result := FieldValue('NFe','tpEmis_B22').AsString;
+end;
+
+// FieldValue('NFe','cDV_B23');
+// Dígito Verificador da Chave de Acesso da NF-e
+Function fu_NFe_DigitoVerificadorNFe : string;
+begin
+  Result := FieldValue('NFe','cDV_B23').AsString;
+end;
+
+// FieldValue('NFe','finNFe_B25');
+// Finalidade de Emissão da NF-e 
+Function fu_NFe_FinalidadeEmissaoNFe  : string;
+begin
+  Result := FieldValue('NFe','finNFe_B25').AsString;
+end;
+
+// FieldValue('NFe','procEmi_B26');
+// Processo de Emissão da NF-e 
+Function fu_NFe_ProcessoEmissaoNFe  : string;
+begin
+  Result := FieldValue('NFe','procEmi_B26').AsString;
+end;
+
+// FieldValue('NFe','dhCont_B28');
+// Identificação do Ambiente NFe
+Function fu_NFe_DataEHoradeEntradaEmContingencia : string;
+begin
+  Result := FieldValue('NFe','dhCont_B28').AsString;
+end;
+
+// FieldValue('NFe','xJust_B29');
+// Justificativa da Entrada em Contingência 
+Function fu_NFe_JustificativaEntradaContigencia  : string;
+begin
+  Result := FieldValue('NFe','xJust_B29').AsString;
+end;
+
+// FieldValue('NFe','CNPJ_C02');
+// CNPJ do Emitente 
+Function fu_NFe_CNPJEmitente  : string;
+begin
+  Result := FieldValue('NFe','CNPJ_C02').AsString;
+end;
+
+// FieldValue('NFe','CPF_C02a');
+// CPF do Remetente
+Function fu_NFe_CPFremetente  : string;
+begin
+  Result := FieldValue('NFe','CPF_C02a').AsString;
+end;
+
+// FieldVAlue('NFe','cMun_C10');
+// Código do Município Emitente 
+Function fu_NFe_CodigoMunicipioEmitente : string;
+begin
+  Result := FieldVAlue('NFe','cMun_C10').AsString;
+end;
+
+// FieldValue('NFe','UF_C12');
+// Sigla da UF Emitente
+Function fu_NFe_SiglaUFEmitente  : string;
+begin
+  Result := FieldValue('NFe','UF_C12').AsString;
+end;
+
+// FieldValue('NFe','IE_C17');
+// IE Emitente
+Function fu_NFe_IEEmitente  : string;
+begin
+  Result := FieldValue('NFe','IE_C17').AsString;
+end;
+
+// FieldValue('NFe','IM_C19');
+// Inscrição Municipal Emitente
+Function fu_NFe_InscricaoMunicipalEmitente  : string;
+begin
+  Result := FieldValue('NFe','IM_C19').AsString;
+end;
+
+// FieldValue('NFe','cnpj_e02');
+// CNPJ do destinatário 
+Function fu_NFe_CNPJDestinatario  : string;
+begin
+  Result := FieldValue('NFe','cnpj_e02').AsString;
+end;
+
+// FieldValue('NFe','CPF_E03');
+// CPF do Destinatário 
+Function fu_NFe_CPFDestinatario : string;
+begin
+  Result := FieldValue('NFe','CPF_E03').AsString;
+end;
+
+// FieldValue('NFe','cMun_E10');
+// Código Município Destinatário
+Function fu_NFe_CodigoMunicipioDestinatario  : string;
+begin
+  Result := FieldValue('NFe','cMun_E10').AsString;
+end;
+
+// FieldValue('NFe','UF_E12');
+// Sigla da UF Destinatario
+Function fu_NFe_SiglaUFDestinatario  : string;
+begin
+  Result := FieldValue('NFe','UF_E12').AsString;
+end;
+
+// FieldValue('NFe','cPais_e14');
+// Código do Pais Destinatario
+Function fu_NFe_CodigoPaisDestinatario  : string;
+begin
+  Result := FieldValue('NFe','cPais_e14').AsString;
+end;
+
+// FieldValue('NFe','IE_E17');
+// IE Destinatario
+Function fu_NFe_IEDestinatario : string;
+begin
+  Result := FieldValue('NFe','IE_E17').AsString;
+end;
+
+// FieldValue('NFe','CNPJ_F02');
+// CNPJ Local Retirada
+Function fu_NFe_CNPJLocalRetirada  : string;
+begin
+  Result := FieldValue('NFe','CNPJ_F02').AsString;
+end;
+
+// FieldValue('NFe','CPF_F02a');
+// CPF Local Retirada
+Function fu_NFe_CPFLocalRetirada : string;
+begin
+  Result := FieldValue('NFe','CPF_F02a').AsString;
+end;
+
+// FieldValue('NFe','cMun_F07');
+// Código do município Local Retirada
+Function fu_NFe_CodigoMunicipioLocalRetirada  : string;
+begin
+  Result := FieldValue('NFe','cMun_F07').AsString;
+end;
+
+// FieldValue('NFe','UF_F09');
+// Sigla da UF Local Retirada
+Function fu_NFe_SiglaUFLocalRetirada  : string;
+begin
+  Result := FieldValue('NFe','UF_F09').AsString;
+end;
+
+// FieldValue('NFe','CNPJ_G02');
+// CNPJ Local Entrega
+Function fu_NFe_CNPJLocalEntrega : string;
+begin
+  Result := FieldValue('NFe','CNPJ_G02').AsString;
+end;
+
+// FieldValue('NFe','CPF_G02a');
+// CPF Local Entrega
+Function fu_NFe_CPFLocalEntrega  : string;
+begin
+  Result := FieldValue('NFe','CPF_G02a').AsString;
+end;
+
+// FieldValue('NFe','cMun_G07');
+// Código do município Local de Entrega
+Function fu_NFe_CodigoMunicipioEntrega  : string;
+begin
+  Result := FieldValue('NFe','cMun_G07').AsString;
+end;
+
+// FieldValue('NFe','UF_G09');
+// Sigla da UF Local de Entrega
+Function fu_NFe_SiglaUFLocalEntrega  : string;
+begin
+  Result := FieldValue('NFe','UF_G09').AsString;
+end;
+
+// FieldValue('det','cEAN_I03');
+// GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de barras
+Function fu_det_CodigoEANItem : string;
+begin
+  Result := FieldValue('det','cEAN_I03').AsString;
+end;
+
+// FieldValue('det','xProd_I04');
+// Descrição do produto ou serviço
+Function fu_det_DescricaoProdutoServico : string;
+begin
+  Result := FieldValue('det','xProd_I04').AsString;
+end;
+
+// FieldValue('det','NCM_I05');
+// Código NCM com 8 dígitos ou 2 dígitos (gênero)
+Function fu_det_CodigoNCMItem : string;
+begin
+  Result := FieldValue('det','NCM_I05').AsString;
+end;
+
+// FieldValue('det','qCom_I10');
+// Quantidade Comercial 
+Function fu_det_QuantidadeComercialItem : string;
+begin
+  Result := FieldValue('det','qCom_I10').AsString;
+end;
+
+// FieldValue('det','vUnCom_I10a');
+// Valor Unitário de Comercialização 
+Function fu_det_ValorUnitarioComercializacaoItem : string;
+begin
+  Result := FieldValue('det','vUnCom_I10a').AsString;
+end;
+
+// FieldValue('det','vProd_I11');
+// Valor Total Bruto dos Produtos ou Serviços
+Function fu_det_ValorTotalBrutoItem : string;
+begin
+  Result := FieldValue('det','vProd_I11').AsString;
+end;
+
+// FieldValue('det','cEANTrib_I12');
+// GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou código de barras 
+Function fu_det_CodigoEANTributavelItem : string;
+begin
+  Result := FieldValue('det','cEANTrib_I12').AsString;
+end;
+
+// FieldValue('det','qTrib_I14');
+// Quantidade Tributável Produto e Serviço
+Function fu_det_QuantidadeTributavelItem : string;
+begin
+  Result := FieldValue('det','qTrib_I14').AsString;
+end;
+
+// FieldValue('det','vUnTrib_I14a');
+// Valor Unitário de tributação Produto e Serviço
+Function fu_det_ValorUnitarioItem : string;
+begin
+  Result := FieldValue('det','vUnTrib_I14a').AsString;
+end;
+
+// FieldValue('det','vFrete_I15');
+// Valor Total do Frete Produto e Serviço
+Function fu_det_ValorTotalFreteItem : string;
+begin
+  Result := FieldValue('det','vFrete_I15').AsString;
+end;
+
+// FieldValue('det','vSeg_I16');
+// Valor Total do Seguro Produto e Serviço
+Function fu_det_ValorTotalSeguroItem : string;
+begin
+  Result := FieldValue('det','vSeg_I16').AsString;
+end;
+
+// FieldValue('det','vDesc_17');
+// Valor do Desconto Produto e Serviço
+Function fu_det_ValorDescontoItem : string;
+begin
+  Result := FieldValue('det','vDesc_17').AsString;
+end;
+
+// FieldValue('det','vOutro_I17a');
+// Outras despesas acessórias Produtos e Servicos
+Function fu_det_OutrasDespesasItem : string;
+begin
+  Result := FieldValue('det','vOutro_I17a').AsString;
+end;
+
+// FieldValue('det','indTot_I17b');
+// Indica se valor do Item (vProd) entra no valor total da NF-e (vProd)
+Function fu_det_TotalizarItem : string;
+begin
+  Result := FieldValue('det','indTot_I17b').AsString;
+end;
+
+// FieldValue('det','tpOp_J02');
+// Tipo de Operação Veiculos Novos
+Function fu_det_TipoOperacaoVeiculosNovos  : string;
+begin
+  Result := FieldValue('det','tpOp_J02').AsString;
+end;
+
+// FieldValue('det','UFCons_L120');
+// Sigla da UF de consumo do Combustivel
+Function fu_det_SiglaUFCombustivel : string;
+begin
+  Result := FieldValue('det','UFCons_L120').AsString;
+end;
+
+// FieldValue('det','orig_N11');
+// Origem da mercadoria ICMS Normal e ST
+Function fu_det_OrigemMercadoriaICMS : string;
+begin
+  Result := FieldValue('det','orig_N11').AsString;
+end;
+
+// FieldValue('det','vBC_N15');
+// Valor da BC do ICMS Normal e ST
+Function fu_det_ValorBCdoICMS : string;
+begin
+  Result := FieldValue('det','vBC_N15').AsString;
+end;
+
+// FieldValue('det','pICMS_N16');
+// Alíquota do imposto ICMS Normal e ST
+Function fu_det_AliquotaICMS : string;
+begin
+  Result := FieldValue('det','pICMS_N16').AsString;
+end;
+
+// FieldValue('det','vICMS_N17');
+// Valor do ICMS Normal e ST
+Function fu_det_ValorICMS : string;
+begin
+  Result := FieldValue('det','vICMS_N17').AsString;
+end;
+
+// FieldValue('det','vBCST_N21');
+// Valor da BC do ICMS ST
+Function fu_det_ValorBCdoICMSST : string;
+begin
+  Result := FieldValue('det','vBCST_N21').AsString;
+end;
+
+// FieldValue('det','vICMSST_N23');
+// Valor do ICMS ST 
+Function fu_det_ValorICMSST : string;
+begin
+  Result := FieldValue('det','vICMSST_N23').AsString;
+end;
+
+// FieldValue('det','motDesICMS_N28');
+// Motivo da desoneração do ICMS Normal e ST
+Function fu_det_MotivoDesonaracaoICMS : string;
+begin
+  Result := FieldValue('det','motDesICMS_N28').AsString;
+end;
+
+// FieldValue('det','vIPI_O14');
+// Valor do IPI Produto Industrializado
+Function fu_det_ValorIPI : string;
+begin
+  Result := FieldValue('det','vIPI_O14').AsString;
+end;
+
+// FieldValue('det','vII_P04');
+// Valor do Imposto de Importação 
+Function fu_det_ValorImpostoImportacao : string;
+begin
+  Result := FieldValue('det','vII_P04').AsString;
+end;
+
+// FieldValue('det','vPIS_Q09');
+// Valor do PIS
+Function fu_det_ValorPIS : string;
+begin
+  Result := FieldValue('det','vPIS_Q09').AsString;
+end;
+
+// FieldValue('det','vCOFINS_S11');
+// Valor do COFINS
+Function fu_det_ValorCOFINS : string;
+begin
+  Result := FieldValue('det','vCOFINS_S11').AsString;
+end;
+
+// FieldValue('det','vBC_U02');
+// Valor da Base de Cálculo do ISSQN
+Function fu_det_ValorBaseCalculoISSQN : string;
+begin
+  Result := FieldValue('det','vBC_U02').AsString;
+end;
+
+// FieldValue('det','vISSQN_U04');
+// Valor do ISSQN 
+Function fu_det_ValorISSQN : string;
+begin
+  Result := FieldValue('det','vISSQN_U04').AsString;
+end;
+
+// FieldValue('det','cMunFG_U05');
+// Código do município de ocorrência do fato gerador do ISSQN 
+Function fu_det_CodigoMunicipioISSQN : string;
+begin
+  Result := FieldValue('det','cMunFG_U05').AsString;
+end;
+
+// FieldValue('NFe','vBC_W03');
+// Base de Cálculo do ICMS 
+Function fu_NFe_BaseCalculoICMS : string;
+begin
+  Result := FieldValue('NFe','vBC_W03').AsString;
+end;
+
+// FieldValue('NFe','vICMS_W04');
+// Valor Total do ICMS
+Function fu_NFe_ValorTotalICMS : string;
+begin
+  Result := FieldValue('NFe','vICMS_W04').AsString;
+end;
+
+// FieldValue('NFe','vBCST_W05');
+// Base de Cálculo do ICMS ST 
+Function fu_NFe_BaseCalculoICMSST : string;
+begin
+  Result := FieldValue('NFe','vBCST_W05').AsString;
+end;
+
+// FieldValue('NFe','vST_W06');
+// Valor Total do ICMS ST 
+Function fu_NFe_ValorTotalICMSST : string;
+begin
+  Result := FieldValue('NFe','vST_W06').AsString;
+end;
+
+// FieldValue('NFe','vProd_W07');
+// Valor Total dos produtos e serviços
+Function fu_NFe_ValorTotalProdutos : string;
+begin
+  Result := FieldValue('NFe','vProd_W07').AsString;
+end;
+
+// FieldValue('NFe','vFrete_W08');
+// Valor Total do Frete 
+Function fu_NFe_ValorTotalFrete : string;
+begin
+  Result := FieldValue('NFe','vFrete_W08').AsString;
+end;
+
+// FieldValue('NFe','vSeg_W09');
+// Valor Total do Seguro 
+Function fu_NFe_ValorTotalSeguro : string;
+begin
+  Result := FieldValue('NFe','vSeg_W09').AsString;
+end;
+
+// FieldValue('NFe','vDesc_W10');
+// Valor Total do Desconto
+Function fu_NFe_ValorTotalDesconto : string;
+begin
+  Result := FieldValue('NFe','vDesc_W10').AsString;
+end;
+
+// FieldValue('NFe','vII_W11');
+// Valor Total do II
+Function fu_NFe_ValorTotalII  : string;
+begin
+  Result := FieldValue('NFe','vII_W11').AsString;
+end;
+
+// FieldValue('NFe','vIPI_W12');
+// Valor Total do IPI
+Function fu_NFe_ValorTotalIPI : string;
+begin
+  Result := FieldValue('NFe','vIPI_W12').AsString;
+end;
+
+// FieldValue('NFe','vPIS_W13');
+// Valor do PIS 
+Function fu_NFe_ValorTotalPIS  : string;
+begin
+  Result := FieldValue('NFe','vPIS_W13').AsString;
+end;
+
+// FieldValue('NFe','vCOFINS_W14');
+// Valor do COFINS
+Function fu_NFe_ValorTotalCOFINS : string;
+begin
+  Result := FieldValue('NFe','vCOFINS_W14').AsString;
+end;
+
+// FieldValue('NFe','vOutro_W15');
+// Outras Despesas acessórias
+Function fu_NFe_OutrasDespesasAcessorias : string;
+begin
+  Result := FieldValue('NFe','vOutro_W15').AsString;
+end;
+
+// FieldValue('NFe','vNF_W16');
+// Valor Total da NF-e 
+Function fu_NFe_ValorTotalNFe : string;
+begin
+  Result := FieldValue('NFe','vNF_W16').AsString;
+end;
+
+// FieldValue('NFe','vServ_W18');
+// Valor Total dos Serviços sob não-incidência ou não tributados pelo ICMS 
+Function fu_NFe_ValorTotalServicosNaoIncidenciaOuNaoTributadoPeloICMS  : string;
+begin
+  Result := FieldValue('NFe','vServ_W18').AsString;
+end;
+
+// FieldValue('NFe','vBC_W19');
+// Base de Cálculo do ISS 
+Function fu_NFe_BaseCalculoISS  : string;
+begin
+  Result := FieldValue('NFe','vBC_W19').AsString;
+end;
+
+// FieldValue('NFe','vISS_W20');
+// Valor Total do ISS
+Function fu_NFe_ValorISS  : string;
+begin
+  Result := FieldValue('NFe','vISS_W20').AsString;
+end;
+
+// FieldValue('NFe','vPIS_W21');
+// Valor do PIS sobre serviços 
+Function fu_NFe_ValorPISSobreServico : string;
+begin
+  Result := FieldValue('NFe','vPIS_W21').AsString;
+end;
+
+// FieldValue('NFe','vCOFINS_W22');
+// Valor do COFINS sobre serviços 
+Function fu_NFe_ValorCOFINSSobreServico  : string;
+begin
+  Result := FieldValue('NFe','vCOFINS_W22').AsString;
+end;
+
+// FieldValue('NFe','modFrete_X02');
+// Modalidade do frete Transporte
+Function fu_NFe_ModalidadeFreteTransporte  : string;
+begin
+  Result := FieldValue('NFe','modFrete_X02').AsString;
+end;
+
+// FieldValue('NFe','CNPJ_X04');
+// CNPJ Transportador
+Function fu_NFe_CNPJTransportador : string;
+begin
+  Result := FieldValue('NFe','CNPJ_X04').AsString;
+end;
+
+// FieldValue('NFe','CPF_X05');
+// CPF Transportador
+Function fu_NFe_CPFTransportador : string;
+begin
+  Result := FieldValue('NFe','CPF_X05').AsString;
+end;
+
+// FieldValue('NFe','IE_X07');
+// Inscrição Estadual Transporte
+Function fu_NFe_InscricaoEstadualTransporte : string;
+begin
+  Result := FieldValue('NFe','IE_X07').AsString;
+end;
+
+// FieldValue('NFe','UF_X10');
+// Sigla da UF Transportador
+Function fu_NFe_SiglaUFTransporte : string;
+begin
+  Result := FieldValue('NFe','UF_X10').AsString;
+end;
+
+// FieldValue('NFe','cMunFG_X17');
+// Código do município de ocorrência do fato gerador do ICMS do transporte 
+Function fu_NFe_CodigoMunicipioGeradorICMSTransporte : string;
+begin
+  Result := FieldValue('NFe','cMunFG_X17').AsString;
+end;
+
+// FieldValue('NFe','UFEmbarq_ZA02');
+// Sigla da UF onde ocorrerá o Embarque dos produtos - Comercio Exterior
+Function fu_NFe_SiglaUFEmbarqueProdutos  : string;
+begin
+  Result := FieldValue('NFe','UFEmbarq_ZA02').AsString;
+end;
+
+// FieldValue('NFe','xLocEmbarq_ZA03');
+// Local onde ocorrerá o Embarque dos produtos 
+Function fu_NFe_LocalEmbarqueProdutos  : string;
+begin
+  Result := FieldValue('NFe','xLocEmbarq_ZA03').AsString;
+end;
+
+// FieldValue('NFe','CRT_C21')
+// Codigo Regime Tributario do Emitente
+Function fu_NFe_CodigoDoRegimeTributario : string;
+begin
+  Result := FieldValue('NFe','CRT_C21').AsString;
+end;
+
+// FieldValue('det','CFOP_I08');
+// Código Fiscal de Operações e Prestações de Produtos e Serviço
+Function fu_det_CFOPProduto : string;
+begin
+  Result := FieldValue('det','CFOP_I08').AsString;
+end;
+
+// FieldValue('det','CST_N12');
+// Tributação do ICMS Normal e CST
+Function fu_det_CST_ICMSProduto : string;
+begin   
+  Result := FieldValue('det','CST_N12').AsString
+end;
+
+// FieldValue('det','CSOSN_N12a');
+// Código de Situação da Operação – Simples Nacional 
+Function fu_det_CSOSN_ICMSProduto : string;
+begin   
+  Result := FieldValue('det','CSOSN_N12a').AsString;
+end;
+
+// FieldValue('det','CST_O09')
+// Código da situação tributária do IPI Produtos Industrializados
+Function fu_det_CST_IPIProduto : string;
+begin
+  Result := FieldValue('det','CST_O09').AsString;
+end;
+
+// Código de Situação Tributária do PIS 
+// FieldValue('det','CST_Q06') ou FieldValue('det','CST_Q02')
+Function fu_det_CST_PISProduto : string;
+begin
+  if FieldValue('det','CST_Q06').AsString <> '' then
+	Result := FieldValue('det','CST_Q06').AsString
+  else if FieldValue('det','CST_Q02').AsString <> '' then
+	Result := FieldValue('det','CST_Q02').AsString;
+end;
+
+// FieldValue('det','CST_S06')
+// Código de Situação Tributária da COFINS
+Function fu_det_CST_COFINSProduto : string;
+begin
+  Result := FieldValue('det','CST_S06').AsString;
+end;
+
+// FieldValue('NFe','tpNF_B11');
+// Tipo de Operação da nota
+Function fu_Nfe_TipoDeOperacao : string;
+begin
+   if FieldValue('NFe','tpNF_B11').AsString = '0' then
+	 Result := 'E'
+   else if FieldValue('NFe','tpNF_B11').AsString = '1' then
+     Result := 'S';          
+end;
+
+// FieldValue('NFe','email_E19')
+// Email do Destinatário
+Function fu_NFe_EmailDestinatario : string;
+begin
+  Result := FieldValue('NFe','email_E19').AsString;
+end;
+
+// Tipo de pessoa destinatario
+Function fu_Nfe_TipoDePessoaDestinatario : string;
+begin
+   if FieldValue('NFe','CNPJ_E02').AsString <> '' then
+	 Result := 'PJ'
+   else if FieldValue('NFe','CPF_E03').AsString <> '' then
+     Result := 'PF';
+   if FieldValue('NFe','UF_E12').AsString = 'EX' then
+     Result := 'PJ';		
+end;
+
+// CEP Emitente
+function fu_Nfe_CepEmitente : string;
+begin
+  Result := FieldValue('NFe','CEP_C13').AsString;
+end;
+
+// CEP Destinatário
+function fu_Nfe_CepDestinatario : string;
+begin
+  Result := FieldValue('NFe','CEP_E13').AsString;
+end;

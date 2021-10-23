@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63FDCB79-131F-4666-906D-B31326FB8D7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MROtica</RootNamespace>
+    <AssemblyName>MROtica</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data, Version=5.0.2229.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <HintPath>..\packages\dotConnect.Express.for.PostgreSQL.7.13.1437\lib\Devart.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data.PostgreSql, Version=7.13.1437.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <HintPath>..\packages\dotConnect.Express.for.PostgreSQL.7.13.1437\lib\Devart.Data.PostgreSql.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MRUtil, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MRUtil\bin\Debug\MRUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\FrmCOFINSAliq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCOFINSAliq.Designer.cs">
+      <DependentUpon>FrmCOFINSAliq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCOFINSNTrib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCOFINSNTrib.Designer.cs">
+      <DependentUpon>FrmCOFINSNTrib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCOFINSOutros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCOFINSOutros.Designer.cs">
+      <DependentUpon>FrmCOFINSOutros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCOFINSQuant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCOFINSQuant.Designer.cs">
+      <DependentUpon>FrmCOFINSQuant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCOFINSST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCOFINSST.Designer.cs">
+      <DependentUpon>FrmCOFINSST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS00.Designer.cs">
+      <DependentUpon>FrmICMS00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS10.Designer.cs">
+      <DependentUpon>FrmICMS10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS20.Designer.cs">
+      <DependentUpon>FrmICMS20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS30.Designer.cs">
+      <DependentUpon>FrmICMS30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS40.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS40.Designer.cs">
+      <DependentUpon>FrmICMS40.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS51.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS51.Designer.cs">
+      <DependentUpon>FrmICMS51.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS60.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS60.Designer.cs">
+      <DependentUpon>FrmICMS60.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS70.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS70.Designer.cs">
+      <DependentUpon>FrmICMS70.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS90.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMS90.Designer.cs">
+      <DependentUpon>FrmICMS90.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSPartilha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSPartilha.Designer.cs">
+      <DependentUpon>FrmICMSPartilha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN101.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN101.Designer.cs">
+      <DependentUpon>FrmICMSSN101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN102.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN102.Designer.cs">
+      <DependentUpon>FrmICMSSN102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN201.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN201.Designer.cs">
+      <DependentUpon>FrmICMSSN201.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN202.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN202.Designer.cs">
+      <DependentUpon>FrmICMSSN202.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN500.Designer.cs">
+      <DependentUpon>FrmICMSSN500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSSN900.Designer.cs">
+      <DependentUpon>FrmICMSSN900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmICMSST.Designer.cs">
+      <DependentUpon>FrmICMSST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmII.Designer.cs">
+      <DependentUpon>FrmII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmIPINTributado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmIPINTributado.Designer.cs">
+      <DependentUpon>FrmIPINTributado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmIPITributado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmIPITributado.Designer.cs">
+      <DependentUpon>FrmIPITributado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmISSQN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmISSQN.Designer.cs">
+      <DependentUpon>FrmISSQN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmOperacaoTributaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmOperacaoTributaria.Designer.cs">
+      <DependentUpon>FrmOperacaoTributaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPISAliquota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPISAliquota.Designer.cs">
+      <DependentUpon>FrmPISAliquota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPISNTrib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPISNTrib.Designer.cs">
+      <DependentUpon>FrmPISNTrib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPISOtros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPISOtros.Designer.cs">
+      <DependentUpon>FrmPISOtros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPISQuantidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPISQuantidade.Designer.cs">
+      <DependentUpon>FrmPISQuantidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPISST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPISST.Designer.cs">
+      <DependentUpon>FrmPISST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmNotaFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmNotaFiscal.Designer.cs">
+      <DependentUpon>FrmNotaFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTesteNFe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTesteNFe.Designer.cs">
+      <DependentUpon>frmTesteNFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\FrmCOFINSAliq.resx">
+      <DependentUpon>FrmCOFINSAliq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCOFINSNTrib.resx">
+      <DependentUpon>FrmCOFINSNTrib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCOFINSOutros.resx">
+      <DependentUpon>FrmCOFINSOutros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCOFINSQuant.resx">
+      <DependentUpon>FrmCOFINSQuant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCOFINSST.resx">
+      <DependentUpon>FrmCOFINSST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMS00.resx">
+      <DependentUpon>FrmICMS00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMS10.resx">
+      <DependentUpon>FrmICMS10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMS20.resx">
+      <DependentUpon>FrmICMS20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMS30.resx">
+      <DependentUpon>FrmICMS30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMS40.resx">
+      <DependentUpon>FrmICMS40.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMS51.resx">
+      <DependentUpon>FrmICMS51.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMS60.resx">
+      <DependentUpon>FrmICMS60.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMS70.resx">
+      <DependentUpon>FrmICMS70.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMS90.resx">
+      <DependentUpon>FrmICMS90.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMSPartilha.resx">
+      <DependentUpon>FrmICMSPartilha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMSSN101.resx">
+      <DependentUpon>FrmICMSSN101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMSSN102.resx">
+      <DependentUpon>FrmICMSSN102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMSSN201.resx">
+      <DependentUpon>FrmICMSSN201.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMSSN202.resx">
+      <DependentUpon>FrmICMSSN202.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMSSN500.resx">
+      <DependentUpon>FrmICMSSN500.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMSSN900.resx">
+      <DependentUpon>FrmICMSSN900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmICMSST.resx">
+      <DependentUpon>FrmICMSST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmII.resx">
+      <DependentUpon>FrmII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmIPINTributado.resx">
+      <DependentUpon>FrmIPINTributado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmIPITributado.resx">
+      <DependentUpon>FrmIPITributado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmISSQN.resx">
+      <DependentUpon>FrmISSQN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmOperacaoTributaria.resx">
+      <DependentUpon>FrmOperacaoTributaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPISAliquota.resx">
+      <DependentUpon>FrmPISAliquota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPISNTrib.resx">
+      <DependentUpon>FrmPISNTrib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPISOtros.resx">
+      <DependentUpon>FrmPISOtros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPISQuantidade.resx">
+      <DependentUpon>FrmPISQuantidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPISST.resx">
+      <DependentUpon>FrmPISST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmNotaFiscal.resx">
+      <DependentUpon>FrmNotaFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTesteNFe.resx">
+      <DependentUpon>frmTesteNFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="relatorios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

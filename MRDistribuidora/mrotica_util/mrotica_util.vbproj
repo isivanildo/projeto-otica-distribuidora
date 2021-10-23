@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{78DD3E99-0A58-4172-8685-74B50401EF04}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>mrotica_util</RootNamespace>
+    <AssemblyName>mrotica_util</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>mrotica_util.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>mrotica_util.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="businessRule\brOS.vb" />
+    <Compile Include="classes\NFeFuncoesEnvio.vb" />
+    <Compile Include="classes\objBlocoSurf.vb" />
+    <Compile Include="classes\config.vb" />
+    <Compile Include="classes\dadosSql.vb" />
+    <Compile Include="classes\dialupMod.vb" />
+    <Compile Include="classes\mod.vb" />
+    <Compile Include="classes\ObjAcordo.vb" />
+    <Compile Include="classes\objAndamentos.vb" />
+    <Compile Include="classes\objBlocos.vb" />
+    <Compile Include="classes\objBoleto.vb" />
+    <Compile Include="classes\objBoletoCobranca.vb" />
+    <Compile Include="classes\objCancalePedido.vb" />
+    <Compile Include="classes\objCancelOS.vb" />
+    <Compile Include="classes\objCheque.vb" />
+    <Compile Include="classes\objCliente.vb" />
+    <Compile Include="classes\objClienteNew.vb" />
+    <Compile Include="classes\objClienteNovo.vb" />
+    <Compile Include="classes\objCompras.vb" />
+    <Compile Include="classes\objConta.vb" />
+    <Compile Include="classes\objContaBanco.vb" />
+    <Compile Include="classes\objContFora.vb" />
+    <Compile Include="classes\objContTratamentos.vb" />
+    <Compile Include="classes\objCreditoCliente.vb" />
+    <Compile Include="classes\objCstNFe.vb" />
+    <Compile Include="classes\objDevEstoque.vb" />
+    <Compile Include="classes\objDevolucaoEstoquePedido.vb" />
+    <Compile Include="classes\objEmitente - Copy.vb" />
+    <Compile Include="classes\objEmpresa.vb" />
+    <Compile Include="classes\objEntradaNota.vb" />
+    <Compile Include="classes\objEntradaProducao.vb" />
+    <Compile Include="classes\objEspecie.vb" />
+    <Compile Include="classes\objFamilia.vb" />
+    <Compile Include="classes\objFatura.vb" />
+    <Compile Include="classes\objFaturamento.vb" />
+    <Compile Include="classes\objFilaImpressao.vb" />
+    <Compile Include="classes\objForn.vb" />
+    <Compile Include="classes\ObjFornecedor.vb" />
+    <Compile Include="classes\objGeral.vb" />
+    <Compile Include="classes\objLancamentos.vb" />
+    <Compile Include="classes\objLenteContato.vb" />
+    <Compile Include="classes\objLentes.vb" />
+    <Compile Include="classes\objLentesDiop.vb" />
+    <Compile Include="classes\objMaster.vb" />
+    <Compile Include="classes\objMovimentoDetalhe.vb" />
+    <Compile Include="classes\ObjMunicipio.vb" />
+    <Compile Include="classes\ObjNaturezaOperacao.vb" />
+    <Compile Include="classes\ObjOS.vb" />
+    <Compile Include="classes\objPacoteCliente.vb" />
+    <Compile Include="classes\objPacoteClienteM.vb" />
+    <Compile Include="classes\objPagamento.vb" />
+    <Compile Include="classes\objPagCredito.vb" />
+    <Compile Include="classes\objPagFatura.vb" />
+    <Compile Include="classes\objPedido.vb" />
+    <Compile Include="classes\objPedidoCompra.vb" />
+    <Compile Include="classes\objPrint.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="classes\objSaidaExtra.vb" />
+    <Compile Include="classes\objSaidaOS.vb" />
+    <Compile Include="classes\objSaidaPedido.vb" />
+    <Compile Include="classes\objSecurity.vb" />
+    <Compile Include="classes\objServicos.vb" />
+    <Compile Include="classes\objSqlTrans.vb" />
+    <Compile Include="classes\objTabela.vb" />
+    <Compile Include="classes\objTabelaPromocional.vb" />
+    <Compile Include="classes\objTrocaDioptria.vb" />
+    <Compile Include="classes\objTrocaProduto.vb" />
+    <Compile Include="classes\ObjUF.vb" />
+    <Compile Include="classes\objUsuario.vb" />
+    <Compile Include="classes\ObjPerfil.vb" />
+    <Compile Include="classes\produtoClass.vb" />
+    <Compile Include="forms\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmSenha.Designer.vb">
+      <DependentUpon>frmSenha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmSenha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmTrocaSenha.Designer.vb">
+      <DependentUpon>frmTrocaSenha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmTrocaSenha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="forms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmSenha.resx">
+      <DependentUpon>frmSenha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmTrocaSenha.resx">
+      <DependentUpon>frmTrocaSenha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="classes\disk.ico" />
+    <None Include="Resources\tela_login.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

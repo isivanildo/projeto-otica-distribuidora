@@ -1,0 +1,21 @@
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.comando SQL/
+.Imagens/
+.Recursos/
+.packages/
+.bin/
+
+# Package Files #
+*.xml
+*.licx
+*.sql
+*.jpge
+*.zip
+*.jpg
+*.png

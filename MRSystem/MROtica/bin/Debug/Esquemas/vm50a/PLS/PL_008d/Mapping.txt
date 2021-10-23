@@ -1,0 +1,14 @@
+[ValidarXML]
+STATUS=consStatServ_v3.10.xsd
+ENVIO=enviNFe_v3.10.xsd
+CONSULTARECIBO=consReciNFe_v3.10.xsd
+CONSULTANF=consSitNFe_v3.10.xsd
+CANCELAMENTO=cancNFe_v2.00.xsd
+INUTILIZACAO=inutNFe_v3.10.xsd
+CONSULTACADASTRO=consCad_v2.00.xsd
+XMLDESTINATARIO=procNFe_v3.10.xsd
+ENVIOMANDEST=envconfrecebto_v1.00.xsd
+CONSULTADESTINADAS=consnfedest_v1.01.xsd
+ENVIOCANCEVENTO=envEventoCancNFe_v1.00.xsd
+DOWNLOADNFE=downloadNFe_v1.00.xsd
+ENVIOCCE=envCCe_v1.00.xsd
